@@ -23753,6 +23753,31 @@ var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
+var _hoisted_19 = {
+  "class": "h-96 w-full bg-slate-700 py-20"
+};
+var _hoisted_20 = {
+  "class": "container flex h-full flex-col items-start justify-start gap-y-10 gap-x-10 xl:flex-row"
+};
+var _hoisted_21 = {
+  "class": "h-full max-w-md border-r pr-16"
+};
+var _hoisted_22 = {
+  "class": "mb-5 flex items-center gap-x-5"
+};
+
+var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "text-2xl text-gray-50"
+}, " Mondol IT Limited ", -1
+/* HOISTED */
+);
+
+var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, a veritatis recusandae, minima excepturi perferendis cupiditate dolorum harum consequuntur ex quas temporibus quisquam iusto ea corrupti illum quaerat, architecto quo. ", -1
+/* HOISTED */
+);
+
+var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex h-full w-full gap-x-20 pl-6 text-slate-400\"><div><h2 class=\"mb-3 text-xl text-white\">Navigation</h2><ul><li>Home</li><li>About</li><li>Projects</li><li>Home</li><li>About</li><li>Projects</li></ul></div><div><h2 class=\"mb-3 text-xl text-white\">Navigation</h2><ul><li>Home</li><li>About</li><li>Projects</li></ul></div><div><h2 class=\"mb-3 text-xl text-white\">Find Us</h2><p>Greenwich Village &amp; Soho, 10012 New York, USA</p><p> 800 123-456 <br> digity@example.com </p></div></div>", 1);
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Head"], {
     title: "Mondol IT Limited"
@@ -23784,7 +23809,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   }, 8
   /* PROPS */
-  , ["href"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_18])])])], 64
+  , ["href"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_18])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("footer", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Logo"], {
+    "class": "fill-gray-100"
+  }), _hoisted_23]), _hoisted_24]), _hoisted_25])])], 64
   /* STABLE_FRAGMENT */
   );
 }

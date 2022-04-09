@@ -371,4 +371,55 @@ defineProps({
             </div>
         </div>
     </section>
+
+    <footer class="h-96 w-full bg-slate-700 py-20">
+        <div
+            class="container flex h-full flex-col items-start justify-start gap-y-10 gap-x-10 xl:flex-row"
+        >
+            <div class="h-full max-w-md border-r pr-16">
+                <div class="mb-5 flex items-center gap-x-5">
+                    <Logo class="fill-gray-100" />
+                    <span class="text-2xl text-gray-50">
+                        Mondol IT Limited
+                    </span>
+                </div>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Repudiandae, a veritatis recusandae, minima excepturi
+                    perferendis cupiditate dolorum harum consequuntur ex quas
+                    temporibus quisquam iusto ea corrupti illum quaerat,
+                    architecto quo.
+                </p>
+            </div>
+            <div class="flex h-full w-full gap-x-20 pl-6 text-slate-400">
+                <div>
+                    <h2 class="mb-3 text-xl text-white">Navigation</h2>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Projects</li>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Projects</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-3 text-xl text-white">Navigation</h2>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Projects</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-3 text-xl text-white">Find Us</h2>
+                    <p>Greenwich Village & Soho, 10012 New York, USA</p>
+                    <p>
+                        800 123-456 <br />
+                        digity@example.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </template>
