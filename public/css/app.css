@@ -1074,12 +1074,24 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(14 165 233 / var(--tw-bg-opacity));
 }
+.bg-sky-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(56 189 248 / var(--tw-bg-opacity));
+}
+.bg-sky-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(186 230 253 / var(--tw-bg-opacity));
+}
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 .from-green-200 {
   --tw-gradient-from: #bbf7d0;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(187 247 208 / 0));
+}
+.from-sky-200 {
+  --tw-gradient-from: #bae6fd;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(186 230 253 / 0));
 }
 .via-white {
   --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgb(255 255 255 / 0));
@@ -1355,6 +1367,14 @@ select {
   --tw-text-opacity: 1;
   color: rgb(2 132 199 / var(--tw-text-opacity));
 }
+.text-sky-500 {
+  --tw-text-opacity: 1;
+  color: rgb(14 165 233 / var(--tw-text-opacity));
+}
+.text-sky-700 {
+  --tw-text-opacity: 1;
+  color: rgb(3 105 161 / var(--tw-text-opacity));
+}
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1461,6 +1481,10 @@ select {
   content: var(--tw-content);
   background-color: rgb(34 197 94 / 0.4);
 }
+.before\:bg-sky-500\/40::before {
+  content: var(--tw-content);
+  background-color: rgb(14 165 233 / 0.4);
+}
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -1487,6 +1511,10 @@ select {
 .hover\:from-green-200:hover {
   --tw-gradient-from: #bbf7d0;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(187 247 208 / 0));
+}
+.hover\:from-sky-200:hover {
+  --tw-gradient-from: #bae6fd;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(186 230 253 / 0));
 }
 .hover\:via-white:hover {
   --tw-gradient-stops: var(--tw-gradient-from), #fff, var(--tw-gradient-to, rgb(255 255 255 / 0));
@@ -1606,6 +1634,10 @@ select {
 .group:hover .group-hover\:bg-green-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+.group:hover .group-hover\:bg-sky-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
 }
 .group:hover .group-hover\:text-white {
   --tw-text-opacity: 1;

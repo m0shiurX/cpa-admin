@@ -7,6 +7,8 @@ use Inertia\Inertia;
 /**************************************************************
  *  Web Routes
  **************************************************************/
+require __DIR__ . '/auth.php';
+
 
 Route::get('/', function () {
     return Inertia::render('Home', [
