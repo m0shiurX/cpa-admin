@@ -23659,11 +23659,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var _assets_adverus_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/assets/adverus_logo.png */ "./resources/js/assets/adverus_logo.png");
-/* harmony import */ var _assets_manter_logo_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/assets/manter_logo.png */ "./resources/js/assets/manter_logo.png");
-/* harmony import */ var _assets_spaced_logo_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/assets/spaced_logo.png */ "./resources/js/assets/spaced_logo.png");
-/* harmony import */ var _assets_stamps_logo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/assets/stamps_logo.png */ "./resources/js/assets/stamps_logo.png");
-/* harmony import */ var _assets_vanuer_logo_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/assets/vanuer_logo.png */ "./resources/js/assets/vanuer_logo.png");
+/* harmony import */ var _assets_imonetizeit_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/assets/imonetizeit.svg */ "./resources/js/assets/imonetizeit.svg");
+/* harmony import */ var _assets_lospollos_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/assets/lospollos.png */ "./resources/js/assets/lospollos.png");
+/* harmony import */ var _assets_datify_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/assets/datify.png */ "./resources/js/assets/datify.png");
+/* harmony import */ var _assets_trafee_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/assets/trafee.svg */ "./resources/js/assets/trafee.svg");
+/* harmony import */ var _assets_ClickDealer_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/assets/ClickDealer.png */ "./resources/js/assets/ClickDealer.png");
 /* harmony import */ var _assets_instagram_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/assets/instagram.png */ "./resources/js/assets/instagram.png");
 /* harmony import */ var _assets_web_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/assets/web.png */ "./resources/js/assets/web.png");
 /* harmony import */ var _assets_graphic_designer_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @/assets/graphic-designer.png */ "./resources/js/assets/graphic-designer.png");
@@ -23684,132 +23684,138 @@ var _hoisted_2 = {
   "class": "flex items-center justify-between"
 };
 var _hoisted_3 = {
-  "class": "",
+  "class": "flex items-center gap-x-5",
   href: "#"
 };
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"hidden items-center space-x-8 md:flex\"><a href=\"#\" class=\"px-2) bg-gradient-to-t from-green-200 via-white px-2 uppercase hover:bg-gradient-to-t hover:from-green-200 hover:via-white\">Home</a><a href=\"#\" class=\"px-2) uppercase hover:bg-gradient-to-t hover:from-green-200 hover:via-white\">Services</a><a href=\"#\" class=\"px-2) uppercase hover:bg-gradient-to-t hover:from-green-200 hover:via-white\">About</a><a href=\"#\" class=\"px-2) uppercase hover:bg-gradient-to-t hover:from-green-200 hover:via-white\">Contact</a><a href=\"#\" class=\"rounded-lg border border-sky-600 py-3 px-6 font-semibold uppercase text-sky-600 hover:bg-sky-600 hover:text-white\">Start a Project</a></div>", 1);
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "text-2xl font-black text-slate-600"
+}, "MONDOL IT", -1
+/* HOISTED */
+);
 
-var _hoisted_5 = {
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"hidden items-center space-x-8 md:flex\"><a href=\"#\" class=\"bg-gradient-to-t from-green-200 via-white px-2 uppercase hover:bg-gradient-to-t hover:from-green-200 hover:via-white\">Home</a><a href=\"#\" class=\"uppercase hover:bg-gradient-to-t hover:from-green-200 hover:via-white\">Services</a><a href=\"#\" class=\"uppercase hover:bg-gradient-to-t hover:from-green-200 hover:via-white\">About</a><a href=\"#\" class=\"uppercase hover:bg-gradient-to-t hover:from-green-200 hover:via-white\">Contact</a><a href=\"#\" class=\"rounded-lg border border-sky-600 py-3 px-3 font-semibold uppercase text-sky-600 hover:bg-sky-600 hover:text-white\">Start a Project</a></div>", 1);
+
+var _hoisted_6 = {
   id: "hero__content",
   "class": "mx-auto mt-56 flex max-w-3xl flex-col items-center space-y-4 text-center"
 };
 
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
   "class": "text-5xl font-bold leading-snug text-gray-800"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" We make remarkable "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" digital products ")], -1
 /* HOISTED */
 );
 
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "text-base text-gray-500"
 }, "We design and build beautiful websites, apps and branding", -1
 /* HOISTED */
 );
 
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Join our Network ");
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Join our Network ");
 
-var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"min-h-40 bg-sky-500 py-20\"><section class=\"container max-w-screen-xl text-center\"><h3 class=\"text-gray-200\">Trusted by <span class=\"text-gray-50\">35+</span> biggest brands</h3><div class=\"mt-20 flex justify-around gap-5\"><div><dt class=\"sr-only\">logo of Adverus</dt><dd><img src=\"" + _assets_adverus_logo_png__WEBPACK_IMPORTED_MODULE_1__["default"] + "\" alt=\"Adverus\"></dd></div><div><dt class=\"sr-only\">logo of Adverus</dt><dd><img src=\"" + _assets_manter_logo_png__WEBPACK_IMPORTED_MODULE_2__["default"] + "\" alt=\"Adverus\"></dd></div><div><dt class=\"sr-only\">logo of Adverus</dt><dd><img src=\"" + _assets_spaced_logo_png__WEBPACK_IMPORTED_MODULE_3__["default"] + "\" alt=\"Adverus\"></dd></div><div><dt class=\"sr-only\">logo of Adverus</dt><dd><img src=\"" + _assets_stamps_logo_png__WEBPACK_IMPORTED_MODULE_4__["default"] + "\" alt=\"Adverus\"></dd></div><div><dt class=\"sr-only\">logo of Adverus</dt><dd><img src=\"" + _assets_vanuer_logo_png__WEBPACK_IMPORTED_MODULE_5__["default"] + "\" alt=\"Adverus\"></dd></div></div></section></div><section class=\"container min-h-screen max-w-screen-xl py-20\"><h3 class=\"relative max-w-screen-sm font-medium uppercase before:absolute before:left-0 before:bottom-1 before:-z-1 before:h-2 before:w-[105px] before:bg-green-500/40\"> What we do </h3><div class=\"flex w-full flex-col items-end justify-between space-y-10 md:flex-row\"><h2 class=\"mt-5 text-5xl font-semibold leading-normal text-gray-800\">Delivering quality products</h2><div class=\"flex max-w-screen-sm space-x-5\"><div class=\"flex w-1/2 items-center\"><span class=\"text-6xl font-medium text-green-500\">13</span><span class=\"w-1/2 px-2 normal-case\">Years in business</span></div><div class=\"flex w-1/2 items-center\"><span class=\"text-6xl font-medium text-green-500\">28</span><span class=\"w-1/2 px-2 normal-case\">Designers &amp; developers</span></div></div></div><div class=\"mt-12 flex flex-col space-y-8 md:mt-32 md:flex-row md:gap-x-10 md:space-y-0\"><div class=\"group rounded-lg bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3\"><img class=\"mb-16\" src=\"" + _assets_instagram_png__WEBPACK_IMPORTED_MODULE_6__["default"] + "\" alt=\"instagram\"><h4 class=\"text-2xl font-semibold text-gray-700\">CPA/Affiliate</h4><p class=\"mt-4 font-light text-gray-500\"> Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi </p><a class=\"mt-8 inline-block\" href=\"#\"><svg class=\"h-8 w-8 rounded-full bg-green-200 p-1.5 text-green-700 group-hover:bg-green-500 group-hover:text-white\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 5l7 7-7 7\"></path></svg></a></div><div class=\"group rounded-lg bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3\"><img class=\"mb-16\" src=\"" + _assets_web_png__WEBPACK_IMPORTED_MODULE_7__["default"] + "\" alt=\"instagram\"><h4 class=\"text-2xl font-semibold text-gray-700\">Web Design &amp; Development</h4><p class=\"mt-4 font-light text-gray-500\"> Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi </p><a class=\"mt-8 inline-block\" href=\"#\"><svg class=\"h-8 w-8 rounded-full bg-green-200 p-1.5 text-green-700 group-hover:bg-green-500 group-hover:text-white\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 5l7 7-7 7\"></path></svg></a></div><div class=\"group rounded-lg bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3\"><img class=\"mb-16\" src=\"" + _assets_graphic_designer_png__WEBPACK_IMPORTED_MODULE_8__["default"] + "\" alt=\"instagram\"><h4 class=\"text-2xl font-semibold text-gray-700\">Graphics Design</h4><p class=\"mt-4 font-light text-gray-500\"> Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi </p><a class=\"mt-8 inline-block\" href=\"#\"><svg class=\"h-8 w-8 rounded-full bg-green-200 p-1.5 text-green-700 group-hover:bg-green-500 group-hover:text-white\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 5l7 7-7 7\"></path></svg></a></div></div><div class=\"mt-4 flex flex-col space-y-8 md:mt-6 md:flex-row md:gap-x-10 md:space-y-0\"><div class=\"group rounded-lg bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3\"><img class=\"mb-16\" src=\"" + _assets_instagram_png__WEBPACK_IMPORTED_MODULE_6__["default"] + "\" alt=\"instagram\"><h4 class=\"text-2xl font-semibold text-gray-700\">Digital Marketing</h4><p class=\"mt-4 font-light text-gray-500\"> Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi </p><a class=\"mt-8 inline-block\" href=\"#\"><svg class=\"h-8 w-8 rounded-full bg-green-200 p-1.5 text-green-700 group-hover:bg-green-500 group-hover:text-white\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 5l7 7-7 7\"></path></svg></a></div><div class=\"group rounded-lg bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3\"><img class=\"mb-16\" src=\"" + _assets_web_png__WEBPACK_IMPORTED_MODULE_7__["default"] + "\" alt=\"instagram\"><h4 class=\"text-2xl font-semibold text-gray-700\">App Development</h4><p class=\"mt-4 font-light text-gray-500\"> Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi </p><a class=\"mt-8 inline-block\" href=\"#\"><svg class=\"h-8 w-8 rounded-full bg-green-200 p-1.5 text-green-700 group-hover:bg-green-500 group-hover:text-white\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 5l7 7-7 7\"></path></svg></a></div><div class=\"group rounded-lg bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3\"><img class=\"mb-16\" src=\"" + _assets_graphic_designer_png__WEBPACK_IMPORTED_MODULE_8__["default"] + "\" alt=\"instagram\"><h4 class=\"text-2xl font-semibold text-gray-700\">Social Media Management</h4><p class=\"mt-4 font-light text-gray-500\"> Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi </p><a class=\"mt-8 inline-block\" href=\"#\"><svg class=\"h-8 w-8 rounded-full bg-green-200 p-1.5 text-green-700 group-hover:bg-green-500 group-hover:text-white\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 5l7 7-7 7\"></path></svg></a></div></div><hr class=\"mt-20 h-2\"></section>", 2);
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"min-h-40 bg-sky-300 py-20\"><section class=\"container max-w-screen-xl text-center\"><h3 class=\"text-xl text-slate-50\">We are working with <span class=\"text-2xl text-green-500\">5+</span> biggest CPA Networks</h3><div class=\"mt-20 flex flex-wrap items-center justify-around gap-5 md:flex-nowrap\"><div><dt class=\"sr-only\">logo of iMonetizeIt</dt><dd><img class=\"w-48 grayscale hover:grayscale-0\" src=\"" + _assets_imonetizeit_svg__WEBPACK_IMPORTED_MODULE_1__["default"] + "\" alt=\"iMonetizeIt\"></dd></div><div><dt class=\"sr-only\">logo of LosPollos</dt><dd><img class=\"w-48 grayscale hover:grayscale-0\" src=\"" + _assets_lospollos_png__WEBPACK_IMPORTED_MODULE_2__["default"] + "\" alt=\"LosPollos\"></dd></div><!-- &lt;div&gt;\n                    &lt;dt class=&quot;sr-only&quot;&gt;logo of CPAFULL&lt;/dt&gt;\n                    &lt;dd&gt;\n                        &lt;img class=&quot;w-24&quot; src=&quot;@/assets/cpafull.png&quot; alt=&quot;CPAFULL&quot; /&gt;\n                    &lt;/dd&gt;\n                &lt;/div&gt; --><div><dt class=\"sr-only\">logo of Datify</dt><dd><img class=\"w-48 grayscale hover:grayscale-0\" src=\"" + _assets_datify_png__WEBPACK_IMPORTED_MODULE_3__["default"] + "\" alt=\"Datify\"></dd></div><div><dt class=\"sr-only\">logo of Trafee</dt><dd><img class=\"w-36 grayscale hover:grayscale-0\" src=\"" + _assets_trafee_svg__WEBPACK_IMPORTED_MODULE_4__["default"] + "\" alt=\"Trafee\"></dd></div><div><dt class=\"sr-only\">logo of ClickDealer</dt><dd><img class=\"w-36 grayscale hover:grayscale-0\" src=\"" + _assets_ClickDealer_png__WEBPACK_IMPORTED_MODULE_5__["default"] + "\" alt=\"ClickDealer\"></dd></div></div></section></div><section class=\"container min-h-screen max-w-screen-xl py-20\"><h3 class=\"relative max-w-screen-sm font-medium uppercase before:absolute before:left-0 before:bottom-1 before:-z-1 before:h-2 before:w-[105px] before:bg-green-500/40\"> What we do </h3><div class=\"flex w-full flex-col items-end justify-between space-y-10 md:flex-row\"><h2 class=\"mt-5 text-5xl font-semibold leading-normal text-gray-800\">Delivering quality products</h2><div class=\"flex max-w-screen-sm space-x-5\"><div class=\"flex w-1/2 items-center\"><span class=\"text-6xl font-medium text-green-500\">13</span><span class=\"w-1/2 px-2 normal-case\">Years in business</span></div><div class=\"flex w-1/2 items-center\"><span class=\"text-6xl font-medium text-green-500\">28</span><span class=\"w-1/2 px-2 normal-case\">Designers &amp; developers</span></div></div></div><div class=\"mt-12 flex flex-col space-y-8 md:mt-32 md:flex-row md:gap-x-10 md:space-y-0\"><div class=\"group rounded-lg bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3\"><img class=\"mb-16\" src=\"" + _assets_instagram_png__WEBPACK_IMPORTED_MODULE_6__["default"] + "\" alt=\"instagram\"><h4 class=\"text-2xl font-semibold text-gray-700\">CPA/Affiliate</h4><p class=\"mt-4 font-light text-gray-500\"> Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi </p><a class=\"mt-8 inline-block\" href=\"#\"><svg class=\"h-8 w-8 rounded-full bg-green-200 p-1.5 text-green-700 group-hover:bg-green-500 group-hover:text-white\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 5l7 7-7 7\"></path></svg></a></div><div class=\"group rounded-lg bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3\"><img class=\"mb-16\" src=\"" + _assets_web_png__WEBPACK_IMPORTED_MODULE_7__["default"] + "\" alt=\"instagram\"><h4 class=\"text-2xl font-semibold text-gray-700\">Web Design &amp; Development</h4><p class=\"mt-4 font-light text-gray-500\"> Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi </p><a class=\"mt-8 inline-block\" href=\"#\"><svg class=\"h-8 w-8 rounded-full bg-green-200 p-1.5 text-green-700 group-hover:bg-green-500 group-hover:text-white\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 5l7 7-7 7\"></path></svg></a></div><div class=\"group rounded-lg bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3\"><img class=\"mb-16\" src=\"" + _assets_graphic_designer_png__WEBPACK_IMPORTED_MODULE_8__["default"] + "\" alt=\"instagram\"><h4 class=\"text-2xl font-semibold text-gray-700\">Graphics Design</h4><p class=\"mt-4 font-light text-gray-500\"> Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi </p><a class=\"mt-8 inline-block\" href=\"#\"><svg class=\"h-8 w-8 rounded-full bg-green-200 p-1.5 text-green-700 group-hover:bg-green-500 group-hover:text-white\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 5l7 7-7 7\"></path></svg></a></div></div><div class=\"mt-4 flex flex-col space-y-8 md:mt-6 md:flex-row md:gap-x-10 md:space-y-0\"><div class=\"group rounded-lg bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3\"><img class=\"mb-16\" src=\"" + _assets_instagram_png__WEBPACK_IMPORTED_MODULE_6__["default"] + "\" alt=\"instagram\"><h4 class=\"text-2xl font-semibold text-gray-700\">Digital Marketing</h4><p class=\"mt-4 font-light text-gray-500\"> Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi </p><a class=\"mt-8 inline-block\" href=\"#\"><svg class=\"h-8 w-8 rounded-full bg-green-200 p-1.5 text-green-700 group-hover:bg-green-500 group-hover:text-white\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 5l7 7-7 7\"></path></svg></a></div><div class=\"group rounded-lg bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3\"><img class=\"mb-16\" src=\"" + _assets_web_png__WEBPACK_IMPORTED_MODULE_7__["default"] + "\" alt=\"instagram\"><h4 class=\"text-2xl font-semibold text-gray-700\">App Development</h4><p class=\"mt-4 font-light text-gray-500\"> Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi </p><a class=\"mt-8 inline-block\" href=\"#\"><svg class=\"h-8 w-8 rounded-full bg-green-200 p-1.5 text-green-700 group-hover:bg-green-500 group-hover:text-white\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 5l7 7-7 7\"></path></svg></a></div><div class=\"group rounded-lg bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3\"><img class=\"mb-16\" src=\"" + _assets_graphic_designer_png__WEBPACK_IMPORTED_MODULE_8__["default"] + "\" alt=\"instagram\"><h4 class=\"text-2xl font-semibold text-gray-700\">Social Media Management</h4><p class=\"mt-4 font-light text-gray-500\"> Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi </p><a class=\"mt-8 inline-block\" href=\"#\"><svg class=\"h-8 w-8 rounded-full bg-green-200 p-1.5 text-green-700 group-hover:bg-green-500 group-hover:text-white\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 5l7 7-7 7\"></path></svg></a></div></div><hr class=\"mt-20 h-2\"></section>", 2);
 
-var _hoisted_11 = {
+var _hoisted_12 = {
   "class": "container max-w-screen-xl py-20"
 };
-var _hoisted_12 = {
+var _hoisted_13 = {
   "class": "flex flex-col items-center justify-between gap-y-10 gap-x-10 xl:flex-row"
 };
-var _hoisted_13 = {
+var _hoisted_14 = {
   "class": "rounded-full border-2 p-8"
 };
 
-var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
   "class": "relative max-w-screen-sm font-medium uppercase before:absolute before:left-0 before:bottom-1 before:-z-1 before:h-2 before:w-[105px] before:bg-green-500/40"
 }, " Why work with us? ", -1
 /* HOISTED */
 );
 
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
   "class": "mt-5 text-5xl font-semibold leading-normal text-gray-800"
 }, "Profitable and fast!", -1
 /* HOISTED */
 );
 
-var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "my-8 text-base font-normal text-gray-500"
 }, " We are giving the highest payout in the country and We have fast payment system. We have wise managers, Who will serve you all the time. We invite you. Join with us, and be more profitable. ", -1
 /* HOISTED */
 );
 
-var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Join our Network ");
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Join our Network ");
 
-var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
   "class": ""
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_19 = {
+var _hoisted_20 = {
   "class": "min-h-96 w-full bg-slate-700 py-20"
 };
-var _hoisted_20 = {
+var _hoisted_21 = {
   "class": "container flex h-full flex-col items-center justify-start gap-y-10 gap-x-10 xl:flex-row xl:justify-start"
 };
-var _hoisted_21 = {
+var _hoisted_22 = {
   "class": "h-full w-full border-slate-500 pr-16 xl:max-w-md xl:border-r"
 };
-var _hoisted_22 = {
+var _hoisted_23 = {
   "class": "mb-5 flex items-center gap-x-5"
 };
 
-var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "text-2xl text-gray-50"
 }, " Mondol IT Limited ", -1
 /* HOISTED */
 );
 
-var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "text-sm text-slate-400"
 }, " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, a veritatis recusandae, minima excepturi perferendis cupiditate dolorum harum consequuntur ex quas temporibus quisquam iusto ea corrupti illum quaerat, architecto quo. ", -1
 /* HOISTED */
 );
 
-var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex h-full w-full flex-col gap-x-20 gap-y-5 text-slate-400 sm:flex-row xl:pl-6\"><div><h2 class=\"mb-3 text-xl text-white\">Navigation</h2><ul><li>Home</li><li>About</li><li>Projects</li><li>Home</li><li>About</li><li>Projects</li></ul></div><div><h2 class=\"mb-3 text-xl text-white\">Navigation</h2><ul><li>Home</li><li>About</li><li>Projects</li></ul></div><div><h2 class=\"mb-3 text-xl text-white\">Find Us</h2><p> Greenwich Village &amp; Soho, 10012 <br> New York, USA </p><p> 800 123-456 <br> digity@example.com </p></div></div>", 1);
+var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex h-full w-full flex-col gap-x-20 gap-y-5 text-slate-400 sm:flex-row xl:pl-6\"><div><h2 class=\"mb-3 text-xl text-white\">Navigation</h2><ul><li>Home</li><li>About</li><li>Projects</li><li>Home</li><li>About</li><li>Projects</li></ul></div><div><h2 class=\"mb-3 text-xl text-white\">Navigation</h2><ul><li>Home</li><li>About</li><li>Projects</li></ul></div><div><h2 class=\"mb-3 text-xl text-white\">Find Us</h2><p> Greenwich Village &amp; Soho, 10012 <br> New York, USA </p><p> 800 123-456 <br> digity@example.com </p></div></div>", 1);
 
-var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container mt-10\"><hr class=\"border-slate-500\"></div><div class=\"container mt-2 text-slate-400\"><p class=\"text-sm\"> All rights reserved by MONDOL IT LIMITED <span class=\"\">|</span> Copyright © 2022 </p></div>", 2);
+var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container mt-10\"><hr class=\"border-slate-500\"></div><div class=\"container mt-2 text-slate-400\"><p class=\"text-sm\"> All rights reserved by MONDOL IT LIMITED <span class=\"\">|</span> Copyright © 2022 </p></div>", 2);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Head"], {
     title: "Mondol IT Limited"
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("header", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Main Navigation "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Brand Logo "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Logo"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Navigation menu items"), _hoisted_4]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" hero content "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [_hoisted_6, _hoisted_7, $props.canRegister ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)($setup["Link"], {
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("header", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Main Navigation "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Brand Logo "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Logo"]), _hoisted_4]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Navigation menu items"), _hoisted_5]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" hero content "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [_hoisted_7, _hoisted_8, $props.canRegister ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)($setup["Link"], {
     key: 0,
     href: _ctx.route('register'),
     "class": "inline-block rounded-lg bg-green-400 px-6 py-3 uppercase text-white"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_8];
+      return [_hoisted_9];
     }),
     _: 1
     /* STABLE */
 
   }, 8
   /* PROPS */
-  , ["href"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Clients/Brands "), _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Logo"], {
+  , ["href"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Clients/Brands "), _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Logo"], {
     "class": "h-96 w-96 object-cover p-5"
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [_hoisted_14, _hoisted_15, _hoisted_16, $props.canRegister ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)($setup["Link"], {
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [_hoisted_15, _hoisted_16, _hoisted_17, $props.canRegister ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)($setup["Link"], {
     key: 0,
     "class": "inline-block rounded-lg bg-green-400 px-9 py-4 text-sm uppercase text-white",
     href: _ctx.route('register')
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_17];
+      return [_hoisted_18];
     }),
     _: 1
     /* STABLE */
 
   }, 8
   /* PROPS */
-  , ["href"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_18])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("footer", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Logo"], {
+  , ["href"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_19])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("footer", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Logo"], {
     "class": "fill-gray-100"
-  }), _hoisted_23]), _hoisted_24]), _hoisted_25]), _hoisted_26])], 64
+  }), _hoisted_24]), _hoisted_25]), _hoisted_26]), _hoisted_27])], 64
   /* STABLE_FRAGMENT */
   );
 }
@@ -24123,10 +24129,10 @@ module.exports = deepmerge_1;
 
 /***/ }),
 
-/***/ "./resources/js/assets/adverus_logo.png":
-/*!**********************************************!*\
-  !*** ./resources/js/assets/adverus_logo.png ***!
-  \**********************************************/
+/***/ "./resources/js/assets/ClickDealer.png":
+/*!*********************************************!*\
+  !*** ./resources/js/assets/ClickDealer.png ***!
+  \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -24134,7 +24140,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/adverus_logo.png?6799129f610cd0bef907618f89c9ce3d");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/ClickDealer.png?d16e034d5ef433d9fb399424073d9ca5");
+
+/***/ }),
+
+/***/ "./resources/js/assets/datify.png":
+/*!****************************************!*\
+  !*** ./resources/js/assets/datify.png ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/datify.png?beb64e19a2e7b2a8c7728c8a3bb175c7");
 
 /***/ }),
 
@@ -24153,6 +24174,21 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/assets/imonetizeit.svg":
+/*!*********************************************!*\
+  !*** ./resources/js/assets/imonetizeit.svg ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/imonetizeit.svg?15444714ff58f25ccb59161d6d175923");
+
+/***/ }),
+
 /***/ "./resources/js/assets/instagram.png":
 /*!*******************************************!*\
   !*** ./resources/js/assets/instagram.png ***!
@@ -24168,10 +24204,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/assets/manter_logo.png":
-/*!*********************************************!*\
-  !*** ./resources/js/assets/manter_logo.png ***!
-  \*********************************************/
+/***/ "./resources/js/assets/lospollos.png":
+/*!*******************************************!*\
+  !*** ./resources/js/assets/lospollos.png ***!
+  \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -24179,14 +24215,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/manter_logo.png?7a1beb1ed6136e16662fa885ccd8694c");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/lospollos.png?6dd88dd7710a54e7a0821d2856649f5f");
 
 /***/ }),
 
-/***/ "./resources/js/assets/spaced_logo.png":
-/*!*********************************************!*\
-  !*** ./resources/js/assets/spaced_logo.png ***!
-  \*********************************************/
+/***/ "./resources/js/assets/trafee.svg":
+/*!****************************************!*\
+  !*** ./resources/js/assets/trafee.svg ***!
+  \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -24194,37 +24230,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/spaced_logo.png?18686fc2d4b7c71963700e6bf0fa4960");
-
-/***/ }),
-
-/***/ "./resources/js/assets/stamps_logo.png":
-/*!*********************************************!*\
-  !*** ./resources/js/assets/stamps_logo.png ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/stamps_logo.png?44cd425ca0ffb40b2aad7850e79543c0");
-
-/***/ }),
-
-/***/ "./resources/js/assets/vanuer_logo.png":
-/*!*********************************************!*\
-  !*** ./resources/js/assets/vanuer_logo.png ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/vanuer_logo.png?7b3b764aea0c090444b4d36f34372fb8");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/trafee.svg?bb2dd7d38a38c9671966c90e3583d35a");
 
 /***/ }),
 

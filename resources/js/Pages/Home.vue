@@ -14,20 +14,21 @@ defineProps({
         <!-- Main Navigation -->
         <nav class="flex items-center justify-between">
             <!-- Brand Logo -->
-            <a class="" href="#">
+            <a class="flex items-center gap-x-5" href="#">
                 <Logo />
+                <span class="text-2xl font-black text-slate-600">MONDOL IT</span>
             </a>
             <!-- Navigation menu items-->
             <div class="hidden items-center space-x-8 md:flex">
                 <a
                     href="#"
-                    class="px-2) bg-gradient-to-t from-green-200 via-white px-2 uppercase hover:bg-gradient-to-t hover:from-green-200 hover:via-white"
+                    class="bg-gradient-to-t from-green-200 via-white px-2 uppercase hover:bg-gradient-to-t hover:from-green-200 hover:via-white"
                     >Home</a
                 >
-                <a href="#" class="px-2) uppercase hover:bg-gradient-to-t hover:from-green-200 hover:via-white">Services</a>
-                <a href="#" class="px-2) uppercase hover:bg-gradient-to-t hover:from-green-200 hover:via-white">About</a>
-                <a href="#" class="px-2) uppercase hover:bg-gradient-to-t hover:from-green-200 hover:via-white">Contact</a>
-                <a href="#" class="rounded-lg border border-sky-600 py-3 px-6 font-semibold uppercase text-sky-600 hover:bg-sky-600 hover:text-white"
+                <a href="#" class="uppercase hover:bg-gradient-to-t hover:from-green-200 hover:via-white">Services</a>
+                <a href="#" class="uppercase hover:bg-gradient-to-t hover:from-green-200 hover:via-white">About</a>
+                <a href="#" class="uppercase hover:bg-gradient-to-t hover:from-green-200 hover:via-white">Contact</a>
+                <a href="#" class="rounded-lg border border-sky-600 py-3 px-3 font-semibold uppercase text-sky-600 hover:bg-sky-600 hover:text-white"
                     >Start a Project</a
                 >
             </div>
@@ -46,38 +47,44 @@ defineProps({
     </header>
 
     <!-- Clients/Brands -->
-    <div class="min-h-40 bg-sky-500 py-20">
+    <div class="min-h-40 bg-sky-300 py-20">
         <section class="container max-w-screen-xl text-center">
-            <h3 class="text-gray-200">Trusted by <span class="text-gray-50">35+</span> biggest brands</h3>
-            <div class="mt-20 flex justify-around gap-5">
+            <h3 class="text-xl text-slate-50">We are working with <span class="text-2xl text-green-500">5+</span> biggest CPA Networks</h3>
+            <div class="mt-20 flex flex-wrap items-center justify-around gap-5 md:flex-nowrap">
                 <div>
-                    <dt class="sr-only">logo of Adverus</dt>
+                    <dt class="sr-only">logo of iMonetizeIt</dt>
                     <dd>
-                        <img src="@/assets/adverus_logo.png" alt="Adverus" />
+                        <img class="w-48 grayscale hover:grayscale-0" src="@/assets/imonetizeit.svg" alt="iMonetizeIt" />
                     </dd>
                 </div>
                 <div>
-                    <dt class="sr-only">logo of Adverus</dt>
+                    <dt class="sr-only">logo of LosPollos</dt>
                     <dd>
-                        <img src="@/assets/manter_logo.png" alt="Adverus" />
+                        <img class="w-48 grayscale hover:grayscale-0" src="@/assets/lospollos.png" alt="LosPollos" />
+                    </dd>
+                </div>
+                <!-- <div>
+                    <dt class="sr-only">logo of CPAFULL</dt>
+                    <dd>
+                        <img class="w-24" src="@/assets/cpafull.png" alt="CPAFULL" />
+                    </dd>
+                </div> -->
+                <div>
+                    <dt class="sr-only">logo of Datify</dt>
+                    <dd>
+                        <img class="w-48 grayscale hover:grayscale-0" src="@/assets/datify.png" alt="Datify" />
                     </dd>
                 </div>
                 <div>
-                    <dt class="sr-only">logo of Adverus</dt>
+                    <dt class="sr-only">logo of Trafee</dt>
                     <dd>
-                        <img src="@/assets/spaced_logo.png" alt="Adverus" />
+                        <img class="w-36 grayscale hover:grayscale-0" src="@/assets/trafee.svg" alt="Trafee" />
                     </dd>
                 </div>
                 <div>
-                    <dt class="sr-only">logo of Adverus</dt>
+                    <dt class="sr-only">logo of ClickDealer</dt>
                     <dd>
-                        <img src="@/assets/stamps_logo.png" alt="Adverus" />
-                    </dd>
-                </div>
-                <div>
-                    <dt class="sr-only">logo of Adverus</dt>
-                    <dd>
-                        <img src="@/assets/vanuer_logo.png" alt="Adverus" />
+                        <img class="w-36 grayscale hover:grayscale-0" src="@/assets/ClickDealer.png" alt="ClickDealer" />
                     </dd>
                 </div>
             </div>
