@@ -23754,7 +23754,7 @@ var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 );
 
 var _hoisted_20 = {
-  "class": "min-h-96 w-full bg-slate-700 py-20"
+  "class": "min-h-96 w-full bg-slate-700 pt-20 pb-8"
 };
 var _hoisted_21 = {
   "class": "container flex h-full flex-col items-center justify-start gap-y-10 gap-x-10 xl:flex-row xl:justify-start"

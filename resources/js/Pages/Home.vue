@@ -256,7 +256,7 @@ defineProps({
         </div>
     </section>
 
-    <footer class="min-h-96 w-full bg-slate-700 py-20">
+    <footer class="min-h-96 w-full bg-slate-700 pt-20 pb-8">
         <div class="container flex h-full flex-col items-center justify-start gap-y-10 gap-x-10 xl:flex-row xl:justify-start">
             <div class="h-full w-full border-slate-500 pr-16 xl:max-w-md xl:border-r">
                 <div class="mb-5 flex items-center gap-x-5">
