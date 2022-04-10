@@ -52,11 +52,12 @@ defineProps({
             <h3 class="text-xl text-slate-50">We are working with <span class="text-2xl text-green-500">5+</span> biggest CPA Networks</h3>
             <div class="mt-20 flex flex-wrap items-center justify-around gap-5 md:flex-nowrap">
                 <div>
-                    <dt class="sr-only">logo of iMonetizeIt</dt>
+                    <dt class="sr-only">logo of Datify</dt>
                     <dd>
-                        <img class="w-48 grayscale hover:grayscale-0" src="@/assets/imonetizeit.svg" alt="iMonetizeIt" />
+                        <img class="w-48 grayscale hover:grayscale-0" src="@/assets/datify.png" alt="Datify" />
                     </dd>
                 </div>
+
                 <div>
                     <dt class="sr-only">logo of LosPollos</dt>
                     <dd>
@@ -70,9 +71,9 @@ defineProps({
                     </dd>
                 </div> -->
                 <div>
-                    <dt class="sr-only">logo of Datify</dt>
+                    <dt class="sr-only">logo of iMonetizeIt</dt>
                     <dd>
-                        <img class="w-48 grayscale hover:grayscale-0" src="@/assets/datify.png" alt="Datify" />
+                        <img class="w-48 grayscale hover:grayscale-0" src="@/assets/imonetizeit.svg" alt="iMonetizeIt" />
                     </dd>
                 </div>
                 <div>
@@ -84,7 +85,7 @@ defineProps({
                 <div>
                     <dt class="sr-only">logo of ClickDealer</dt>
                     <dd>
-                        <img class="w-36 grayscale hover:grayscale-0" src="@/assets/ClickDealer.png" alt="ClickDealer" />
+                        <img class="w-32 grayscale hover:grayscale-0" src="@/assets/ClickDealer.png" alt="ClickDealer" />
                     </dd>
                 </div>
             </div>
@@ -229,11 +230,11 @@ defineProps({
     </section>
 
     <section class="container max-w-screen-xl py-20">
-        <div class="flex flex-col items-center justify-between gap-y-10 gap-x-10 xl:flex-row">
-            <div class="rounded-full border-2 p-8">
-                <Logo class="h-96 w-96 object-cover p-5" />
+        <div class="flex flex-col items-center gap-y-10 gap-x-10 xl:flex-row">
+            <div class="grid h-64 w-80 place-items-center rounded-full border-2">
+                <img src="@/assets/profitable.jpg" alt="" class="h-auto w-full object-cover" />
             </div>
-            <div>
+            <div class="w-auto pl-8">
                 <h3
                     class="relative max-w-screen-sm font-medium uppercase before:absolute before:left-0 before:bottom-1 before:-z-1 before:h-2 before:w-[105px] before:bg-green-500/40"
                 >
@@ -274,18 +275,17 @@ defineProps({
                     <ul>
                         <li>Home</li>
                         <li>About</li>
-                        <li>Projects</li>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Projects</li>
+                        <li>Contact</li>
+                        <li>Services</li>
                     </ul>
                 </div>
                 <div>
-                    <h2 class="mb-3 text-xl text-white">Navigation</h2>
+                    <h2 class="mb-3 text-xl text-white">Information</h2>
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Projects</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li>
+                        <li>FAQ</li>
+                        <li>FAQ</li>
                     </ul>
                 </div>
                 <div>
