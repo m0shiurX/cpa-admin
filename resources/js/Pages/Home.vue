@@ -1,6 +1,8 @@
 <script setup>
 import { Head, Link } from '@inertiajs/inertia-vue3';
 import Logo from '../Components/Logo.vue';
+import Footer from '../Components/Footer.vue';
+import Navigation from '../Components/Navigation.vue';
 defineProps({
     canLogin: Boolean,
     canRegister: Boolean,
@@ -10,29 +12,9 @@ defineProps({
 <template>
     <Head title="Mondol IT Limited" />
 
-    <header id="top__header" class="container mt-9 h-screen max-w-screen-xl bg-hero bg-bottom bg-no-repeat bg-blend-screen">
+    <header id="top__header" class="container h-screen max-w-screen-xl bg-hero bg-bottom bg-no-repeat pt-8 bg-blend-screen">
         <!-- Main Navigation -->
-        <nav class="flex items-center justify-between">
-            <!-- Brand Logo -->
-            <a class="flex items-center gap-x-5" href="#">
-                <Logo />
-                <span class="text-2xl font-black text-slate-600">MONDOL IT</span>
-            </a>
-            <!-- Navigation menu items-->
-            <div class="hidden items-center space-x-8 md:flex">
-                <a
-                    href="#"
-                    class="bg-gradient-to-t from-green-200 via-white px-2 uppercase hover:bg-gradient-to-t hover:from-green-200 hover:via-white"
-                    >Home</a
-                >
-                <a href="#" class="uppercase hover:bg-gradient-to-t hover:from-green-200 hover:via-white">Services</a>
-                <a href="#" class="uppercase hover:bg-gradient-to-t hover:from-green-200 hover:via-white">About</a>
-                <a href="#" class="uppercase hover:bg-gradient-to-t hover:from-green-200 hover:via-white">Contact</a>
-                <a href="#" class="rounded-lg border border-sky-600 py-3 px-3 font-semibold uppercase text-sky-600 hover:bg-sky-600 hover:text-white"
-                    >Start a Project</a
-                >
-            </div>
-        </nav>
+        <Navigation />
         <!-- hero content -->
         <div id="hero__content" class="mx-auto mt-56 flex max-w-3xl flex-col items-center space-y-4 text-center">
             <h1 class="text-5xl font-bold leading-snug text-gray-800">
@@ -40,7 +22,7 @@ defineProps({
                 digital products
             </h1>
             <p class="text-base text-gray-500">We design and build beautiful websites, apps and branding</p>
-            <Link v-if="canRegister" :href="route('register')" class="inline-block rounded-lg bg-green-400 px-6 py-3 uppercase text-white">
+            <Link v-if="canRegister" :href="route('cpa')" class="inline-block rounded-lg bg-green-400 px-6 py-3 uppercase text-white">
                 Join our Network
             </Link>
         </div>
@@ -118,7 +100,8 @@ defineProps({
                 <img class="mb-16" src="@/assets/instagram.png" alt="instagram" />
                 <h4 class="text-2xl font-semibold text-gray-700">CPA/Affiliate</h4>
                 <p class="mt-4 font-light text-gray-500">
-                    Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi
+                    We have been working with different networks for over 7 years.We have more than 6 biggest networks. Every networks gives us high
+                    price. You can test us.
                 </p>
                 <a class="mt-8 inline-block" href="#">
                     <svg
@@ -134,9 +117,11 @@ defineProps({
             </div>
             <div class="group rounded-lg bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3">
                 <img class="mb-16" src="@/assets/web.png" alt="instagram" />
-                <h4 class="text-2xl font-semibold text-gray-700">Web Design & Development</h4>
+                <h4 class="text-2xl font-semibold text-gray-700">Web Design</h4>
                 <p class="mt-4 font-light text-gray-500">
-                    Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi
+                    Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from
+                    developing a simple single static page of plain text to complex web applications, electronic businesses, and social network
+                    services. Do you have experience? Join us
                 </p>
                 <a class="mt-8 inline-block" href="#">
                     <svg
@@ -153,9 +138,7 @@ defineProps({
             <div class="group rounded-lg bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3">
                 <img class="mb-16" src="@/assets/graphic-designer.png" alt="instagram" />
                 <h4 class="text-2xl font-semibold text-gray-700">Graphics Design</h4>
-                <p class="mt-4 font-light text-gray-500">
-                    Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi
-                </p>
+                <p class="mt-4 font-light text-gray-500">Are you a skilled graphic designer? You are welcome! You can join with us.</p>
                 <a class="mt-8 inline-block" href="#">
                     <svg
                         class="h-8 w-8 rounded-full bg-green-200 p-1.5 text-green-700 group-hover:bg-green-500 group-hover:text-white"
@@ -174,7 +157,8 @@ defineProps({
                 <img class="mb-16" src="@/assets/instagram.png" alt="instagram" />
                 <h4 class="text-2xl font-semibold text-gray-700">Digital Marketing</h4>
                 <p class="mt-4 font-light text-gray-500">
-                    Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi
+                    Digital marketing, also called online marketing, This includes not only email, social media, and web-based advertising, but also
+                    text and multimedia messages as a marketing channel. Do you have experience? Join us
                 </p>
                 <a class="mt-8 inline-block" href="#">
                     <svg
@@ -192,7 +176,9 @@ defineProps({
                 <img class="mb-16" src="@/assets/web.png" alt="instagram" />
                 <h4 class="text-2xl font-semibold text-gray-700">App Development</h4>
                 <p class="mt-4 font-light text-gray-500">
-                    Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi
+                    Mobile app development is the act or process by which a mobile app is developed for mobile devices, such as personal digital
+                    assistants, enterprise digital assistants or mobile phones. These software applications are designed to run on mobile devices,
+                    such as a smartphone or tablet computer. Do you have experience? Join us
                 </p>
                 <a class="mt-8 inline-block" href="#">
                     <svg
@@ -210,7 +196,9 @@ defineProps({
                 <img class="mb-16" src="@/assets/graphic-designer.png" alt="instagram" />
                 <h4 class="text-2xl font-semibold text-gray-700">Social Media Management</h4>
                 <p class="mt-4 font-light text-gray-500">
-                    Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi
+                    Social media marketing is the use of social media platforms and websites to promote a product or service. Although the terms
+                    e-marketing and digital marketing are still dominant in academia, social media marketing is becoming more popular for both
+                    practitioners and researchers. Do you have experience? Join us
                 </p>
                 <a class="mt-8 inline-block" href="#">
                     <svg
@@ -245,11 +233,7 @@ defineProps({
                     We are giving the highest payout in the country and We have fast payment system. We have wise managers, Who will serve you all the
                     time. We invite you. Join with us, and be more profitable.
                 </p>
-                <Link
-                    class="inline-block rounded-lg bg-green-400 px-9 py-4 text-sm uppercase text-white"
-                    v-if="canRegister"
-                    :href="route('register')"
-                >
+                <Link class="inline-block rounded-lg bg-green-400 px-9 py-4 text-sm uppercase text-white" v-if="canRegister" :href="route('cpa')">
                     Join our Network
                 </Link>
                 <button class=""></button>
@@ -257,57 +241,5 @@ defineProps({
         </div>
     </section>
 
-    <footer class="min-h-96 w-full bg-slate-700 pt-20 pb-8">
-        <div class="container flex h-full max-w-screen-xl flex-col items-center justify-start gap-y-10 gap-x-10 xl:flex-row xl:justify-start">
-            <div class="h-full w-full border-slate-500 pr-16 xl:max-w-md xl:border-r">
-                <div class="mb-5 flex items-center gap-x-5">
-                    <Logo class="fill-gray-100" />
-                    <span class="text-2xl text-gray-50"> Mondol IT Limited </span>
-                </div>
-                <p class="text-sm text-slate-400">
-                    We aspire to build a Digital Bangladesh. You can work with us if you have a minimal experience on computer literacy. Let's build a
-                    digital Bangladesh together &amp; change the world.
-                </p>
-            </div>
-            <div class="flex h-full w-full flex-col gap-x-20 gap-y-5 text-slate-400 sm:flex-row xl:pl-6">
-                <div>
-                    <h2 class="mb-3 text-xl text-white">Navigation</h2>
-                    <ul class="space-y-2">
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                        <li>Services</li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="mb-3 text-xl text-white">Information</h2>
-                    <ul class="space-y-2">
-                        <li>Privacy Policy</li>
-                        <li>Terms & Conditions</li>
-                        <li>FAQ</li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="mb-3 text-xl text-white">Find Us</h2>
-                    <p class="leading-6">
-                        Jamil Nagar, Bogura Sadar <br />
-                        Bogura - 5800, BD
-                    </p>
-                    <p class="leading-6">
-                        +880 1977 538 234 <br />
-                        support@mondolit.com
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="container mt-10 max-w-screen-xl">
-            <hr class="border-slate-500" />
-        </div>
-        <div class="container mt-2 max-w-screen-xl text-slate-400">
-            <p class="text-sm">
-                All rights reserved by MONDOL IT LIMITED
-                <span class="">|</span> Copyright &copy; 2022
-            </p>
-        </div>
-    </footer>
+    <Footer />
 </template>
