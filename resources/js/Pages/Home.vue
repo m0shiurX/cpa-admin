@@ -258,7 +258,7 @@ defineProps({
     </section>
 
     <footer class="min-h-96 w-full bg-slate-700 pt-20 pb-8">
-        <div class="container flex h-full flex-col items-center justify-start gap-y-10 gap-x-10 xl:flex-row xl:justify-start">
+        <div class="container flex h-full max-w-screen-xl flex-col items-center justify-start gap-y-10 gap-x-10 xl:flex-row xl:justify-start">
             <div class="h-full w-full border-slate-500 pr-16 xl:max-w-md xl:border-r">
                 <div class="mb-5 flex items-center gap-x-5">
                     <Logo class="fill-gray-100" />
@@ -301,10 +301,10 @@ defineProps({
                 </div>
             </div>
         </div>
-        <div class="container mt-10">
+        <div class="container mt-10 max-w-screen-xl">
             <hr class="border-slate-500" />
         </div>
-        <div class="container mt-2 text-slate-400">
+        <div class="container mt-2 max-w-screen-xl text-slate-400">
             <p class="text-sm">
                 All rights reserved by MONDOL IT LIMITED
                 <span class="">|</span> Copyright &copy; 2022
