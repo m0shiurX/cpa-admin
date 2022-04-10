@@ -992,6 +992,9 @@ select {
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
 }
+.gap-y-5 {
+  row-gap: 1.25rem;
+}
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
@@ -1179,6 +1182,12 @@ select {
 }
 .fill-gray-100 {
   fill: #f3f4f6;
+}
+.fill-sky-600 {
+  fill: #0284c7;
+}
+.fill-green-600 {
+  fill: #16a34a;
 }
 .object-cover {
   -o-object-fit: cover;
@@ -1794,6 +1803,10 @@ select {
     flex: 1 1 0%;
   }
 
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
   .sm\:items-center {
     align-items: center;
   }
@@ -1862,6 +1875,10 @@ select {
 }
 @media (min-width: 1024px) {
 
+  .lg\:border-r {
+    border-right-width: 1px;
+  }
+
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1869,8 +1886,24 @@ select {
 }
 @media (min-width: 1280px) {
 
+  .xl\:max-w-md {
+    max-width: 28rem;
+  }
+
   .xl\:flex-row {
     flex-direction: row;
+  }
+
+  .xl\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .xl\:border-r {
+    border-right-width: 1px;
+  }
+
+  .xl\:pl-6 {
+    padding-left: 1.5rem;
   }
 }
 

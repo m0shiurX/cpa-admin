@@ -249,9 +249,9 @@ defineProps({
         </div>
     </section>
 
-    <footer class="h-96 w-full bg-slate-700 py-20">
-        <div class="container flex flex-col items-start justify-start gap-y-10 gap-x-10 xl:flex-row">
-            <div class="h-full max-w-md border-r border-slate-500 pr-16">
+    <footer class="min-h-96 w-full bg-slate-700 py-20">
+        <div class="container flex h-full flex-col items-center justify-start gap-y-10 gap-x-10 xl:flex-row xl:justify-start">
+            <div class="h-full w-full border-slate-500 pr-16 xl:max-w-md xl:border-r">
                 <div class="mb-5 flex items-center gap-x-5">
                     <Logo class="fill-gray-100" />
                     <span class="text-2xl text-gray-50"> Mondol IT Limited </span>
@@ -261,7 +261,7 @@ defineProps({
                     cupiditate dolorum harum consequuntur ex quas temporibus quisquam iusto ea corrupti illum quaerat, architecto quo.
                 </p>
             </div>
-            <div class="flex h-full w-full gap-x-20 pl-6 text-slate-400">
+            <div class="flex h-full w-full flex-col gap-x-20 gap-y-5 text-slate-400 sm:flex-row xl:pl-6">
                 <div>
                     <h2 class="mb-3 text-xl text-white">Navigation</h2>
                     <ul>

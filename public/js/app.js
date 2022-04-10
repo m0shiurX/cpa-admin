@@ -22585,7 +22585,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "h-8 w-auto fill-gray-600",
+  "class": "h-8 w-auto fill-sky-600",
   xmlns: "http://www.w3.org/2000/svg",
   viewBox: "0 0 259.17 173.62"
 };
@@ -23748,13 +23748,13 @@ var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 );
 
 var _hoisted_19 = {
-  "class": "h-96 w-full bg-slate-700 py-20"
+  "class": "min-h-96 w-full bg-slate-700 py-20"
 };
 var _hoisted_20 = {
-  "class": "container flex flex-col items-start justify-start gap-y-10 gap-x-10 xl:flex-row"
+  "class": "container flex h-full flex-col items-center justify-start gap-y-10 gap-x-10 xl:flex-row xl:justify-start"
 };
 var _hoisted_21 = {
-  "class": "h-full max-w-md border-r border-slate-500 pr-16"
+  "class": "h-full w-full border-slate-500 pr-16 xl:max-w-md xl:border-r"
 };
 var _hoisted_22 = {
   "class": "mb-5 flex items-center gap-x-5"
@@ -23772,7 +23772,7 @@ var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex h-full w-full gap-x-20 pl-6 text-slate-400\"><div><h2 class=\"mb-3 text-xl text-white\">Navigation</h2><ul><li>Home</li><li>About</li><li>Projects</li><li>Home</li><li>About</li><li>Projects</li></ul></div><div><h2 class=\"mb-3 text-xl text-white\">Navigation</h2><ul><li>Home</li><li>About</li><li>Projects</li></ul></div><div><h2 class=\"mb-3 text-xl text-white\">Find Us</h2><p> Greenwich Village &amp; Soho, 10012 <br> New York, USA </p><p> 800 123-456 <br> digity@example.com </p></div></div>", 1);
+var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex h-full w-full flex-col gap-x-20 gap-y-5 text-slate-400 sm:flex-row xl:pl-6\"><div><h2 class=\"mb-3 text-xl text-white\">Navigation</h2><ul><li>Home</li><li>About</li><li>Projects</li><li>Home</li><li>About</li><li>Projects</li></ul></div><div><h2 class=\"mb-3 text-xl text-white\">Navigation</h2><ul><li>Home</li><li>About</li><li>Projects</li></ul></div><div><h2 class=\"mb-3 text-xl text-white\">Find Us</h2><p> Greenwich Village &amp; Soho, 10012 <br> New York, USA </p><p> 800 123-456 <br> digity@example.com </p></div></div>", 1);
 
 var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container mt-10\"><hr class=\"border-slate-500\"></div><div class=\"container mt-2 text-slate-400\"><p class=\"text-sm\"> All rights reserved by MONDOL IT LIMITED <span class=\"\">|</span> Copyright © 2022 </p></div>", 2);
 
