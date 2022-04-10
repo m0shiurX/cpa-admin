@@ -10,7 +10,7 @@ defineProps({
 <template>
     <Head title="Mondol IT Limited" />
 
-    <header id="top__header" class="container mt-9 h-screen max-w-screen-xl">
+    <header id="top__header" class="container mt-9 h-screen max-w-screen-xl bg-hero bg-bottom bg-no-repeat bg-blend-screen">
         <!-- Main Navigation -->
         <nav class="flex items-center justify-between">
             <!-- Brand Logo -->
@@ -265,14 +265,14 @@ defineProps({
                     <span class="text-2xl text-gray-50"> Mondol IT Limited </span>
                 </div>
                 <p class="text-sm text-slate-400">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, a veritatis recusandae, minima excepturi perferendis
-                    cupiditate dolorum harum consequuntur ex quas temporibus quisquam iusto ea corrupti illum quaerat, architecto quo.
+                    We aspire to build a Digital Bangladesh. You can work with us if you have a minimal experience on computer literacy. Let's build a
+                    digital Bangladesh together &amp; change the world.
                 </p>
             </div>
             <div class="flex h-full w-full flex-col gap-x-20 gap-y-5 text-slate-400 sm:flex-row xl:pl-6">
                 <div>
                     <h2 class="mb-3 text-xl text-white">Navigation</h2>
-                    <ul>
+                    <ul class="space-y-2">
                         <li>Home</li>
                         <li>About</li>
                         <li>Contact</li>
@@ -281,22 +281,21 @@ defineProps({
                 </div>
                 <div>
                     <h2 class="mb-3 text-xl text-white">Information</h2>
-                    <ul>
+                    <ul class="space-y-2">
                         <li>Privacy Policy</li>
                         <li>Terms & Conditions</li>
-                        <li>FAQ</li>
                         <li>FAQ</li>
                     </ul>
                 </div>
                 <div>
                     <h2 class="mb-3 text-xl text-white">Find Us</h2>
-                    <p>
-                        Greenwich Village & Soho, 10012 <br />
-                        New York, USA
+                    <p class="leading-6">
+                        Jamil Nagar, Bogura Sadar <br />
+                        Bogura - 5800, BD
                     </p>
-                    <p>
-                        800 123-456 <br />
-                        digity@example.com
+                    <p class="leading-6">
+                        +880 1977 538 234 <br />
+                        support@mondolit.com
                     </p>
                 </div>
             </div>
