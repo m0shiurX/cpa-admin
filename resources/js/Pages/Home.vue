@@ -94,7 +94,7 @@ defineProps({
             </div>
         </div>
 
-        <div class="mt-12 flex flex-col space-y-8 md:mt-32 md:flex-row md:gap-x-10 md:space-y-0">
+        <div class="mt-12 flex flex-col space-y-8 md:mt-20 md:flex-row md:gap-x-10 md:space-y-0">
             <div class="group rounded-lg border border-slate-100 bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3">
                 <img class="mb-16" src="@/assets/instagram.png" alt="instagram" />
                 <h4 class="text-2xl font-semibold text-gray-700">CPA/Affiliate</h4>
@@ -148,7 +148,7 @@ defineProps({
                 </a>
             </div>
         </div>
-        <div class="mt-4 flex flex-col space-y-8 md:mt-6 md:flex-row md:gap-x-10 md:space-y-0">
+        <div class="mt-4 flex flex-col space-y-8 md:mt-8 md:flex-row md:gap-x-10 md:space-y-0">
             <div class="group rounded-lg border border-slate-100 bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3">
                 <img class="mb-16" src="@/assets/instagram.png" alt="instagram" />
                 <h4 class="text-2xl font-semibold text-gray-700">Digital Marketing</h4>
@@ -209,30 +209,142 @@ defineProps({
                 </a>
             </div>
         </div>
-
-        <hr class="mt-20 h-2" />
     </section>
 
-    <section class="container max-w-screen-xl py-20">
-        <div class="flex flex-col items-center gap-y-10 gap-x-10 xl:flex-row">
-            <div class="grid h-64 w-80 place-items-center rounded-full border-2">
+    <section class="container mt-10 max-w-screen-xl py-20">
+        <div class="group flex flex-col items-center gap-y-10 gap-x-10 xl:flex-row">
+            <div class="grid h-64 w-96 place-items-center rounded-full p-5 ring-4 ring-slate-100 ring-offset-2">
                 <img src="@/assets/profitable.jpg" alt="" class="h-auto w-full object-cover" />
             </div>
             <div class="w-auto pl-8">
                 <h3
-                    class="relative max-w-screen-sm font-medium uppercase before:absolute before:left-0 before:bottom-1 before:-z-1 before:h-2 before:w-[105px] before:bg-green-500/40"
+                    class="relative max-w-screen-sm font-medium uppercase underline decoration-green-50 decoration-4 underline-offset-2 transition-all duration-300 group-hover:decoration-green-200"
                 >
                     Why work with us?
                 </h3>
-                <h2 class="mt-5 text-5xl font-semibold leading-normal text-gray-800">Profitable and fast!</h2>
-                <p class="my-8 text-base font-normal text-gray-500">
+                <h2 class="mt-3 font-heading text-5xl leading-normal text-gray-700">Profitable and fast</h2>
+                <p class="mb-5 mt-3 text-base font-normal text-gray-500">
                     We are giving the highest payout in the country and We have fast payment system. We have wise managers, Who will serve you all the
                     time. We invite you. Join with us, and be more profitable.
                 </p>
-                <Link class="inline-block rounded-lg bg-green-400 px-9 py-4 text-sm uppercase text-white" v-if="canRegister" :href="route('cpa')">
+                <Link
+                    class="inline-block rounded-lg border border-green-400 px-9 py-4 font-heading text-sm font-semibold uppercase text-green-500 transition-all delay-100 duration-500 group-hover:bg-green-400 group-hover:text-white"
+                    v-if="canRegister"
+                    :href="route('cpa')"
+                >
                     Join our Network
                 </Link>
-                <button class=""></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-10 max-w-screen-xl py-20">
+        <div class="text-center">
+            <h3
+                class="font-medium uppercase underline decoration-green-50 decoration-4 underline-offset-2 transition-all duration-300 hover:decoration-green-200"
+            >
+                Meet The Team
+            </h3>
+            <h2 class="mt-5 font-heading text-5xl leading-snug text-gray-700">
+                We work hard for <br />
+                your success
+            </h2>
+
+            <div class="mt-8 flex flex-col space-y-8 md:mt-10 md:flex-row md:gap-x-4 md:space-y-0">
+                <div
+                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/6"
+                >
+                    <img
+                        src="https://i.pravatar.cc/300?img=3"
+                        class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
+                    />
+                    <h2 class="text-xl font-semibold text-gray-700">John Doe</h2>
+                    <p class="text-sm">Relationship Manager</p>
+                </div>
+                <div
+                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/6"
+                >
+                    <img
+                        src="https://i.pravatar.cc/300?img=30"
+                        class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
+                    />
+                    <h2 class="text-xl font-semibold text-gray-700">John Doe</h2>
+                    <p class="text-sm">Relationship Manager</p>
+                </div>
+                <div
+                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/6"
+                >
+                    <img
+                        src="https://i.pravatar.cc/300?img=4"
+                        class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
+                    />
+                    <h2 class="text-xl font-semibold text-gray-700">John Doe</h2>
+                    <p class="text-sm">Relationship Manager</p>
+                </div>
+                <div
+                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/6"
+                >
+                    <img
+                        src="https://i.pravatar.cc/300?img=35"
+                        class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
+                    />
+                    <h2 class="text-xl font-semibold text-gray-700">John Doe</h2>
+                    <p class="text-sm">Relationship Manager</p>
+                </div>
+                <div
+                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/6"
+                >
+                    <img
+                        src="https://i.pravatar.cc/300?img=33"
+                        class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
+                    />
+                    <h2 class="text-xl font-semibold text-gray-700">John Doe</h2>
+                    <p class="text-sm">Relationship Manager</p>
+                </div>
+                <div
+                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/6"
+                >
+                    <img
+                        src="https://i.pravatar.cc/300?img=39"
+                        class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
+                    />
+                    <h2 class="text-xl font-semibold text-gray-700">John Doe</h2>
+                    <p class="text-sm">Relationship Manager</p>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col space-y-8 md:mt-8 md:flex-row md:justify-center md:gap-x-8 md:space-y-0">
+                <div
+                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/3"
+                >
+                    <img
+                        src="https://i.pravatar.cc/300?img=38"
+                        class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
+                    />
+                    <h2 class="text-xl font-semibold text-gray-700">John Doe</h2>
+                    <p class="text-sm">System Administrator</p>
+                </div>
+                <div
+                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/3"
+                >
+                    <img
+                        src="https://i.pravatar.cc/300?img=37"
+                        class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
+                    />
+                    <h2 class="text-xl font-semibold text-gray-700">John Doe</h2>
+                    <p class="text-sm">System Administrator</p>
+                </div>
+            </div>
+            <div class="mt-6 flex flex-col space-y-8 md:mt-8 md:flex-row md:justify-center md:gap-x-8 md:space-y-0">
+                <div
+                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/3"
+                >
+                    <img
+                        src="https://i.pravatar.cc/300?img=36"
+                        class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-200 ring-offset-4 group-hover:ring-green-300"
+                    />
+                    <h2 class="text-xl font-semibold text-gray-700">John Doe</h2>
+                    <p class="text-sm">CEO</p>
+                </div>
             </div>
         </div>
     </section>
