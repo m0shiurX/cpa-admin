@@ -24,6 +24,7 @@ module.exports = {
             },
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                heading: ['Ubuntu', ...defaultTheme.fontFamily.sans],
             },
             zIndex: {
                 '-1': '-1',

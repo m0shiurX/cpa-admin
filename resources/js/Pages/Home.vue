@@ -12,17 +12,16 @@ defineProps({
 <template>
     <Head title="Mondol IT Limited" />
 
-    <header id="top__header" class="container h-screen max-w-screen-xl bg-hero bg-bottom bg-no-repeat pt-8 bg-blend-screen">
+    <header id="top__header" class="container h-screen max-w-screen-xl bg-hero bg-contain bg-bottom bg-no-repeat pt-8">
         <!-- Main Navigation -->
         <Navigation />
         <!-- hero content -->
         <div id="hero__content" class="mx-auto mt-56 flex max-w-3xl flex-col items-center space-y-4 text-center">
-            <h1 class="text-5xl font-bold leading-snug text-gray-800">
+            <h1 class="mb-5 font-heading text-5xl font-bold leading-tight text-gray-800 md:leading-normal xl:text-6xl">
                 We make remarkable <br />
-                digital products
+                <span class="text-sky-500">digital growth</span> together.
             </h1>
-            <p class="text-base text-gray-500">We design and build beautiful websites, apps and branding</p>
-            <Link v-if="canRegister" :href="route('cpa')" class="inline-block rounded-lg bg-green-400 px-6 py-3 uppercase text-white">
+            <Link v-if="canRegister" :href="route('cpa')" class="block rounded-lg bg-green-400 px-6 py-3 uppercase text-white">
                 Join our Network
             </Link>
         </div>
@@ -96,12 +95,11 @@ defineProps({
         </div>
 
         <div class="mt-12 flex flex-col space-y-8 md:mt-32 md:flex-row md:gap-x-10 md:space-y-0">
-            <div class="group rounded-lg bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3">
+            <div class="group rounded-lg border border-slate-100 bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3">
                 <img class="mb-16" src="@/assets/instagram.png" alt="instagram" />
                 <h4 class="text-2xl font-semibold text-gray-700">CPA/Affiliate</h4>
                 <p class="mt-4 font-light text-gray-500">
-                    We have been working with different networks for over 7 years.We have more than 6 biggest networks. Every networks gives us high
-                    price. You can test us.
+                    Affiliate marketing is one of our the strongest expertise since we are doing it for a decade.
                 </p>
                 <a class="mt-8 inline-block" href="#">
                     <svg
@@ -115,13 +113,11 @@ defineProps({
                     </svg>
                 </a>
             </div>
-            <div class="group rounded-lg bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3">
+            <div class="group rounded-lg border border-slate-100 bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3">
                 <img class="mb-16" src="@/assets/web.png" alt="instagram" />
                 <h4 class="text-2xl font-semibold text-gray-700">Web Design</h4>
                 <p class="mt-4 font-light text-gray-500">
-                    Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from
-                    developing a simple single static page of plain text to complex web applications, electronic businesses, and social network
-                    services. Do you have experience? Join us
+                    We turn your business into web not for typical digital existence but profitable and accessible to customers.
                 </p>
                 <a class="mt-8 inline-block" href="#">
                     <svg
@@ -135,10 +131,10 @@ defineProps({
                     </svg>
                 </a>
             </div>
-            <div class="group rounded-lg bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3">
+            <div class="group rounded-lg border border-slate-100 bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3">
                 <img class="mb-16" src="@/assets/graphic-designer.png" alt="instagram" />
                 <h4 class="text-2xl font-semibold text-gray-700">Graphics Design</h4>
-                <p class="mt-4 font-light text-gray-500">Are you a skilled graphic designer? You are welcome! You can join with us.</p>
+                <p class="mt-4 font-light text-gray-500">Design sells! We don't create just catchy design but the design that boosts your sells.</p>
                 <a class="mt-8 inline-block" href="#">
                     <svg
                         class="h-8 w-8 rounded-full bg-green-200 p-1.5 text-green-700 group-hover:bg-green-500 group-hover:text-white"
@@ -153,13 +149,13 @@ defineProps({
             </div>
         </div>
         <div class="mt-4 flex flex-col space-y-8 md:mt-6 md:flex-row md:gap-x-10 md:space-y-0">
-            <div class="group rounded-lg bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3">
+            <div class="group rounded-lg border border-slate-100 bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3">
                 <img class="mb-16" src="@/assets/instagram.png" alt="instagram" />
                 <h4 class="text-2xl font-semibold text-gray-700">Digital Marketing</h4>
-                <p class="mt-4 font-light text-gray-500">
+                <!-- <p class="mt-4 font-light text-gray-500">
                     Digital marketing, also called online marketing, This includes not only email, social media, and web-based advertising, but also
                     text and multimedia messages as a marketing channel. Do you have experience? Join us
-                </p>
+                </p> -->
                 <a class="mt-8 inline-block" href="#">
                     <svg
                         class="h-8 w-8 rounded-full bg-green-200 p-1.5 text-green-700 group-hover:bg-green-500 group-hover:text-white"
@@ -172,14 +168,14 @@ defineProps({
                     </svg>
                 </a>
             </div>
-            <div class="group rounded-lg bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3">
+            <div class="group rounded-lg border border-slate-100 bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3">
                 <img class="mb-16" src="@/assets/web.png" alt="instagram" />
                 <h4 class="text-2xl font-semibold text-gray-700">App Development</h4>
-                <p class="mt-4 font-light text-gray-500">
+                <!-- <p class="mt-4 font-light text-gray-500">
                     Mobile app development is the act or process by which a mobile app is developed for mobile devices, such as personal digital
                     assistants, enterprise digital assistants or mobile phones. These software applications are designed to run on mobile devices,
                     such as a smartphone or tablet computer. Do you have experience? Join us
-                </p>
+                </p> -->
                 <a class="mt-8 inline-block" href="#">
                     <svg
                         class="h-8 w-8 rounded-full bg-green-200 p-1.5 text-green-700 group-hover:bg-green-500 group-hover:text-white"
@@ -192,14 +188,14 @@ defineProps({
                     </svg>
                 </a>
             </div>
-            <div class="group rounded-lg bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3">
+            <div class="group rounded-lg border border-slate-100 bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3">
                 <img class="mb-16" src="@/assets/graphic-designer.png" alt="instagram" />
                 <h4 class="text-2xl font-semibold text-gray-700">Social Media Management</h4>
-                <p class="mt-4 font-light text-gray-500">
+                <!-- <p class="mt-4 font-light text-gray-500">
                     Social media marketing is the use of social media platforms and websites to promote a product or service. Although the terms
                     e-marketing and digital marketing are still dominant in academia, social media marketing is becoming more popular for both
                     practitioners and researchers. Do you have experience? Join us
-                </p>
+                </p> -->
                 <a class="mt-8 inline-block" href="#">
                     <svg
                         class="h-8 w-8 rounded-full bg-green-200 p-1.5 text-green-700 group-hover:bg-green-500 group-hover:text-white"
