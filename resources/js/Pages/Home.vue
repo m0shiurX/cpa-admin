@@ -1,6 +1,5 @@
 <script setup>
 import { Head, Link } from '@inertiajs/inertia-vue3';
-import Logo from '../Components/Logo.vue';
 import Footer from '../Components/Footer.vue';
 import Navigation from '../Components/Navigation.vue';
 defineProps({
@@ -11,12 +10,11 @@ defineProps({
 
 <template>
     <Head title="Mondol IT Limited" />
-
     <header id="top__header" class="container h-screen max-w-screen-xl bg-hero bg-contain bg-bottom bg-no-repeat pt-8">
         <!-- Main Navigation -->
         <Navigation />
         <!-- hero content -->
-        <div id="hero__content" class="mx-auto mt-56 flex max-w-3xl flex-col items-center space-y-4 text-center">
+        <div class="mx-auto mt-56 flex max-w-3xl flex-col items-center space-y-4 text-center">
             <h1 class="mb-5 font-heading text-5xl font-bold leading-tight text-gray-800 md:leading-normal xl:text-6xl">
                 We make remarkable <br />
                 <span class="text-sky-500">digital growth</span> together.
@@ -213,8 +211,8 @@ defineProps({
 
     <section class="container mt-10 max-w-screen-xl py-20">
         <div class="group flex flex-col items-center gap-y-10 gap-x-10 xl:flex-row">
-            <div class="grid h-64 w-96 place-items-center rounded-full p-5 ring-4 ring-slate-100 ring-offset-2">
-                <img src="@/assets/profitable.jpg" alt="" class="h-auto w-full object-cover" />
+            <div class="grid h-64 w-64 place-items-center rounded-full p-5 ring-4 ring-slate-100 ring-offset-2 md:w-96">
+                <img src="@/assets/profitable.jpg" alt="" class="h-auto w-full rounded-full object-cover" />
             </div>
             <div class="w-auto pl-8">
                 <h3
@@ -347,7 +345,7 @@ defineProps({
     </section>
     <section class="container max-w-screen-xl pb-20">
         <div class="text-center">
-            <h2 class="font-heading text-5xl leading-snug text-gray-700">
+            <h2 class="font-heading text-3xl leading-snug text-gray-700 md:text-5xl">
                 Turn your online career <br />
                 <span class="text-sky-500">succeeded</span> with us.
             </h2>
@@ -359,6 +357,5 @@ defineProps({
             </Link>
         </div>
     </section>
-
-    <Footer />
+    <footer />
 </template>

@@ -1,14 +1,19 @@
 <script setup>
-import { Head, Link } from '@inertiajs/inertia-vue3';
-import Footer from '../Components/Footer.vue';
-import Navigation from '../Components/Navigation.vue';
+import PageLayout from '../Layouts/Page.vue';
 </script>
 
 <template>
     <Head title="CPA" />
-    <header class="container mt-9 h-screen max-w-screen-xl">
-        <Navigation />
-    </header>
+    <PageLayout>
+        <section class="container max-w-screen-xl py-20">
+            <h1 class="mb-5 text-center font-heading text-4xl font-bold leading-tight text-gray-800 md:leading-normal xl:text-5xl">
+                Join the network <br />
+                <span class="text-sky-500">grow</span> faster.
+            </h1>
 
-    <Footer />
+            <form>
+                <div></div>
+            </form>
+        </section>
+    </PageLayout>
 </template>
