@@ -240,11 +240,7 @@ defineProps({
 
     <section class="container mt-10 max-w-screen-xl py-20">
         <div class="text-center">
-            <h3
-                class="font-medium uppercase underline decoration-green-50 decoration-4 underline-offset-2 transition-all duration-300 hover:decoration-green-200"
-            >
-                Meet The Team
-            </h3>
+            <h3 class="font-medium uppercase underline decoration-green-200 decoration-4 underline-offset-2">Meet The Team</h3>
             <h2 class="mt-5 font-heading text-5xl leading-snug text-gray-700">
                 We work hard for <br />
                 your success
@@ -346,6 +342,21 @@ defineProps({
                     <p class="text-sm">CEO</p>
                 </div>
             </div>
+        </div>
+        <hr class="mt-20 h-2" />
+    </section>
+    <section class="container max-w-screen-xl pb-20">
+        <div class="text-center">
+            <h2 class="font-heading text-5xl leading-snug text-gray-700">
+                Turn your online career <br />
+                <span class="text-sky-500">succeeded</span> with us.
+            </h2>
+            <p class="my-3 text-base font-normal text-gray-500">
+                Join today to get into the highest paying affiliate networks with trustworthy and fast payment system.
+            </p>
+            <Link v-if="canRegister" :href="route('cpa')" class="mt-5 inline-block rounded-lg bg-green-400 px-6 py-3 uppercase text-white">
+                Join our Network
+            </Link>
         </div>
     </section>
 
