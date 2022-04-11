@@ -22409,13 +22409,71 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Layouts_Page_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Layouts/Page.vue */ "./resources/js/Layouts/Page.vue");
+/* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _Components_Button_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Components/Button.vue */ "./resources/js/Components/Button.vue");
+/* harmony import */ var _Components_Input_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/Components/Input.vue */ "./resources/js/Components/Input.vue");
+/* harmony import */ var _Components_Label_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/Components/Label.vue */ "./resources/js/Components/Label.vue");
+
+
+
+
+
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   setup: function setup(__props, _ref) {
     var expose = _ref.expose;
     expose();
+    var networks = (0,vue__WEBPACK_IMPORTED_MODULE_2__.ref)([{
+      id: 1,
+      name: 'Datify'
+    }, {
+      id: 2,
+      name: 'losPollos'
+    }, {
+      id: 3,
+      name: 'iMonetizeIt'
+    }, {
+      id: 4,
+      name: 'Trafee'
+    }, {
+      id: 5,
+      name: 'ClickDealer'
+    }, {
+      id: 6,
+      name: 'CpaFull'
+    }]);
+    var form = (0,_inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.useForm)({
+      name: '',
+      email: '',
+      password: '',
+      password_confirmation: '',
+      terms: false,
+      phone: '',
+      address: '',
+      network_id: null
+    });
+
+    var submit = function submit() {
+      form.post(route('register'), {
+        onFinish: function onFinish() {
+          return form.reset('password', 'password_confirmation');
+        }
+      });
+    };
+
     var __returned__ = {
-      PageLayout: _Layouts_Page_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+      networks: networks,
+      form: form,
+      submit: submit,
+      PageLayout: _Layouts_Page_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+      Head: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.Head,
+      Link: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.Link,
+      useForm: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.useForm,
+      ref: vue__WEBPACK_IMPORTED_MODULE_2__.ref,
+      BreezeButton: _Components_Button_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
+      BreezeInput: _Components_Input_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
+      BreezeLabel: _Components_Label_vue__WEBPACK_IMPORTED_MODULE_5__["default"]
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
       enumerable: false,
@@ -23586,7 +23644,7 @@ var _hoisted_4 = {
   "class": "mt-4"
 };
 var _hoisted_5 = {
-  "class": "flex items-center justify-end mt-4"
+  "class": "mt-4 flex items-center justify-end"
 };
 
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Already registered? ");
@@ -23665,7 +23723,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       /* PROPS */
       , ["modelValue"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Link"], {
         href: _ctx.route('login'),
-        "class": "underline text-sm text-gray-600 hover:text-gray-900"
+        "class": "text-sm text-gray-600 underline hover:text-gray-900"
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
           return [_hoisted_6];
@@ -23901,25 +23959,205 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", {
+var _hoisted_1 = {
   "class": "container max-w-screen-xl py-20"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
-  "class": "mb-5 text-center font-heading text-4xl font-bold leading-tight text-gray-800 md:leading-normal xl:text-5xl"
+};
+
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
+  "class": "mb-5 text-center font-heading text-4xl font-bold leading-tight text-gray-600 md:leading-normal xl:text-5xl"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Join the network "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "text-sky-500"
-}, "grow"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" faster. ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div")])], -1
+}, "grow"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" faster. ")], -1
 /* HOISTED */
 );
 
-function render(_ctx, _cache, $props, $setup, $data, $options) {
-  var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
+var _hoisted_3 = ["onSubmit"];
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  "class": "text-xl"
+}, "Choose a network", -1
+/* HOISTED */
+);
+
+var _hoisted_5 = {
+  "class": "mt-3 flex flex-wrap gap-y-3 gap-x-5"
+};
+var _hoisted_6 = ["id", "value"];
+var _hoisted_7 = ["for"];
+var _hoisted_8 = {
+  "class": "mt-4"
+};
+var _hoisted_9 = {
+  "class": "mt-4"
+};
+var _hoisted_10 = {
+  "class": "mt-4"
+};
+var _hoisted_11 = {
+  "class": "mt-4"
+};
+var _hoisted_12 = {
+  "class": "mt-4"
+};
+var _hoisted_13 = {
+  "class": "mt-4 flex items-center justify-end"
+};
+
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Already registered? ");
+
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Register ");
+
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Head"], {
     title: "CPA"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["PageLayout"], null, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_1];
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
+        "class": "container max-w-screen-md space-y-3 py-10",
+        onSubmit: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)($setup.submit, ["prevent"])
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.networks, function (network, index) {
+        return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+          key: index,
+          "class": "flex flex-1 items-center gap-x-2 rounded-md border border-gray-300 px-3 py-2 text-lg"
+        }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+          name: "network",
+          "class": "text-sky-500 focus:text-sky-500 focus:ring-sky-400",
+          type: "radio",
+          id: network.id,
+          value: network.id,
+          "onUpdate:modelValue": _cache[0] || (_cache[0] = function ($event) {
+            return $setup.form.network_id = $event;
+          })
+        }, null, 8
+        /* PROPS */
+        , _hoisted_6), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.form.network_id]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+          "class": "w-full select-none",
+          "for": network.id
+        }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(network.name), 9
+        /* TEXT, PROPS */
+        , _hoisted_7)]);
+      }), 128
+      /* KEYED_FRAGMENT */
+      ))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BreezeLabel"], {
+        "for": "name",
+        value: "Name"
+      }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BreezeInput"], {
+        id: "name",
+        type: "text",
+        "class": "mt-1 block w-full",
+        modelValue: $setup.form.name,
+        "onUpdate:modelValue": _cache[1] || (_cache[1] = function ($event) {
+          return $setup.form.name = $event;
+        }),
+        required: "",
+        autofocus: "",
+        autocomplete: "name"
+      }, null, 8
+      /* PROPS */
+      , ["modelValue"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BreezeLabel"], {
+        "for": "email",
+        value: "Email"
+      }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BreezeInput"], {
+        id: "email",
+        type: "email",
+        "class": "mt-1 block w-full",
+        modelValue: $setup.form.email,
+        "onUpdate:modelValue": _cache[2] || (_cache[2] = function ($event) {
+          return $setup.form.email = $event;
+        }),
+        required: "",
+        autocomplete: "email"
+      }, null, 8
+      /* PROPS */
+      , ["modelValue"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BreezeLabel"], {
+        "for": "phone",
+        value: "Phone"
+      }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BreezeInput"], {
+        id: "phone",
+        type: "tel",
+        "class": "mt-1 block w-full",
+        modelValue: $setup.form.phone,
+        "onUpdate:modelValue": _cache[3] || (_cache[3] = function ($event) {
+          return $setup.form.phone = $event;
+        }),
+        required: "",
+        autocomplete: "tel"
+      }, null, 8
+      /* PROPS */
+      , ["modelValue"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BreezeLabel"], {
+        "for": "address",
+        value: "Address"
+      }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BreezeInput"], {
+        id: "address",
+        type: "text",
+        "class": "mt-1 block w-full",
+        modelValue: $setup.form.address,
+        "onUpdate:modelValue": _cache[4] || (_cache[4] = function ($event) {
+          return $setup.form.address = $event;
+        }),
+        required: "",
+        autocomplete: "address"
+      }, null, 8
+      /* PROPS */
+      , ["modelValue"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BreezeLabel"], {
+        "for": "password",
+        value: "Password"
+      }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BreezeInput"], {
+        id: "password",
+        type: "password",
+        "class": "mt-1 block w-full",
+        modelValue: $setup.form.password,
+        "onUpdate:modelValue": _cache[5] || (_cache[5] = function ($event) {
+          return $setup.form.password = $event;
+        }),
+        required: "",
+        autocomplete: "new-password"
+      }, null, 8
+      /* PROPS */
+      , ["modelValue"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BreezeLabel"], {
+        "for": "password_confirmation",
+        value: "Confirm Password"
+      }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BreezeInput"], {
+        id: "password_confirmation",
+        type: "password",
+        "class": "mt-1 block w-full",
+        modelValue: $setup.form.password_confirmation,
+        "onUpdate:modelValue": _cache[6] || (_cache[6] = function ($event) {
+          return $setup.form.password_confirmation = $event;
+        }),
+        required: "",
+        autocomplete: "new-password"
+      }, null, 8
+      /* PROPS */
+      , ["modelValue"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Link"], {
+        href: _ctx.route('login'),
+        "class": "text-sm text-gray-600 underline hover:text-gray-900"
+      }, {
+        "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+          return [_hoisted_14];
+        }),
+        _: 1
+        /* STABLE */
+
+      }, 8
+      /* PROPS */
+      , ["href"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BreezeButton"], {
+        "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["ml-4", {
+          'opacity-25': $setup.form.processing
+        }]),
+        disabled: $setup.form.processing
+      }, {
+        "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+          return [_hoisted_15];
+        }),
+        _: 1
+        /* STABLE */
+
+      }, 8
+      /* PROPS */
+      , ["class", "disabled"])])], 40
+      /* PROPS, HYDRATE_EVENTS */
+      , _hoisted_3)])];
     }),
     _: 1
     /* STABLE */
