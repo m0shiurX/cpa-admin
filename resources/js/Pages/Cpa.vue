@@ -110,5 +110,54 @@ const submit = () => {
                 </div>
             </form>
         </section>
+        <section class="container mt-10 max-w-screen-xl py-20">
+            <div class="group flex flex-col items-center gap-y-10 gap-x-10 xl:flex-row">
+                <div class="grid h-64 w-64 place-items-center p-5 ring-2 ring-slate-50 ring-offset-2 md:w-96">
+                    <img src="@/assets/why.svg" alt="" class="h-auto w-full object-cover" />
+                </div>
+                <div class="w-auto pl-8">
+                    <h3
+                        class="relative max-w-screen-sm font-medium uppercase underline decoration-green-50 decoration-4 underline-offset-2 transition-all duration-300 group-hover:decoration-green-200"
+                    >
+                        Why work with us?
+                    </h3>
+                    <h2 class="mt-3 font-heading text-5xl leading-normal text-gray-700">Profitable and fast</h2>
+                    <p class="mt-3 text-base font-normal text-gray-500">
+                        We are giving the highest payout in the country and We have fast payment system. We have wise managers, Who will serve you all
+                        the time. We invite you. Join with us, and be more profitable.
+                    </p>
+                    <p class="mt-3 text-lg font-normal text-gray-500">
+                        <span class="font-semibold"> Our Payment System:</span> Bank, Bkash, Nagad, Rocket
+                    </p>
+                    <p class="mt-3 text-lg font-normal text-gray-500">
+                        <span class="font-semibold">Payment Frequency:</span> Daily, Net-7, Net-15, Net-30
+                    </p>
+                    <p class="mt-3 text-lg font-normal text-red-400">
+                        <span class="font-bold">Note:</span> Never try to cheat. If we detect it, we will take the legal action, so be careful &amp;
+                        don't try to cheat.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-10 max-w-screen-xl py-20">
+            <div class="flex flex-col items-center gap-y-10 gap-x-10 xl:flex-row">
+                <div class="grid h-64 w-64 place-items-start p-5 ring-2 ring-slate-50 ring-offset-2 md:w-64">
+                    <img src="@/assets/terms.svg" alt="" class="h-auto w-48" />
+                </div>
+                <div class="w-auto pl-8">
+                    <h3 class="relative max-w-screen-sm text-lg font-medium uppercase underline decoration-green-200 decoration-4 underline-offset-2">
+                        Terms &amp; Conditions
+                    </h3>
+                    <ul class="mt-5 list-inside list-decimal text-base">
+                        <li>You must use code and use the same code as a token.</li>
+                        <li>If you have a $1 fraud on a smartlink, then the payment will be deducted for the last 7 days of that smartlink.</li>
+                        <li>You can use maximum of 10 smartlinks.</li>
+                        <li>You have to must push 60% traffic from USA.</li>
+                        <li>You must avoid from working in Germany, Norway, Switzerland, Sweden, Denmark, Austria.</li>
+                        <li>We have to pay 0.80% of your income as maintenance fee. ($100=$0.80)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </PageLayout>
 </template>
