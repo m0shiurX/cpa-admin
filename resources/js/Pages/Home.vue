@@ -357,5 +357,5 @@ defineProps({
             </Link>
         </div>
     </section>
-    <footer />
+    <Footer />
 </template>
