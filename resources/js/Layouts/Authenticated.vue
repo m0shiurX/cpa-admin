@@ -28,6 +28,8 @@ const showingNavigationDropdown = ref(false);
                             <!-- Navigation Links -->
                             <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                                 <BreezeNavLink :href="route('dashboard')" :active="route().current('dashboard')"> Dashboard </BreezeNavLink>
+                                <BreezeNavLink :href="route('networks.index')" :active="route().current('networks.index')"> Networks </BreezeNavLink>
+                                <BreezeNavLink :href="route('users')" :active="route().current('users')"> Users </BreezeNavLink>
                             </div>
                         </div>
 
@@ -110,6 +112,10 @@ const showingNavigationDropdown = ref(false);
                     <div class="space-y-1 pt-2 pb-3">
                         <BreezeResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
                             Dashboard
+                        </BreezeResponsiveNavLink>
+                        <BreezeResponsiveNavLink :href="route('users')" :active="route().current('users')"> Users </BreezeResponsiveNavLink>
+                        <BreezeResponsiveNavLink :href="route('networks.index')" :active="route().current('networks.index')">
+                            Networks
                         </BreezeResponsiveNavLink>
                     </div>
 

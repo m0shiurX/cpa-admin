@@ -140,7 +140,7 @@ const submit = () => {
             </div>
         </section>
         <section class="container mt-10 max-w-screen-xl py-20">
-            <div class="flex flex-col items-center gap-y-10 gap-x-10 xl:flex-row">
+            <div class="flex flex-col items-start gap-y-10 gap-x-10 xl:flex-row">
                 <div class="grid h-64 w-64 place-items-start p-5 ring-2 ring-slate-50 ring-offset-2 md:w-64">
                     <img src="@/assets/terms.svg" alt="" class="h-auto w-48" />
                 </div>
@@ -154,7 +154,7 @@ const submit = () => {
                         <li>You can use maximum of 10 smartlinks.</li>
                         <li>You have to must push 60% traffic from USA.</li>
                         <li>You must avoid from working in Germany, Norway, Switzerland, Sweden, Denmark, Austria.</li>
-                        <li>We have to pay 0.80% of your income as maintenance fee. ($100=$0.80)</li>
+                        <li>We have to pay 0.80% of your income as maintenance fee. ($100 = $0.80)</li>
                     </ul>
                 </div>
             </div>
