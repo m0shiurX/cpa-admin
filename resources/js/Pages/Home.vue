@@ -10,7 +10,7 @@ defineProps({
 
 <template>
     <Head title="Mondol IT Limited" />
-    <header id="top__header" class="container h-screen max-w-screen-xl bg-hero bg-contain bg-bottom bg-no-repeat pt-8">
+    <header id="top__header" class="container h-screen max-w-screen-xl bg-hero bg-bottom bg-no-repeat pt-8">
         <!-- Main Navigation -->
         <Navigation />
         <!-- hero content -->
@@ -24,52 +24,6 @@ defineProps({
             </Link>
         </div>
     </header>
-
-    <!-- Clients/Brands -->
-    <div class="min-h-40 bg-sky-300 py-20">
-        <section class="container max-w-screen-xl text-center">
-            <h3 class="text-xl text-slate-50">We are working with <span class="text-2xl text-green-500">5+</span> biggest CPA Networks</h3>
-            <div class="mt-20 flex flex-wrap items-center justify-around gap-5 md:flex-nowrap">
-                <div>
-                    <dt class="sr-only">logo of Datify</dt>
-                    <dd>
-                        <img class="w-48 grayscale hover:grayscale-0" src="@/assets/datify.png" alt="Datify" />
-                    </dd>
-                </div>
-
-                <div>
-                    <dt class="sr-only">logo of LosPollos</dt>
-                    <dd>
-                        <img class="w-48 grayscale hover:grayscale-0" src="@/assets/lospollos.png" alt="LosPollos" />
-                    </dd>
-                </div>
-                <!-- <div>
-                    <dt class="sr-only">logo of CPAFULL</dt>
-                    <dd>
-                        <img class="w-24" src="@/assets/cpafull.png" alt="CPAFULL" />
-                    </dd>
-                </div> -->
-                <div>
-                    <dt class="sr-only">logo of iMonetizeIt</dt>
-                    <dd>
-                        <img class="w-48 grayscale hover:grayscale-0" src="@/assets/imonetizeit.svg" alt="iMonetizeIt" />
-                    </dd>
-                </div>
-                <div>
-                    <dt class="sr-only">logo of Trafee</dt>
-                    <dd>
-                        <img class="w-36 grayscale hover:grayscale-0" src="@/assets/trafee.svg" alt="Trafee" />
-                    </dd>
-                </div>
-                <div>
-                    <dt class="sr-only">logo of ClickDealer</dt>
-                    <dd>
-                        <img class="w-32 grayscale hover:grayscale-0" src="@/assets/ClickDealer.png" alt="ClickDealer" />
-                    </dd>
-                </div>
-            </div>
-        </section>
-    </div>
 
     <section class="container min-h-screen max-w-screen-xl py-20">
         <h3
@@ -208,6 +162,51 @@ defineProps({
             </div>
         </div>
     </section>
+    <!-- Clients/Brands -->
+    <div class="min-h-40 bg-sky-300 py-20">
+        <section class="container max-w-screen-xl text-center">
+            <h3 class="text-xl text-slate-50">We are working with <span class="text-2xl text-green-500">5+</span> biggest CPA Networks</h3>
+            <div class="mt-20 flex flex-wrap items-center justify-around gap-5 md:flex-nowrap">
+                <div>
+                    <dt class="sr-only">logo of Datify</dt>
+                    <dd>
+                        <img class="w-48 grayscale hover:grayscale-0" src="@/assets/datify.png" alt="Datify" />
+                    </dd>
+                </div>
+
+                <div>
+                    <dt class="sr-only">logo of LosPollos</dt>
+                    <dd>
+                        <img class="w-48 grayscale hover:grayscale-0" src="@/assets/lospollos.png" alt="LosPollos" />
+                    </dd>
+                </div>
+                <!-- <div>
+                    <dt class="sr-only">logo of CPAFULL</dt>
+                    <dd>
+                        <img class="w-24" src="@/assets/cpafull.png" alt="CPAFULL" />
+                    </dd>
+                </div> -->
+                <div>
+                    <dt class="sr-only">logo of iMonetizeIt</dt>
+                    <dd>
+                        <img class="w-64" src="@/assets/imonetizeit.svg" alt="iMonetizeIt" />
+                    </dd>
+                </div>
+                <div>
+                    <dt class="sr-only">logo of Trafee</dt>
+                    <dd>
+                        <img class="w-36 grayscale hover:grayscale-0" src="@/assets/trafee.svg" alt="Trafee" />
+                    </dd>
+                </div>
+                <div>
+                    <dt class="sr-only">logo of ClickDealer</dt>
+                    <dd>
+                        <img class="w-32 grayscale hover:grayscale-0" src="@/assets/ClickDealer.png" alt="ClickDealer" />
+                    </dd>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <section class="container mt-10 max-w-screen-xl py-20">
         <div class="group flex flex-col items-center gap-y-10 gap-x-10 xl:flex-row">

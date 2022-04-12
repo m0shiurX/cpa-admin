@@ -34,7 +34,7 @@ const submit = () => {
 </script>
 
 <template>
-    <Head title="CPA" />
+    <Head title="Join us" />
     <PageLayout>
         <section class="container max-w-screen-xl py-20">
             <h1 class="mb-5 text-center font-heading text-4xl font-bold leading-tight text-gray-600 md:leading-normal xl:text-5xl">
