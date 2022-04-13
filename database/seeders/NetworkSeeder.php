@@ -12,12 +12,12 @@ class NetworkSeeder extends Seeder
     public function run(): void
     {
         $networks = [
-            ['name' => 'iMonitizeIT'],
-            ['name' => 'LosPollos'],
-            ['name' => 'CPAFULL'],
-            ['name' => 'Datify'],
-            ['name' => 'Trafee'],
-            ['name' => 'ClickDealer'],
+            ['name' => 'iMonitizeIT', 'description' => 'imonetizeit.com'],
+            ['name' => 'LosPollos', 'description' => 'lospollos.com'],
+            ['name' => 'CPAFULL', 'description' => 'cpafull.com'],
+            ['name' => 'Datify', 'description' => 'datify.com'],
+            ['name' => 'Trafee', 'description' => 'trafee.com'],
+            ['name' => 'ClickDealer', 'description' => 'clickdealer.com'],
         ];
         Network::insert($networks);
     }

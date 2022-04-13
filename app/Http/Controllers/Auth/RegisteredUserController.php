@@ -39,6 +39,7 @@ class RegisteredUserController extends Controller
             'email' => 'required|string|email|max:255|unique:users',
             'phone' => 'required',
             'address'  => 'required',
+            'smartlink_code'  => 'required',
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
@@ -47,8 +48,10 @@ class RegisteredUserController extends Controller
             'email' => $request->email,
             'phone' => $request->phone,
             'address' => $request->address,
+            'smartlink_code' => $request->smartlink_code,
             'password' => Hash::make($request->password),
         ]);
+        $user->assignRole('member');
 
         event(new Registered($user));
 

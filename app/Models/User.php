@@ -28,6 +28,7 @@ class User extends Authenticatable implements MustVerifyEmail
         'video_path',
         'photo_path',
         'is_approved',
+        'smartlink_code'
     ];
 
     protected $hidden = [

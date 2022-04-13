@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\NetworkController;
+use App\Http\Controllers\UserController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -22,9 +23,13 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/users', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('users');
+Route::get('/users', [UserController::class, 'index'])->middleware(['auth', 'verified'])->name('users.index');
+Route::get('/users/create', [UserController::class, 'create'])->middleware(['auth', 'verified'])->name('users.create');
+Route::post('/users', [UserController::class, 'store'])->middleware(['auth', 'verified'])->name('users.store');
+Route::get('/users/{user}', [UserController::class, 'show'])->middleware(['auth', 'verified'])->name('users.show');
+Route::get('/users/{user}/edit', [UserController::class, 'edit'])->middleware(['auth', 'verified'])->name('users.edit');
+Route::put('/users/{user}/update', [UserController::class, 'update'])->middleware(['auth', 'verified'])->name('users.update');
+Route::delete('/users/{user}', [UserController::class, 'destroy'])->middleware(['auth', 'verified'])->name('users.destroy');
 
 Route::get('/networks', [NetworkController::class, 'index'])->middleware(['auth', 'verified'])->name('networks.index');
 Route::get('/networks/create', [NetworkController::class, 'create'])->middleware(['auth', 'verified'])->name('networks.create');
@@ -36,4 +41,4 @@ Route::delete('/networks/{network}', [NetworkController::class, 'destroy'])->mid
 
 Route::get('/join', function () {
     return Inertia::render('Cpa');
-})->name('cpa');
+})->middleware('guest')->name('cpa');

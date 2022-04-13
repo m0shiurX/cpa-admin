@@ -20,9 +20,10 @@ class RolesAndPermissionsSeeder extends Seeder
         /**************************************
          * Creating Roles
          **************************************/
+        $engineer_role = Role::create(['name' => 'super_admin']);
         $admin_role = Role::create(['name' => 'admin']);
         $manager_role = Role::create(['name' => 'manager']);
-        $engineer_role = Role::create(['name' => 'super_admin']);
+        $member_role = Role::create(['name' => 'member']);
 
 
         /**************************************
@@ -43,7 +44,14 @@ class RolesAndPermissionsSeeder extends Seeder
          * Seeding with demo users TODO: RM
          **************************************/
 
-        // Creating a manger
+        // Creating a member
+        $member = \App\Models\User::factory()->create([
+            'name' => 'Mr Manager',
+            'email' => 'member@cpa-admin.com',
+        ]);
+        $member->assignRole($member_role);
+
+        // Creating a manager
         $manager = \App\Models\User::factory()->create([
             'name' => 'Mr Manager',
             'email' => 'manager@cpa-admin.com',
@@ -61,7 +69,7 @@ class RolesAndPermissionsSeeder extends Seeder
         // Creating a super user
         $engineer = \App\Models\User::factory()->create([
             'name' => 'Mr Engineer',
-            'email' => 'superadmin@cpa-admin.com',
+            'email' => 'super_admin@cpa-admin.com',
 
         ]);
         $engineer->assignRole($engineer_role);
