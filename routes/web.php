@@ -27,9 +27,12 @@ Route::get('/users', function () {
 })->middleware(['auth', 'verified'])->name('users');
 
 Route::get('/networks', [NetworkController::class, 'index'])->middleware(['auth', 'verified'])->name('networks.index');
+Route::get('/networks/create', [NetworkController::class, 'create'])->middleware(['auth', 'verified'])->name('networks.create');
+Route::post('/networks', [NetworkController::class, 'store'])->middleware(['auth', 'verified'])->name('networks.store');
 Route::get('/networks/{network}', [NetworkController::class, 'show'])->middleware(['auth', 'verified'])->name('networks.show');
 Route::get('/networks/{network}/edit', [NetworkController::class, 'edit'])->middleware(['auth', 'verified'])->name('networks.edit');
 Route::put('/networks/{network}/update', [NetworkController::class, 'update'])->middleware(['auth', 'verified'])->name('networks.update');
+Route::delete('/networks/{network}', [NetworkController::class, 'destroy'])->middleware(['auth', 'verified'])->name('networks.destroy');
 
 Route::get('/join', function () {
     return Inertia::render('Cpa');

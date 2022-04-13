@@ -54,4 +54,24 @@ class NetworkController extends Controller
 
         // return Redirect::back()->with('success', 'Successfully updated.');
     }
+
+    public function create()
+    {
+        return Inertia::render('Networks/Create');
+    }
+
+    public function store(UpdateNetworkRequest $request)
+    {
+        Network::create($request->validated());
+        return Redirect::route('networks.index')->with('success', 'Successfully updated.');
+
+        // return Redirect::back()->with('success', 'Successfully updated.');
+    }
+
+
+    public function destroy(Network $network)
+    {
+        $network->delete();
+        return Redirect::route('networks.index')->with('success', 'Successfully deleted.');
+    }
 }

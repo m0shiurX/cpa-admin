@@ -13,8 +13,7 @@ const props = defineProps({
 });
 
 const destroyItem = (item) => {
-    console.log(item);
-    // Inertia.delete(route('networks.destroy', item));
+    Inertia.delete(route('networks.destroy', item));
 };
 </script>
 
@@ -34,6 +33,7 @@ const destroyItem = (item) => {
                 <div class="px-4 md:px-8 xl:px-10">
                     <div class="flex items-center justify-between">
                         <Link
+                            :href="route('networks.create')"
                             class="mt-4 inline-flex items-start justify-start rounded bg-green-700 px-6 py-3 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2 sm:mt-0"
                             ><span class="text-sm font-medium leading-none text-white">Add network</span>
                         </Link>
