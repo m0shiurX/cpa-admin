@@ -1,10 +1,11 @@
 <?php
 
-use App\Http\Controllers\NetworkController;
-use App\Http\Controllers\UserController;
-use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Application;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\MemberController;
+use App\Http\Controllers\NetworkController;
 
 /**************************************************************
  *  Web Routes
@@ -38,6 +39,14 @@ Route::get('/networks/{network}', [NetworkController::class, 'show'])->middlewar
 Route::get('/networks/{network}/edit', [NetworkController::class, 'edit'])->middleware(['auth', 'verified'])->name('networks.edit');
 Route::put('/networks/{network}/update', [NetworkController::class, 'update'])->middleware(['auth', 'verified'])->name('networks.update');
 Route::delete('/networks/{network}', [NetworkController::class, 'destroy'])->middleware(['auth', 'verified'])->name('networks.destroy');
+
+Route::get('/members', [MemberController::class, 'index'])->middleware(['auth', 'verified'])->name('members.index');
+Route::get('/members/create', [MemberController::class, 'create'])->middleware(['auth', 'verified'])->name('members.create');
+Route::post('/members', [MemberController::class, 'store'])->middleware(['auth', 'verified'])->name('members.store');
+Route::get('/members/{member}', [MemberController::class, 'show'])->middleware(['auth', 'verified'])->name('members.show');
+Route::get('/members/{member}/edit', [MemberController::class, 'edit'])->middleware(['auth', 'verified'])->name('members.edit');
+Route::put('/members/{member}/update', [MemberController::class, 'update'])->middleware(['auth', 'verified'])->name('members.update');
+Route::delete('/members/{member}', [MemberController::class, 'destroy'])->middleware(['auth', 'verified'])->name('members.destroy');
 
 Route::get('/join', function () {
     return Inertia::render('Cpa');
