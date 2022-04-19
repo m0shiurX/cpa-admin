@@ -46,7 +46,7 @@ class RolesAndPermissionsSeeder extends Seeder
 
         // Creating a member
         $member = \App\Models\User::factory()->create([
-            'name' => 'Mr Manager',
+            'name' => 'Mr Member',
             'email' => 'member@cpa-admin.com',
         ]);
         $member->assignRole($member_role);
@@ -73,5 +73,10 @@ class RolesAndPermissionsSeeder extends Seeder
 
         ]);
         $engineer->assignRole($engineer_role);
+
+
+        \App\Models\User::factory(5)->hasConversions(2)->create()->each(function ($user) {
+            $user->assignRole('member');
+        });
     }
 }
