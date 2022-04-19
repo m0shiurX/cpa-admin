@@ -245,64 +245,44 @@ defineProps({
 
             <div class="mt-8 flex flex-col space-y-8 md:mt-10 md:flex-row md:gap-x-4 md:space-y-0">
                 <div
-                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/6"
+                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/4"
                 >
                     <img
                         src="https://i.pravatar.cc/300?img=3"
                         class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
                     />
-                    <h2 class="text-xl font-semibold text-gray-700">John Doe</h2>
-                    <p class="text-sm">Relationship Manager</p>
+                    <h2 class="text-xl font-semibold text-gray-700">Insaf Sheik</h2>
+                    <p class="text-sm">Manager</p>
                 </div>
                 <div
-                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/6"
+                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/4"
                 >
                     <img
                         src="https://i.pravatar.cc/300?img=30"
                         class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
                     />
-                    <h2 class="text-xl font-semibold text-gray-700">John Doe</h2>
-                    <p class="text-sm">Relationship Manager</p>
+                    <h2 class="text-xl font-semibold text-gray-700">LP Sojib</h2>
+                    <p class="text-sm">Manager</p>
                 </div>
                 <div
-                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/6"
+                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/4"
                 >
                     <img
                         src="https://i.pravatar.cc/300?img=4"
                         class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
                     />
-                    <h2 class="text-xl font-semibold text-gray-700">John Doe</h2>
-                    <p class="text-sm">Relationship Manager</p>
+                    <h2 class="text-xl font-semibold text-gray-700">S N Rashed Khan (Niloy)</h2>
+                    <p class="text-sm">Manager</p>
                 </div>
                 <div
-                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/6"
+                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/4"
                 >
                     <img
                         src="https://i.pravatar.cc/300?img=35"
                         class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
                     />
-                    <h2 class="text-xl font-semibold text-gray-700">John Doe</h2>
-                    <p class="text-sm">Relationship Manager</p>
-                </div>
-                <div
-                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/6"
-                >
-                    <img
-                        src="https://i.pravatar.cc/300?img=33"
-                        class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
-                    />
-                    <h2 class="text-xl font-semibold text-gray-700">John Doe</h2>
-                    <p class="text-sm">Relationship Manager</p>
-                </div>
-                <div
-                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/6"
-                >
-                    <img
-                        src="https://i.pravatar.cc/300?img=39"
-                        class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
-                    />
-                    <h2 class="text-xl font-semibold text-gray-700">John Doe</h2>
-                    <p class="text-sm">Relationship Manager</p>
+                    <h2 class="text-xl font-semibold text-gray-700">Alex hridoy</h2>
+                    <p class="text-sm">Manager</p>
                 </div>
             </div>
             <div class="mt-6 flex flex-col space-y-8 md:mt-8 md:flex-row md:justify-center md:gap-x-8 md:space-y-0">
@@ -313,8 +293,8 @@ defineProps({
                         src="https://i.pravatar.cc/300?img=38"
                         class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
                     />
-                    <h2 class="text-xl font-semibold text-gray-700">John Doe</h2>
-                    <p class="text-sm">System Administrator</p>
+                    <h2 class="text-xl font-semibold text-gray-700">Asifur Rahman</h2>
+                    <p class="text-sm">HR Manager</p>
                 </div>
                 <div
                     class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/3"
@@ -323,8 +303,8 @@ defineProps({
                         src="https://i.pravatar.cc/300?img=37"
                         class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
                     />
-                    <h2 class="text-xl font-semibold text-gray-700">John Doe</h2>
-                    <p class="text-sm">System Administrator</p>
+                    <h2 class="text-xl font-semibold text-gray-700">Atikur Rahman</h2>
+                    <p class="text-sm"></p>
                 </div>
             </div>
             <div class="mt-6 flex flex-col space-y-8 md:mt-8 md:flex-row md:justify-center md:gap-x-8 md:space-y-0">
@@ -332,10 +312,10 @@ defineProps({
                     class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/3"
                 >
                     <img
-                        src="https://i.pravatar.cc/300?img=36"
+                        src="https://i.pravatar.cc/300?img=42"
                         class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-200 ring-offset-4 group-hover:ring-green-300"
                     />
-                    <h2 class="text-xl font-semibold text-gray-700">John Doe</h2>
+                    <h2 class="text-xl font-semibold text-gray-700">Emon Hasan</h2>
                     <p class="text-sm">CEO</p>
                 </div>
             </div>
