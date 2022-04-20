@@ -40,6 +40,7 @@ class RegisteredUserController extends Controller
             'phone' => 'required|unique:users',
             'address'  => 'required',
             'smartlink_code'  => 'required',
+            'fb_link'  => 'required',
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
@@ -49,6 +50,7 @@ class RegisteredUserController extends Controller
             'phone' => $request->phone,
             'address' => $request->address,
             'smartlink_code' => $request->smartlink_code,
+            'fb_link' => $request->fb_link,
             'password' => Hash::make($request->password),
         ]);
         $user->assignRole('member');

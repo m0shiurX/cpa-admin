@@ -25,6 +25,7 @@ const form = useForm({
     address: '',
     network_id: null,
     smartlink_code: '',
+    fb_link: '',
 });
 
 const submit = () => {
@@ -82,14 +83,11 @@ const submit = () => {
                 </div>
                 <div class="mt-4">
                     <BreezeLabel for="smartlink_code" value="Smartlink Code" />
-                    <BreezeInput
-                        id="smartlink_code"
-                        type="text"
-                        class="mt-1 block w-full"
-                        v-model="form.smartlink_code"
-                        required
-                        autocomplete="smartlink_code"
-                    />
+                    <BreezeInput id="smartlink_code" type="text" class="mt-1 block w-full" v-model="form.smartlink_code" required />
+                </div>
+                <div class="mt-4">
+                    <BreezeLabel for="fb_link" value="Facebook Profile" />
+                    <BreezeInput id="fb_link" type="text" class="mt-1 block w-full" v-model="form.fb_link" required />
                 </div>
 
                 <div class="mt-4">

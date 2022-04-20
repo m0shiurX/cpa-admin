@@ -1,13 +1,26 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
+import { Link, usePage } from '@inertiajs/inertia-vue3';
 import Logo from '@/Components/Logo.vue';
 import BreezeDropdown from '@/Components/Dropdown.vue';
 import BreezeDropdownLink from '@/Components/DropdownLink.vue';
 import BreezeNavLink from '@/Components/NavLink.vue';
 import BreezeResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
-import { Link } from '@inertiajs/inertia-vue3';
-
 const showingNavigationDropdown = ref(false);
+
+// defineProps({
+//     auth: Object,
+// });
+
+const is_admin = computed(() => {
+    return usePage().props.value.auth.role[0] === 'admin';
+});
+const is_member = computed(() => {
+    return usePage().props.value.auth.role[0] === 'member';
+});
+const is_manager = computed(() => {
+    return usePage().props.value.auth.role[0] === 'manager';
+});
 </script>
 
 <template>
@@ -27,15 +40,21 @@ const showingNavigationDropdown = ref(false);
 
                             <!-- Navigation Links -->
                             <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                                <BreezeNavLink :href="route('dashboard')" :active="route().current('dashboard')"> Dashboard </BreezeNavLink>
-                                <BreezeNavLink :href="route('networks.index')" :active="route().current('networks.index')"> Networks </BreezeNavLink>
-                                <BreezeNavLink :href="route('users.index')" :active="route().current('users.index')"> Users </BreezeNavLink>
-                                <BreezeNavLink :href="route('members.index')" :active="route().current('members.index')">
-                                    Team Members
-                                </BreezeNavLink>
+                                <template v-if="is_admin || is_manager">
+                                    <BreezeNavLink :href="route('dashboard')" :active="route().current('dashboard')"> Dashboard </BreezeNavLink>
+                                    <BreezeNavLink :href="route('networks.index')" :active="route().current('networks.index')">
+                                        Networks
+                                    </BreezeNavLink>
+                                    <BreezeNavLink :href="route('users.index')" :active="route().current('users.index')"> Users </BreezeNavLink>
+                                    <BreezeNavLink :href="route('members.index')" :active="route().current('members.index')">
+                                        Team Members
+                                    </BreezeNavLink>
+                                </template>
+                                <template v-if="is_member">
+                                    <BreezeNavLink :href="route('members.index')" :active="route().current('members.index')"> Reports </BreezeNavLink>
+                                </template>
                             </div>
                         </div>
-
                         <div class="hidden sm:ml-6 sm:flex sm:items-center">
                             <!-- Settings Dropdown -->
                             <div class="relative ml-3">
@@ -65,6 +84,7 @@ const showingNavigationDropdown = ref(false);
                                     </template>
 
                                     <template #content>
+                                        <BreezeDropdownLink :href="route('profile')"> My Profile </BreezeDropdownLink>
                                         <BreezeDropdownLink :href="route('logout')" method="post" as="button"> Log Out </BreezeDropdownLink>
                                     </template>
                                 </BreezeDropdown>

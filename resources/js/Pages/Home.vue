@@ -19,7 +19,7 @@ defineProps({
                 We make remarkable <br />
                 <span class="text-sky-500">digital growth</span> together.
             </h1>
-            <Link v-if="canRegister" :href="route('cpa')" class="block rounded-lg bg-green-400 px-6 py-3 uppercase text-white">
+            <Link v-if="canRegister" :href="route('join')" class="block rounded-lg bg-green-400 px-6 py-3 uppercase text-white">
                 Join our Network
             </Link>
         </div>
@@ -227,7 +227,7 @@ defineProps({
                 <Link
                     class="inline-block rounded-lg border border-green-400 px-9 py-4 font-heading text-sm font-semibold uppercase text-green-500 transition-all delay-100 duration-500 group-hover:bg-green-400 group-hover:text-white"
                     v-if="canRegister"
-                    :href="route('cpa')"
+                    :href="route('join')"
                 >
                     Join our Network
                 </Link>
@@ -331,7 +331,7 @@ defineProps({
             <p class="my-3 text-base font-normal text-gray-500">
                 Join today to get into the highest paying affiliate networks with trustworthy and fast payment system.
             </p>
-            <Link v-if="canRegister" :href="route('cpa')" class="mt-5 inline-block rounded-lg bg-green-400 px-6 py-3 uppercase text-white">
+            <Link v-if="canRegister" :href="route('join')" class="mt-5 inline-block rounded-lg bg-green-400 px-6 py-3 uppercase text-white">
                 Join our Network
             </Link>
         </div>

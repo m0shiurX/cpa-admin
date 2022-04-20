@@ -22,6 +22,7 @@ class UserController extends Controller
                     'address' => $user->address,
                     'network_id' => $user->network_id,
                     'smartlink_code' => $user->smartlink_code,
+                    'fb_link' => $user->fb_link,
                     'is_approved' => $user->is_approved,
                     'created_at' => Carbon::parse($user->created_at)->format('M d, Y'),
                 ]),
@@ -30,6 +31,8 @@ class UserController extends Controller
 
     public function show(User $user)
     {
+        // $user->load('roles');
+
         return Inertia::render('Users/Show', [
             'user' => [
                 'id' => $user->id,
@@ -38,8 +41,9 @@ class UserController extends Controller
                 'address' => $user->address,
                 'network_id' => $user->network_id,
                 'smartlink_code' => $user->smartlink_code,
+                'fb_link' => $user->fb_link,
                 'is_approved' => $user->is_approved,
-                'role'  => $user->role
+                'role'  => $user->getRoleNames(),
             ]
         ]);
     }
@@ -53,6 +57,7 @@ class UserController extends Controller
                 'email' => $user->email,
                 'address' => $user->address,
                 'network_id' => $user->network_id,
+                'fb_link' => $user->fb_link,
             ]
         ]);
     }

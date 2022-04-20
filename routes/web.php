@@ -49,5 +49,8 @@ Route::put('/members/{member}/update', [MemberController::class, 'update'])->mid
 Route::delete('/members/{member}', [MemberController::class, 'destroy'])->middleware(['auth', 'verified'])->name('members.destroy');
 
 Route::get('/join', function () {
-    return Inertia::render('Cpa');
-})->middleware('guest')->name('cpa');
+    return Inertia::render('Join');
+})->middleware('guest')->name('join');
+Route::get('/profile', function () {
+    return Inertia::render('Profile');
+})->middleware('auth', 'verified')->name('profile');
