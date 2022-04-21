@@ -20,6 +20,8 @@ Route::middleware('auth')->group(
 
         Route::get('/dashboard', [DashboardController::class, 'showDashboard'])->name('dashboard');
         Route::get('/profile', [ProfileController::class, 'showProfile'])->name('profile');
+        Route::put('/profile/verification', [ProfileController::class, 'verifyMember'])->name('profile.verification');
+
         Route::get('/report', [ReportController::class, 'showReport'])->name('reports.index');
 
         Route::get('/users', [UserController::class, 'index'])->name('users.index');
