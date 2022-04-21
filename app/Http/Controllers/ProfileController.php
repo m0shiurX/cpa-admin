@@ -37,10 +37,15 @@ class ProfileController extends Controller
 
     public function verifyMember(Request $request)
     {
+        $request->validate([
+            'nid_front' => 'required|file',
+            'nid_back' => 'required|file',
+        ]);
+
         if ($request->hasFile('nid_back') && $request->hasFile('nid_front')) {
             $request->user()->update([
-                'n_id_front_path' => $request->nid_front->store('NID'),
-                'n_id_back_path' => $request->nid_back->store('NID'),
+                'n_id_front_path' => $request->nid_front->store('nid'),
+                'n_id_back_path' => $request->nid_back->store('nid'),
             ]);
         }
         return Redirect::back()->with('success', 'NID Uploaded');

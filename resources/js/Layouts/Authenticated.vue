@@ -134,18 +134,28 @@ const is_manager = computed(() => {
                     class="sm:hidden"
                 >
                     <div class="space-y-1 pt-2 pb-3">
-                        <BreezeResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
-                            Dashboard
-                        </BreezeResponsiveNavLink>
-                        <BreezeResponsiveNavLink :href="route('users.index')" :active="route().current('users.index')">
-                            Users
-                        </BreezeResponsiveNavLink>
-                        <BreezeResponsiveNavLink :href="route('networks.index')" :active="route().current('networks.index')">
-                            Networks
-                        </BreezeResponsiveNavLink>
-                        <BreezeResponsiveNavLink :href="route('members.index')" :active="route().current('members.index')">
-                            Team Members
-                        </BreezeResponsiveNavLink>
+                        <template v-if="is_admin || is_manager">
+                            <BreezeResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
+                                Dashboard
+                            </BreezeResponsiveNavLink>
+                            <BreezeResponsiveNavLink :href="route('users.index')" :active="route().current('users.index')">
+                                Users
+                            </BreezeResponsiveNavLink>
+                            <BreezeResponsiveNavLink :href="route('networks.index')" :active="route().current('networks.index')">
+                                Networks
+                            </BreezeResponsiveNavLink>
+                            <BreezeResponsiveNavLink :href="route('members.index')" :active="route().current('members.index')">
+                                Team Members
+                            </BreezeResponsiveNavLink>
+                        </template>
+                        <template v-if="is_member">
+                            <BreezeResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
+                                Dashboard
+                            </BreezeResponsiveNavLink>
+                            <BreezeResponsiveNavLink :href="route('reports.index')" :active="route().current('reports.index')">
+                                Reports
+                            </BreezeResponsiveNavLink>
+                        </template>
                     </div>
 
                     <!-- Responsive Settings Options -->
@@ -160,7 +170,8 @@ const is_manager = computed(() => {
                         </div>
 
                         <div class="mt-3 space-y-1">
-                            <BreezeResponsiveNavLink :href="route('logout')" method="post" as="button"> Log Out </BreezeResponsiveNavLink>
+                            <BreezeDropdownLink :href="route('profile')"> My Profile </BreezeDropdownLink>
+                            <BreezeDropdownLink :href="route('logout')" method="post" as="button"> Log Out </BreezeDropdownLink>
                         </div>
                     </div>
                 </div>

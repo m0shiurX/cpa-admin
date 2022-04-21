@@ -21,9 +21,8 @@ class UserController extends Controller
                     'email' => $user->email,
                     'address' => $user->address,
                     'network_id' => $user->network_id,
+                    'nid_verified' => $user->is_n_id_verified,
                     'smartlink_code' => $user->smartlink_code,
-                    'n_id_front' => $user->n_id_front,
-                    'n_id_back' => $user->n_id_back,
                     'fb_link' => $user->fb_link,
                     'is_approved' => $user->is_approved,
                     'created_at' => Carbon::parse($user->created_at)->format('M d, Y'),
@@ -41,9 +40,9 @@ class UserController extends Controller
                 'name' => $user->name,
                 'email' => $user->email,
                 'address' => $user->address,
+                'fb_link' => $user->fb_link,
                 'network_id' => $user->network_id,
                 'smartlink_code' => $user->smartlink_code,
-                'fb_link' => $user->fb_link,
                 'nid_verified' => $user->is_n_id_verified,
                 'nid_front' => $user->n_id_front_path,
                 'nid_back' => $user->n_id_back_path,
@@ -51,6 +50,10 @@ class UserController extends Controller
                 'role'  => $user->getRoleNames(),
             ]
         ]);
+    }
+
+    public function approveMember(User $user)
+    {
     }
 
     public function edit(User $user)

@@ -28,6 +28,7 @@ const form = useForm({
     network_id: null,
     smartlink_code: '',
     fb_link: '',
+    nid_no: '',
 });
 
 const submit = () => {
@@ -82,6 +83,9 @@ const submit = () => {
 
                 <div class="mt-4">
                     <BaseInput label="Address" inputType="text" v-model="form.address" :error="form.errors.address" required autocomplete="address" />
+                </div>
+                <div class="mt-4">
+                    <BaseInput label="NID No." inputType="text" v-model="form.nid_no" :error="form.errors.nid_no" required />
                 </div>
                 <div class="mt-4">
                     <BaseInput label="Smartlink Code" inputType="text" v-model="form.smartlink_code" :error="form.errors.smartlink_code" required />

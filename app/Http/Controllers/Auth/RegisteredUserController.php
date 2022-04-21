@@ -2,15 +2,15 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
 use App\Models\User;
-use App\Providers\RouteServiceProvider;
-use Illuminate\Auth\Events\Registered;
+use Inertia\Inertia;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rules;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Validation\Rules;
-use Inertia\Inertia;
+use Illuminate\Auth\Events\Registered;
+use App\Providers\RouteServiceProvider;
 
 class RegisteredUserController extends Controller
 {
@@ -34,13 +34,16 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request)
     {
+
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'phone' => 'required|unique:users',
-            'address'  => 'required',
-            'smartlink_code'  => 'required',
+            'address'  => 'required|string',
+            'nid_no'  => 'required|string',
+            'smartlink_code'  => 'required|string',
             'fb_link'  => 'required',
+            'network_id'  => 'required',
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
@@ -49,10 +52,13 @@ class RegisteredUserController extends Controller
             'email' => $request->email,
             'phone' => $request->phone,
             'address' => $request->address,
-            'smartlink_code' => $request->smartlink_code,
+            'n_id_no' => $request->nid_no,
             'fb_link' => $request->fb_link,
+            'network_id'  => $request->network_id,
             'password' => Hash::make($request->password),
+            'smartlink_code' => $request->smartlink_code,
         ]);
+
         $user->assignRole('member');
 
         event(new Registered($user));

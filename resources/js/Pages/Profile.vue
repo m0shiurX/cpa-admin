@@ -173,6 +173,7 @@ const uploadNID = () => {
                                                 type="file"
                                                 accept="image/png, image/jpeg"
                                                 class="mb-3 block w-full text-sm text-slate-500 file:mr-4 file:rounded-full file:border-0 file:bg-green-200 file:py-2 file:px-4 file:text-sm file:font-semibold file:text-green-700 hover:file:bg-green-100"
+                                                required
                                             />
                                             <p class="mb-2 text-sm text-gray-400">
                                                 Upload a clear photo of your NID card's front side where every corner is visible and readable.
@@ -189,6 +190,7 @@ const uploadNID = () => {
                                                 type="file"
                                                 accept="image/png, image/jpeg"
                                                 class="mb-3 block w-full text-sm text-slate-500 file:mr-4 file:rounded-full file:border-0 file:bg-green-200 file:py-2 file:px-4 file:text-sm file:font-semibold file:text-green-700 hover:file:bg-green-100"
+                                                required
                                             />
                                             <p class="mb-2 text-sm text-gray-400">
                                                 Upload a clear photo of your NID card's back side where every corner is visible and readable.
