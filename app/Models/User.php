@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Network;
 use App\Models\Conversion;
 use Laravel\Sanctum\HasApiTokens;
 use Spatie\Permission\Traits\HasRoles;
@@ -41,8 +42,14 @@ class User extends Authenticatable //implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
     public function conversions()
     {
         return $this->hasMany(Conversion::class);
+    }
+
+    public function network()
+    {
+        return $this->belongsTo(Network::class);
     }
 }

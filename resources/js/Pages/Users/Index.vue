@@ -13,7 +13,7 @@ const props = defineProps({
 });
 
 const destroyItem = (item) => {
-    // Inertia.delete(route('users.destroy', item));
+    Inertia.delete(route('users.destroy', item));
 };
 </script>
 

@@ -1,6 +1,8 @@
 <script setup>
 import BreezeAuthenticatedLayout from '@/Layouts/Authenticated.vue';
 import { Head, useForm } from '@inertiajs/inertia-vue3';
+import InfoRowVue from '@/Shared/InfoRow.vue';
+
 const props = defineProps({
     info: Object,
 });
@@ -34,89 +36,12 @@ const uploadNID = () => {
                         <div class="py-3">
                             <table class="w-full table-auto whitespace-nowrap">
                                 <tbody class="">
-                                    <tr class="h-14 rounded border border-slate-100 bg-slate-50 hover:bg-slate-300">
-                                        <td class="w-48 border-r border-slate-100">
-                                            <div class="flex items-center pl-5">
-                                                <p class="mr-2 text-lg font-medium leading-none text-slate-700">Name</p>
-                                            </div>
-                                        </td>
-                                        <td class="">
-                                            <div class="flex items-center pl-5">
-                                                <p class="ml-1 truncate text-base leading-none text-slate-400">{{ props.info.name }}</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="h-1"></tr>
-
-                                    <tr class="h-14 rounded border border-slate-100 bg-slate-50 hover:bg-slate-300">
-                                        <td class="w-48 border-r border-slate-100">
-                                            <div class="flex items-center pl-5">
-                                                <p class="mr-2 text-lg font-medium leading-none text-slate-700">Email</p>
-                                            </div>
-                                        </td>
-                                        <td class="">
-                                            <div class="flex items-center pl-5">
-                                                <p class="ml-1 truncate text-base leading-none text-slate-400">{{ props.info.email }}</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="h-1"></tr>
-
-                                    <tr class="h-14 rounded border border-slate-100 bg-slate-50 hover:bg-slate-300">
-                                        <td class="w-48 border-r border-slate-100">
-                                            <div class="flex items-center pl-5">
-                                                <p class="mr-2 text-lg font-medium leading-none text-slate-700">Phone</p>
-                                            </div>
-                                        </td>
-                                        <td class="">
-                                            <div class="flex items-center pl-5">
-                                                <p class="ml-1 truncate text-base leading-none text-slate-400">{{ props.info.phone }}</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="h-1"></tr>
-
-                                    <tr class="h-14 rounded border border-slate-100 bg-slate-50 hover:bg-slate-300">
-                                        <td class="w-48 border-r border-slate-100">
-                                            <div class="flex items-center pl-5">
-                                                <p class="mr-2 text-lg font-medium leading-none text-slate-700">Address</p>
-                                            </div>
-                                        </td>
-                                        <td class="">
-                                            <div class="flex items-center pl-5">
-                                                <p class="ml-1 truncate text-base leading-none text-slate-700">{{ props.info.address }}</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="h-1"></tr>
-
-                                    <tr class="h-14 rounded border border-slate-100 bg-slate-50 hover:bg-slate-300">
-                                        <td class="w-48 border-r border-slate-100">
-                                            <div class="flex items-center pl-5">
-                                                <p class="mr-2 text-lg font-medium leading-none text-slate-700">NID Number</p>
-                                            </div>
-                                        </td>
-                                        <td class="">
-                                            <div class="flex items-center pl-5">
-                                                <p class="ml-1 truncate text-base leading-none text-slate-700">{{ props.info.n_id_no }}</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="h-1"></tr>
-
-                                    <tr class="h-14 rounded border border-slate-100 bg-slate-50 hover:bg-slate-300">
-                                        <td class="w-48 border-r border-slate-100">
-                                            <div class="flex items-center pl-5">
-                                                <p class="mr-2 text-lg font-medium leading-none text-slate-700">Facebook Profile</p>
-                                            </div>
-                                        </td>
-                                        <td class="">
-                                            <div class="flex items-center pl-5">
-                                                <p class="ml-1 truncate text-base leading-none text-slate-700">{{ props.info.fb_link }}</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="h-1"></tr>
+                                    <InfoRowVue label="Name" :value="props.info.name" />
+                                    <InfoRowVue label="Email" :value="props.info.email" />
+                                    <InfoRowVue label="Phone" :value="props.info.phone" />
+                                    <InfoRowVue label="Address" :value="props.info.address" />
+                                    <InfoRowVue label="NID Number" :value="props.info.n_id_no" />
+                                    <InfoRowVue label="Facebook Profile" :value="props.info.fb_link" />
                                 </tbody>
                             </table>
                         </div>
@@ -126,32 +51,8 @@ const uploadNID = () => {
                         <div class="py-3">
                             <table class="w-full table-auto whitespace-nowrap">
                                 <tbody class="">
-                                    <tr class="h-14 rounded border border-slate-100 bg-slate-50 hover:bg-slate-300">
-                                        <td class="w-48 border-r border-slate-100">
-                                            <div class="flex items-center pl-5">
-                                                <p class="mr-2 text-lg font-medium leading-none text-slate-700">Selected Network</p>
-                                            </div>
-                                        </td>
-                                        <td class="">
-                                            <div class="flex items-center pl-5">
-                                                <p class="ml-1 truncate text-base leading-none text-slate-400">{{ props.info.network_id }}</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="h-1"></tr>
-                                    <tr class="h-14 rounded border border-slate-100 bg-slate-50 hover:bg-slate-300">
-                                        <td class="w-48 border-r border-slate-100">
-                                            <div class="flex items-center pl-5">
-                                                <p class="mr-2 text-lg font-medium leading-none text-slate-700">Smartlink Code</p>
-                                            </div>
-                                        </td>
-                                        <td class="">
-                                            <div class="flex items-center pl-5">
-                                                <p class="ml-1 truncate text-base leading-none text-slate-400">{{ props.info.smartlink_code }}</p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="h-1"></tr>
+                                    <InfoRowVue label="Network" :value="props.info.network_id" />
+                                    <InfoRowVue label="Smartlink Code" :value="props.info.smartlink_code" />
                                 </tbody>
                             </table>
                         </div>

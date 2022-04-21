@@ -32,7 +32,6 @@ class UserController extends Controller
 
     public function show(User $user)
     {
-        // $user->load('roles');
 
         return Inertia::render('Users/Show', [
             'user' => [
@@ -42,11 +41,13 @@ class UserController extends Controller
                 'address' => $user->address,
                 'fb_link' => $user->fb_link,
                 'network_id' => $user->network_id,
+                'network_name' => $user->network?->name,
                 'smartlink_code' => $user->smartlink_code,
                 'nid_verified' => $user->is_n_id_verified,
+                'is_approved' => $user->is_approved,
                 'nid_front' => $user->n_id_front_path,
                 'nid_back' => $user->n_id_back_path,
-                'is_approved' => $user->is_approved,
+                'nid_no' => $user->n_id_no,
                 'role'  => $user->getRoleNames(),
             ]
         ]);
@@ -79,23 +80,10 @@ class UserController extends Controller
     //     // return Redirect::back()->with('success', 'Successfully updated.');
     // }
 
-    // public function create()
-    // {
-    //     return Inertia::render('Users/Create');
-    // }
 
-    // public function store(UpdateUserRequest $request)
-    // {
-    //     User::create($request->validated());
-    //     return Redirect::route('networks.index')->with('success', 'Successfully updated.');
-
-    //     // return Redirect::back()->with('success', 'Successfully updated.');
-    // }
-
-
-    // public function destroy(User $user)
-    // {
-    //     $user->delete();
-    //     return Redirect::route('networks.index')->with('success', 'Successfully deleted.');
-    // }
+    public function destroy(User $user)
+    {
+        $user->delete();
+        return Redirect::route('users.index')->with('success', 'Successfully deleted.');
+    }
 }

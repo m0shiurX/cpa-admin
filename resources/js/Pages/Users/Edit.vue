@@ -84,7 +84,7 @@ const updateItem = () => {
 
 const destroyItem = () => {
     if (confirm('Are you sure you want to delete this?')) {
-        // form.delete(route('users.destroy', props.user.id));
+        form.delete(route('users.destroy', props.user.id));
     }
 };
 
