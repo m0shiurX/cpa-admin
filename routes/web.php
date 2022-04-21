@@ -15,7 +15,7 @@ use App\Http\Controllers\DashboardController;
 require __DIR__ . '/auth.php';
 
 
-Route::middleware('auth', 'verified')->group(
+Route::middleware('auth')->group(
     function () {
 
         Route::get('/dashboard', [DashboardController::class, 'showDashboard'])->name('dashboard');
