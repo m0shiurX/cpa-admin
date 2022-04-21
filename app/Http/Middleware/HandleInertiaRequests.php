@@ -39,6 +39,12 @@ class HandleInertiaRequests extends Middleware
                 'user' => $request->user(),
                 'role'  => $request->user()?->getRoleNames()
             ],
+            'flash' => function () use ($request) {
+                return [
+                    'success' => $request->session()->get('success'),
+                    'error' => $request->session()->get('error'),
+                ];
+            },
             'ziggy' => function () {
                 return (new Ziggy)->toArray();
             },

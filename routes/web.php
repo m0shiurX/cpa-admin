@@ -2,10 +2,12 @@
 
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Foundation\Application;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\MemberController;
+use App\Http\Controllers\ReportController;
 use App\Http\Controllers\NetworkController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\DashboardController;
 
 /**************************************************************
  *  Web Routes
@@ -13,44 +15,47 @@ use App\Http\Controllers\NetworkController;
 require __DIR__ . '/auth.php';
 
 
+Route::middleware('auth', 'verified')->group(
+    function () {
+
+        Route::get('/dashboard', [DashboardController::class, 'showDashboard'])->name('dashboard');
+        Route::get('/profile', [ProfileController::class, 'showProfile'])->name('profile');
+        Route::get('/report', [ReportController::class, 'showReport'])->name('reports.index');
+
+        Route::get('/users', [UserController::class, 'index'])->name('users.index');
+        Route::get('/users/create', [UserController::class, 'create'])->name('users.create');
+        Route::post('/users', [UserController::class, 'store'])->name('users.store');
+        Route::get('/users/{user}', [UserController::class, 'show'])->name('users.show');
+        Route::get('/users/{user}/edit', [UserController::class, 'edit'])->name('users.edit');
+        Route::put('/users/{user}/update', [UserController::class, 'update'])->name('users.update');
+        Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('users.destroy');
+
+        Route::get('/networks', [NetworkController::class, 'index'])->name('networks.index');
+        Route::get('/networks/create', [NetworkController::class, 'create'])->name('networks.create');
+        Route::post('/networks', [NetworkController::class, 'store'])->name('networks.store');
+        Route::get('/networks/{network}', [NetworkController::class, 'show'])->name('networks.show');
+        Route::get('/networks/{network}/edit', [NetworkController::class, 'edit'])->name('networks.edit');
+        Route::put('/networks/{network}/update', [NetworkController::class, 'update'])->name('networks.update');
+        Route::delete('/networks/{network}', [NetworkController::class, 'destroy'])->name('networks.destroy');
+
+        Route::get('/members', [MemberController::class, 'index'])->name('members.index');
+        Route::post('/members', [MemberController::class, 'store'])->name('members.store');
+        Route::get('/members/create', [MemberController::class, 'create'])->name('members.create');
+        Route::get('/members/{member}', [MemberController::class, 'show'])->name('members.show');
+        Route::get('/members/{member}/edit', [MemberController::class, 'edit'])->name('members.edit');
+        Route::put('/members/{member}/update', [MemberController::class, 'update'])->name('members.update');
+        Route::delete('/members/{member}', [MemberController::class, 'destroy'])->name('members.destroy');
+    }
+);
+
+
+Route::get('/join', function () {
+    return Inertia::render('Join');
+})->middleware('guest')->name('join');
+
 Route::get('/', function () {
     return Inertia::render('Home', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
     ]);
 })->name('home');
-
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
-Route::get('/users', [UserController::class, 'index'])->middleware(['auth', 'verified'])->name('users.index');
-Route::get('/users/create', [UserController::class, 'create'])->middleware(['auth', 'verified'])->name('users.create');
-Route::post('/users', [UserController::class, 'store'])->middleware(['auth', 'verified'])->name('users.store');
-Route::get('/users/{user}', [UserController::class, 'show'])->middleware(['auth', 'verified'])->name('users.show');
-Route::get('/users/{user}/edit', [UserController::class, 'edit'])->middleware(['auth', 'verified'])->name('users.edit');
-Route::put('/users/{user}/update', [UserController::class, 'update'])->middleware(['auth', 'verified'])->name('users.update');
-Route::delete('/users/{user}', [UserController::class, 'destroy'])->middleware(['auth', 'verified'])->name('users.destroy');
-
-Route::get('/networks', [NetworkController::class, 'index'])->middleware(['auth', 'verified'])->name('networks.index');
-Route::get('/networks/create', [NetworkController::class, 'create'])->middleware(['auth', 'verified'])->name('networks.create');
-Route::post('/networks', [NetworkController::class, 'store'])->middleware(['auth', 'verified'])->name('networks.store');
-Route::get('/networks/{network}', [NetworkController::class, 'show'])->middleware(['auth', 'verified'])->name('networks.show');
-Route::get('/networks/{network}/edit', [NetworkController::class, 'edit'])->middleware(['auth', 'verified'])->name('networks.edit');
-Route::put('/networks/{network}/update', [NetworkController::class, 'update'])->middleware(['auth', 'verified'])->name('networks.update');
-Route::delete('/networks/{network}', [NetworkController::class, 'destroy'])->middleware(['auth', 'verified'])->name('networks.destroy');
-
-Route::get('/members', [MemberController::class, 'index'])->middleware(['auth', 'verified'])->name('members.index');
-Route::get('/members/create', [MemberController::class, 'create'])->middleware(['auth', 'verified'])->name('members.create');
-Route::post('/members', [MemberController::class, 'store'])->middleware(['auth', 'verified'])->name('members.store');
-Route::get('/members/{member}', [MemberController::class, 'show'])->middleware(['auth', 'verified'])->name('members.show');
-Route::get('/members/{member}/edit', [MemberController::class, 'edit'])->middleware(['auth', 'verified'])->name('members.edit');
-Route::put('/members/{member}/update', [MemberController::class, 'update'])->middleware(['auth', 'verified'])->name('members.update');
-Route::delete('/members/{member}', [MemberController::class, 'destroy'])->middleware(['auth', 'verified'])->name('members.destroy');
-
-Route::get('/join', function () {
-    return Inertia::render('Join');
-})->middleware('guest')->name('join');
-Route::get('/profile', function () {
-    return Inertia::render('Profile');
-})->middleware('auth', 'verified')->name('profile');

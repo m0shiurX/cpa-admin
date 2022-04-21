@@ -4,11 +4,11 @@ import { Head } from '@inertiajs/inertia-vue3';
 </script>
 
 <template>
-    <Head title="Profile" />
+    <Head title="Report" />
 
     <BreezeAuthenticatedLayout>
         <template #header>
-            <h2 class="text-xl font-semibold leading-tight text-gray-800">Profile</h2>
+            <h2 class="text-xl font-semibold leading-tight text-gray-800">Report</h2>
         </template>
 
         <div class="py-12">

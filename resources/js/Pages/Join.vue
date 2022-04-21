@@ -5,6 +5,8 @@ import { ref } from 'vue';
 import BreezeButton from '@/Components/Button.vue';
 import BreezeInput from '@/Components/Input.vue';
 import BreezeLabel from '@/Components/Label.vue';
+import FlashMessages from '@/Shared/FlashMessages';
+import BaseInput from '@/Shared/BaseInput.vue';
 
 const networks = ref([
     { id: 1, name: 'Datify' },
@@ -45,6 +47,10 @@ const submit = () => {
             </h1>
 
             <form class="container max-w-screen-md space-y-3 py-10" @submit.prevent="submit">
+                <div class="">
+                    <FlashMessages />
+                </div>
+
                 <div>
                     <label class="text-xl">Choose a network</label>
                     <div class="mt-3 flex flex-wrap gap-y-3 gap-x-5">
@@ -57,6 +63,7 @@ const submit = () => {
                                     :id="network.id"
                                     :value="network.id"
                                     v-model="form.network_id"
+                                    required
                                 />
                                 <label class="w-full select-none" :for="network.id">{{ network.name }}</label>
                             </div>
@@ -64,51 +71,42 @@ const submit = () => {
                     </div>
                 </div>
                 <div>
-                    <BreezeLabel for="name" value="Name" />
-                    <BreezeInput id="name" type="text" class="mt-1 block w-full" v-model="form.name" required autofocus autocomplete="name" />
+                    <BaseInput label="Name" inputType="text" v-model="form.name" :error="form.errors.name" required autocomplete="name" />
+                </div>
+                <div class="mt-4">
+                    <BaseInput label="Email" inputType="email" v-model="form.email" :error="form.errors.email" required autocomplete="email" />
+                </div>
+                <div class="mt-4">
+                    <BaseInput label="Phone" inputType="tel" v-model="form.phone" :error="form.errors.phone" required autocomplete="tel" />
                 </div>
 
                 <div class="mt-4">
-                    <BreezeLabel for="email" value="Email" />
-                    <BreezeInput id="email" type="email" class="mt-1 block w-full" v-model="form.email" required autocomplete="email" />
+                    <BaseInput label="Address" inputType="text" v-model="form.address" :error="form.errors.address" required autocomplete="address" />
                 </div>
                 <div class="mt-4">
-                    <BreezeLabel for="phone" value="Phone" />
-                    <BreezeInput id="phone" type="tel" class="mt-1 block w-full" v-model="form.phone" required autocomplete="tel" />
-                </div>
-
-                <div class="mt-4">
-                    <BreezeLabel for="address" value="Address" />
-                    <BreezeInput id="address" type="text" class="mt-1 block w-full" v-model="form.address" required autocomplete="address" />
+                    <BaseInput label="Smartlink Code" inputType="text" v-model="form.smartlink_code" :error="form.errors.smartlink_code" required />
                 </div>
                 <div class="mt-4">
-                    <BreezeLabel for="smartlink_code" value="Smartlink Code" />
-                    <BreezeInput id="smartlink_code" type="text" class="mt-1 block w-full" v-model="form.smartlink_code" required />
-                </div>
-                <div class="mt-4">
-                    <BreezeLabel for="fb_link" value="Facebook Profile" />
-                    <BreezeInput id="fb_link" type="text" class="mt-1 block w-full" v-model="form.fb_link" required />
+                    <BaseInput label="Facebook Profile Link" inputType="text" v-model="form.fb_link" :error="form.errors.fb_link" required />
                 </div>
 
                 <div class="mt-4">
-                    <BreezeLabel for="password" value="Password" />
-                    <BreezeInput
-                        id="password"
-                        type="password"
-                        class="mt-1 block w-full"
+                    <BaseInput
+                        label="Password"
+                        inputType="password"
                         v-model="form.password"
+                        :error="form.errors.password"
                         required
                         autocomplete="new-password"
                     />
                 </div>
 
                 <div class="mt-4">
-                    <BreezeLabel for="password_confirmation" value="Confirm Password" />
-                    <BreezeInput
-                        id="password_confirmation"
-                        type="password"
-                        class="mt-1 block w-full"
+                    <BaseInput
+                        label="Confirm Password"
+                        inputType="password"
                         v-model="form.password_confirmation"
+                        :error="form.errors.password_confirmation"
                         required
                         autocomplete="new-password"
                     />

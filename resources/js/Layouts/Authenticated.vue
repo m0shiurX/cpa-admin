@@ -51,7 +51,8 @@ const is_manager = computed(() => {
                                     </BreezeNavLink>
                                 </template>
                                 <template v-if="is_member">
-                                    <BreezeNavLink :href="route('members.index')" :active="route().current('members.index')"> Reports </BreezeNavLink>
+                                    <BreezeNavLink :href="route('dashboard')" :active="route().current('dashboard')"> Dashboard </BreezeNavLink>
+                                    <BreezeNavLink :href="route('reports.index')" :active="route().current('reports.index')"> Reports </BreezeNavLink>
                                 </template>
                             </div>
                         </div>
