@@ -40,6 +40,7 @@ class UserController extends Controller
                 'id' => $user->id,
                 'name' => $user->name,
                 'email' => $user->email,
+                'phone' => $user->phone,
                 'address' => $user->address,
                 'fb_link' => $user->fb_link,
                 'network_id' => $user->network_id,

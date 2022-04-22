@@ -75,15 +75,20 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="mt-6" v-if="is_approved === 0 || nid_verified === 0">
+                    <div class="mt-6" v-if="props.user.is_approved === 0 && props.user.nid_verified === 0">
                         <div class="flex items-center justify-end space-x-5">
                             <button @click.prevent="approveUser" class="rounded-md bg-green-500 px-8 py-2 text-white">Approve</button>
                             <button @click.prevent="disApproveUser" class="rounded-md bg-orange-400 px-8 py-2 text-white">Disapprove</button>
                         </div>
                     </div>
-                    <div class="mt-6" v-else>
+                    <div class="mt-6" v-else-if="props.user.is_approved === 1 && props.user.nid_verified === 1">
                         <div class="flex items-center justify-center space-x-5">
                             <p class="text-2xl text-green-500">Already Verified</p>
+                        </div>
+                    </div>
+                    <div class="mt-6" v-else>
+                        <div class="flex items-center justify-center space-x-5">
+                            <p class="text-2xl text-gray-500">Incomplete submission</p>
                         </div>
                     </div>
                 </div>

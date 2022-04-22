@@ -8,14 +8,9 @@ import BreezeLabel from '@/Components/Label.vue';
 import FlashMessages from '@/Shared/FlashMessages';
 import BaseInput from '@/Shared/BaseInput.vue';
 
-const networks = ref([
-    { id: 1, name: 'Datify' },
-    { id: 2, name: 'losPollos' },
-    { id: 3, name: 'iMonetizeIt' },
-    { id: 4, name: 'Trafee' },
-    { id: 5, name: 'ClickDealer' },
-    { id: 6, name: 'CpaFull' },
-]);
+const props = defineProps({
+    networks: Array,
+});
 
 const form = useForm({
     name: '',
@@ -55,7 +50,7 @@ const submit = () => {
                 <div>
                     <label class="text-xl">Choose a network</label>
                     <div class="mt-3 flex flex-wrap gap-y-3 gap-x-5">
-                        <template v-for="(network, index) in networks" :key="index">
+                        <template v-for="(network, index) in props.networks.data" :key="index">
                             <div class="flex flex-1 items-center gap-x-2 rounded-md border border-gray-300 px-3 py-2 text-lg">
                                 <input
                                     name="network"

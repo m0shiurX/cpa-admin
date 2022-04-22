@@ -10,6 +10,7 @@ use App\Http\Controllers\ReportController;
 use App\Http\Controllers\NetworkController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\Auth\RegisteredUserController;
 
 /**************************************************************
  *  Web Routes
@@ -54,9 +55,7 @@ Route::middleware('auth')->group(
 );
 
 
-Route::get('/join', function () {
-    return Inertia::render('Join');
-})->middleware('guest')->name('join');
+Route::get('join', [RegisteredUserController::class, 'create'])->middleware('guest')->name('join');
 
 Route::get('/', function () {
     return Inertia::render('Home', [

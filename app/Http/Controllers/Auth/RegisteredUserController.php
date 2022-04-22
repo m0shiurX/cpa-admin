@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Carbon\Carbon;
 use App\Models\User;
 use Inertia\Inertia;
+use App\Models\Network;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rules;
 use App\Http\Controllers\Controller;
@@ -16,21 +18,25 @@ class RegisteredUserController extends Controller
 {
     /**
      * Display the registration view.
-     *
      * @return \Inertia\Response
      */
     public function create()
     {
-        return Inertia::render('Auth/Register');
+
+        return Inertia::render('Join', [
+            'networks' => Network::orderBy('name', 'asc')
+                ->paginate(20)
+                ->through(fn ($network) => [
+                    'id' => $network->id,
+                    'name' => $network->name,
+                ]),
+        ]);
     }
 
     /**
      * Handle an incoming registration request.
-     *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\RedirectResponse
-     *
-     * @throws \Illuminate\Validation\ValidationException
      */
     public function store(Request $request)
     {
