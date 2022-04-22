@@ -40,7 +40,7 @@ const uploadNID = () => {
                                     <InfoRowVue label="Email" :value="props.info.email" />
                                     <InfoRowVue label="Phone" :value="props.info.phone" />
                                     <InfoRowVue label="Address" :value="props.info.address" />
-                                    <InfoRowVue label="NID Number" :value="props.info.n_id_no" />
+                                    <InfoRowVue label="NID Number" :value="props.info.nid_no" />
                                     <InfoRowVue label="Facebook Profile" :value="props.info.fb_link" />
                                 </tbody>
                             </table>
@@ -51,8 +51,8 @@ const uploadNID = () => {
                         <div class="py-3">
                             <table class="w-full table-auto whitespace-nowrap">
                                 <tbody class="">
-                                    <InfoRowVue label="Network" :value="props.info.network_id" />
-                                    <InfoRowVue label="Smartlink Code" :value="props.info.smartlink_code" />
+                                    <InfoRowVue label="Network" :value="props.info.network" />
+                                    <InfoRowVue label="Smartlink Code" :value="props.info.smartlink" />
                                 </tbody>
                             </table>
                         </div>
@@ -60,11 +60,11 @@ const uploadNID = () => {
                     <div class="border-b border-gray-200 bg-white p-6">
                         <h2 class="text-xl">Verification</h2>
                         <div class="mt-3 rounded border border-slate-100 bg-slate-50 p-3">
-                            <template v-if="props.info.is_approved === 1 && props.info.is_n_id_verified === 1">
+                            <template v-if="props.info.is_approved === 1 && props.info.nid_verified === 1">
                                 <p>Congratulations! You are verified member!</p>
                             </template>
                             <template v-else>
-                                <div v-if="props.info.n_id_front_path === null || props.info.n_id_back_path === null">
+                                <div v-if="props.info.nid_front === null || props.info.nid_back === null">
                                     <p class="text-lg text-orange-500">Please complete the following verification process.</p>
                                     <form @submit.prevent="uploadNID" class="flex flex-col gap-6">
                                         <div class="mt-3 rounded border px-5 py-3">

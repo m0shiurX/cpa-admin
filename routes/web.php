@@ -3,6 +3,7 @@
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ImagesController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\NetworkController;
@@ -31,6 +32,7 @@ Route::middleware('auth')->group(
         Route::get('/users/{user}/edit', [UserController::class, 'edit'])->name('users.edit');
         Route::put('/users/{user}/update', [UserController::class, 'update'])->name('users.update');
         Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('users.destroy');
+        Route::put('/users/{user}/verify', [UserController::class, 'approveMember'])->name('users.verification');
 
         Route::get('/networks', [NetworkController::class, 'index'])->name('networks.index');
         Route::get('/networks/create', [NetworkController::class, 'create'])->name('networks.create');
@@ -61,3 +63,9 @@ Route::get('/', function () {
         'canRegister' => Route::has('register'),
     ]);
 })->name('home');
+
+
+// Images
+Route::get('/storage/{path}', [ImagesController::class, 'show'])
+    ->where('path', '.*')
+    ->name('storage');

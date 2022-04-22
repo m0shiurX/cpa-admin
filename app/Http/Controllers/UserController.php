@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use App\Models\User;
 use Inertia\Inertia;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Redirect;
 
 class UserController extends Controller
@@ -45,16 +46,25 @@ class UserController extends Controller
                 'smartlink_code' => $user->smartlink_code,
                 'nid_verified' => $user->is_n_id_verified,
                 'is_approved' => $user->is_approved,
-                'nid_front' => $user->n_id_front_path,
-                'nid_back' => $user->n_id_back_path,
+                'nid_front' => $user->n_id_front_path ? URL::route('storage', ['path' => $user->n_id_front_path, 'w' => 480, 'h' => 360, 'fit' => 'crop']) : null,
+                'nid_back' => $user->n_id_back_path ? URL::route('storage', ['path' => $user->n_id_back_path, 'w' => 480, 'h' => 360, 'fit' => 'crop']) : null,
                 'nid_no' => $user->n_id_no,
                 'role'  => $user->getRoleNames(),
             ]
         ]);
     }
 
-    public function approveMember(User $user)
+    public function approveMember(Request $request, User $user)
     {
+        $roles = $request->user()->getRoleNames();
+        if ($roles->contains('admin')) {
+            $user->update([
+                'is_n_id_verified' => 1,
+                'is_approved' => 1
+            ]);
+            return Redirect::back()->with('success', 'Verification successful');
+        }
+        return Redirect::back()->with('error', 'Verification failed');
     }
 
     public function edit(User $user)

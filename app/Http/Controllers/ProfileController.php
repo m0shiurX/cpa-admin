@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Inertia\Inertia;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
+use App\Http\Resources\MemberProfileResource;
 
 class ProfileController extends Controller
 {
@@ -26,8 +27,7 @@ class ProfileController extends Controller
 
     public function memberProfile(Request $request)
     {
-        $user = $request->user();
-        return Inertia::render('Profile', ['info' => $user]);
+        return Inertia::render('Profile', ['info' => MemberProfileResource::make($request->user())->toArray($request)]);
     }
     public function adminProfile()
     {

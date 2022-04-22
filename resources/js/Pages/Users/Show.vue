@@ -1,11 +1,11 @@
 <template>
-    <Head title="Manufacturers" />
+    <Head title="Users" />
 
     <BreezeAuthenticatedLayout>
         <template #header>
-            <h2 class="text-xl font-semibold leading-tight text-gray-800">users</h2>
+            <h2 class="text-xl font-semibold leading-tight text-gray-800">User</h2>
         </template>
-
+        <FlashMessages />
         <div class="py-12">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <form class="bg-white/30 py-4" @submit.prevent="">
@@ -18,7 +18,6 @@
                                     <InfoRowVue label="Email" :value="props.user.email" />
                                     <InfoRowVue label="Phone" :value="props.user.phone" />
                                     <InfoRowVue label="Address" :value="props.user.address" />
-                                    <InfoRowVue label="NID No" :value="props.user.nid_no" />
                                     <InfoRowVue label="Network" :value="props.user.network_name" />
                                     <InfoRowVue label="Facebook Link" :value="props.user.fb_link" />
                                     <InfoRowVue label="Smartlink Code" :value="props.user.smartlink_code" />
@@ -41,8 +40,6 @@
                         <table class="w-full table-auto whitespace-nowrap">
                             <tbody class="">
                                 <InfoRowVue label="NID No" :value="props.user.nid_no" />
-                                <InfoRowVue label="NID Front" :value="props.user.nid_front" />
-                                <InfoRowVue label="NID Back" :value="props.user.nid_back" />
                                 <tr class="h-14 rounded border border-slate-100 bg-slate-50 hover:bg-slate-300">
                                     <td class="w-48 border-r border-slate-100">
                                         <div class="flex items-center pl-5">
@@ -51,17 +48,42 @@
                                     </td>
                                     <td class="">
                                         <div class="flex items-center pl-5">
-                                            <p class="ml-1 truncate text-base leading-none text-slate-400">{{ props.user.nid_front }}</p>
+                                            <p class="ml-1">
+                                                <a :href="props.user.nid_front" target="_blank">
+                                                    <img :src="props.user.nid_front" alt="" />
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="h-14 rounded border border-slate-100 bg-slate-50 hover:bg-slate-300">
+                                    <td class="w-48 border-r border-slate-100">
+                                        <div class="flex items-center pl-5">
+                                            <p class="mr-2 text-lg font-medium leading-none text-slate-700">NID BACK</p>
+                                        </div>
+                                    </td>
+                                    <td class="">
+                                        <div class="flex items-center pl-5">
+                                            <p class="ml-1">
+                                                <a :href="props.user.nid_back" target="_blank">
+                                                    <img :src="props.user.nid_back" alt="" />
+                                                </a>
+                                            </p>
                                         </div>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <div class="mt-6">
+                    <div class="mt-6" v-if="is_approved === 0 || nid_verified === 0">
                         <div class="flex items-center justify-end space-x-5">
-                            <button @click.prevent="" class="rounded-md bg-green-500 px-8 py-2 text-white">Approve</button>
-                            <button @click.prevent="" class="rounded-md bg-orange-400 px-8 py-2 text-white">Disapprove</button>
+                            <button @click.prevent="approveUser" class="rounded-md bg-green-500 px-8 py-2 text-white">Approve</button>
+                            <button @click.prevent="disApproveUser" class="rounded-md bg-orange-400 px-8 py-2 text-white">Disapprove</button>
+                        </div>
+                    </div>
+                    <div class="mt-6" v-else>
+                        <div class="flex items-center justify-center space-x-5">
+                            <p class="text-2xl text-green-500">Already Verified</p>
                         </div>
                     </div>
                 </div>
@@ -74,10 +96,24 @@ import { Head, Link, useForm } from '@inertiajs/inertia-vue3';
 import { Inertia } from '@inertiajs/inertia';
 import BreezeAuthenticatedLayout from '@/Layouts/Authenticated.vue';
 import InfoRowVue from '@/Shared/InfoRow.vue';
+import FlashMessages from '@/Shared/FlashMessages.vue';
 
 const props = defineProps({
     user: Object,
 });
+
+const approvalForm = useForm({
+    _method: 'put',
+    token: null,
+});
+
+const approveUser = () => {
+    approvalForm.post(route('users.verification', props.user.id));
+};
+
+const disApproveUser = () => {
+    // approvalForm.put(route('users.verification', props.user.id));
+};
 
 const destroyItem = () => {
     if (confirm('Are you sure you want to delete this organization?')) {
