@@ -16,7 +16,7 @@ class UserController extends Controller
         return Inertia::render('Users/Index', [
             'users' => User::role('member')->orderBy('name', 'asc')
                 ->paginate(10)
-                ->setPath('/')
+                ->setPath('')
                 ->through(fn ($user) => [
                     'id' => $user->id,
                     'name' => $user->name,
