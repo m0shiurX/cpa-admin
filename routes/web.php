@@ -2,6 +2,7 @@
 
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ImagesController;
 use App\Http\Controllers\MemberController;
@@ -69,3 +70,7 @@ Route::get('/', function () {
 Route::get('/storage/{path}', [ImagesController::class, 'show'])
     ->where('path', '.*')
     ->name('storage');
+
+Route::get('/linkstorage', function () {
+    Artisan::call('storage:link');
+});
