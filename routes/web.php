@@ -71,6 +71,6 @@ Route::get('/storage/{path}', [ImagesController::class, 'show'])
     ->where('path', '.*')
     ->name('storage');
 
-Route::get('/linkstorage', function () {
-    Artisan::call('storage:link');
-});
+// Route::get('/link_storage', function () {
+//     Artisan::call('storage:link');
+// });
