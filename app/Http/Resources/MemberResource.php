@@ -12,9 +12,9 @@ class MemberResource extends JsonResource
         return [
             'name' => $this->name,
             'designation' => $this->designation,
-            'skype' => $this->skype,
-            'whatsapp' => $this->whatsapp,
-            'email' => $this->email,
+            'skype' => 'skype:' . $this->skype . '?call',
+            'whatsapp' => 'https://wa.me/' . $this->whatsapp,
+            'email' => 'mailto:' . $this->email,
             'avatar' => $this->photo_path ? URL::route('storage', ['path' => $this->photo_path, 'w' => 250, 'h' => 250, 'fit' => 'crop']) : null,
         ];
     }
