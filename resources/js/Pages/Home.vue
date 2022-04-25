@@ -293,6 +293,23 @@ defineProps({
                         />
                         <h2 class="text-xl font-semibold text-gray-700">{{ hr_manager.data.name }}</h2>
                         <p class="text-sm">{{ hr_manager.data.designation }}</p>
+                        <div class="flex items-center justify-around gap-x-5">
+                            <div>
+                                <a :href="hr_manager.data.whatsapp">
+                                    <Icon icon="whatsapp" class="fill-gray-400" />
+                                </a>
+                            </div>
+                            <div>
+                                <a :href="hr_manager.data.email">
+                                    <Icon icon="email" class="stroke-gray-400" />
+                                </a>
+                            </div>
+                            <div>
+                                <a :href="hr_manager.data.skype">
+                                    <Icon icon="skype" class="fill-gray-400" />
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </template>
             </div>
@@ -310,6 +327,23 @@ defineProps({
                         />
                         <h2 class="text-xl font-semibold text-gray-700">{{ ceo.data.name }}</h2>
                         <p class="text-sm">{{ ceo.data.designation }}</p>
+                        <div class="flex items-center justify-around gap-x-5">
+                            <div>
+                                <a :href="ceo.data.whatsapp">
+                                    <Icon icon="whatsapp" class="fill-gray-400" />
+                                </a>
+                            </div>
+                            <div>
+                                <a :href="ceo.data.email">
+                                    <Icon icon="email" class="stroke-gray-400" />
+                                </a>
+                            </div>
+                            <div>
+                                <a :href="ceo.data.skype">
+                                    <Icon icon="skype" class="fill-gray-400" />
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </template>
             </div>
