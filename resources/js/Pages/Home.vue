@@ -75,28 +75,8 @@ defineProps({
             </div>
         </section>
     </div>
-    <section class="container min-h-screen max-w-screen-xl py-20">
-        <h3
-            class="relative max-w-screen-sm font-medium uppercase before:absolute before:left-0 before:bottom-1 before:-z-1 before:h-2 before:w-[105px] before:bg-green-500/40"
-        >
-            What we do
-        </h3>
-
-        <div class="flex w-full flex-col items-end justify-between space-y-10 md:flex-row">
-            <h2 class="mt-5 text-5xl font-semibold leading-normal text-gray-800">Delivering quality products</h2>
-            <div class="flex max-w-screen-sm space-x-5">
-                <div class="flex w-1/2 items-center">
-                    <span class="text-6xl font-medium text-green-500">13</span>
-                    <span class="w-1/2 px-2 normal-case">Years in business</span>
-                </div>
-                <div class="flex w-1/2 items-center">
-                    <span class="text-6xl font-medium text-green-500">28</span>
-                    <span class="w-1/2 px-2 normal-case">Designers & developers</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="mt-12 flex flex-col space-y-8 md:mt-20 md:flex-row md:gap-x-10 md:space-y-0">
+    <section class="container min-h-screen max-w-screen-xl py-10">
+        <div class="mt-4 flex flex-col space-y-8 md:mt-20 md:flex-row md:gap-x-10 md:space-y-0">
             <div class="group rounded-lg border border-slate-100 bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3">
                 <img class="mb-16" src="@/assets/cpa.png" alt="instagram" />
                 <h4 class="text-2xl font-semibold text-gray-700">CPA/Affiliate</h4>
@@ -209,6 +189,25 @@ defineProps({
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                     </svg>
                 </a>
+            </div>
+        </div>
+        <h3
+            class="relative mt-12 max-w-screen-sm font-medium uppercase before:absolute before:left-0 before:bottom-1 before:-z-1 before:h-2 before:w-[105px] before:bg-green-500/40"
+        >
+            What we do
+        </h3>
+
+        <div class="flex w-full flex-col items-end justify-between space-y-10 md:flex-row">
+            <h2 class="mt-5 text-5xl font-semibold leading-normal text-gray-800">Delivering quality products</h2>
+            <div class="flex max-w-screen-sm space-x-5">
+                <div class="flex w-1/2 items-center">
+                    <span class="text-6xl font-medium text-green-500">7</span>
+                    <span class="w-1/2 px-2 normal-case">Years in business</span>
+                </div>
+                <div class="flex w-1/2 items-center">
+                    <span class="text-6xl font-medium text-green-500">200+</span>
+                    <span class="w-1/2 px-2 normal-case">Members</span>
+                </div>
             </div>
         </div>
     </section>

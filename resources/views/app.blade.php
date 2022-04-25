@@ -6,6 +6,7 @@
 
         <title inertia>{{ config('app.name', 'Spacer') }}</title>
 
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
