@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\MemberResource;
 use Inertia\Inertia;
 use App\Models\Member;
 use Illuminate\Support\Facades\Route;
@@ -14,7 +15,7 @@ class HomeController extends Controller
         return Inertia::render('Home', [
             'canLogin' => Route::has('login'),
             'canRegister' => Route::has('register'),
-            'teamMember' => Member::select('name', 'designation')->get()->groupBy('designation')
+            'teamMembers' => MemberResource::collection(Member::all())->collection->groupBy('designation')
         ]);
     }
 }

@@ -22,7 +22,6 @@ class MemberController extends Controller
                     'id' => $member->id,
                     'name' => $member->name,
                     'designation' => $member->designation,
-                    'avatar' => $member->photo_path,
                     'avatar' => $member->photo_path ? URL::route('storage', ['path' => $member->photo_path, 'w' => 250, 'h' => 250, 'fit' => 'crop']) : null,
 
                     'created_at' => Carbon::parse($member->created_at)->format('M d, Y'),

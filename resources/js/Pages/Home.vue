@@ -5,6 +5,7 @@ import Navigation from '../Components/Navigation.vue';
 defineProps({
     canLogin: Boolean,
     canRegister: Boolean,
+    teamMembers: Object,
 });
 </script>
 
@@ -245,81 +246,53 @@ defineProps({
                 your success
             </h2>
 
-            <div class="mt-8 flex flex-col space-y-8 md:mt-10 md:flex-row md:gap-x-4 md:space-y-0">
-                <div
-                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/4"
-                >
-                    <img
-                        src="https://i.pravatar.cc/300?img=3"
-                        class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
-                    />
-                    <h2 class="text-xl font-semibold text-gray-700">Insaf Sheik</h2>
-                    <p class="text-sm">Manager</p>
-                </div>
-                <div
-                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/4"
-                >
-                    <img
-                        src="https://i.pravatar.cc/300?img=30"
-                        class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
-                    />
-                    <h2 class="text-xl font-semibold text-gray-700">LP Sojib</h2>
-                    <p class="text-sm">Manager</p>
-                </div>
-                <div
-                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/4"
-                >
-                    <img
-                        src="https://i.pravatar.cc/300?img=4"
-                        class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
-                    />
-                    <h2 class="text-xl font-semibold text-gray-700">S N Rashed Khan (Niloy)</h2>
-                    <p class="text-sm">Manager</p>
-                </div>
-                <div
-                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/4"
-                >
-                    <img
-                        src="https://i.pravatar.cc/300?img=35"
-                        class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
-                    />
-                    <h2 class="text-xl font-semibold text-gray-700">Alex hridoy</h2>
-                    <p class="text-sm">Manager</p>
-                </div>
+            <div v-if="teamMembers.hasOwnProperty('Manager')" class="mt-8 flex flex-col space-y-8 md:mt-10 md:flex-row md:gap-x-4 md:space-y-0">
+                <template v-for="(manager, index) in teamMembers.Manager" :key="index">
+                    <div
+                        class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/4"
+                    >
+                        <img
+                            :src="manager.data.avatar"
+                            class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
+                        />
+                        <h2 class="text-xl font-semibold text-gray-700">{{ manager.data.name }}</h2>
+                        <p class="text-sm">{{ manager.data.designation }}</p>
+                    </div>
+                </template>
             </div>
-            <div class="mt-6 flex flex-col space-y-8 md:mt-8 md:flex-row md:justify-center md:gap-x-8 md:space-y-0">
-                <div
-                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/3"
-                >
-                    <img
-                        src="https://i.pravatar.cc/300?img=38"
-                        class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
-                    />
-                    <h2 class="text-xl font-semibold text-gray-700">Asifur Rahman</h2>
-                    <p class="text-sm">HR Manager</p>
-                </div>
-                <div
-                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/3"
-                >
-                    <img
-                        src="https://i.pravatar.cc/300?img=37"
-                        class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
-                    />
-                    <h2 class="text-xl font-semibold text-gray-700">Atikur Rahman</h2>
-                    <p class="text-sm"></p>
-                </div>
+            <div
+                v-if="teamMembers.hasOwnProperty('HR Manager')"
+                class="mt-6 flex flex-col space-y-8 md:mt-8 md:flex-row md:justify-center md:gap-x-8 md:space-y-0"
+            >
+                <template v-for="(hr_manager, index) in teamMembers['HR Manager']" :key="index">
+                    <div
+                        class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/3"
+                    >
+                        <img
+                            :src="hr_manager.data.avatar"
+                            class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
+                        />
+                        <h2 class="text-xl font-semibold text-gray-700">{{ hr_manager.data.name }}</h2>
+                        <p class="text-sm">{{ hr_manager.data.designation }}</p>
+                    </div>
+                </template>
             </div>
-            <div class="mt-6 flex flex-col space-y-8 md:mt-8 md:flex-row md:justify-center md:gap-x-8 md:space-y-0">
-                <div
-                    class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/3"
-                >
-                    <img
-                        src="https://i.pravatar.cc/300?img=42"
-                        class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-200 ring-offset-4 group-hover:ring-green-300"
-                    />
-                    <h2 class="text-xl font-semibold text-gray-700">Emon Hasan</h2>
-                    <p class="text-sm">CEO</p>
-                </div>
+            <div
+                v-if="teamMembers.hasOwnProperty('CEO')"
+                class="mt-6 flex flex-col space-y-8 md:mt-8 md:flex-row md:justify-center md:gap-x-8 md:space-y-0"
+            >
+                <template v-for="(ceo, index) in teamMembers.CEO" :key="index">
+                    <div
+                        class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/3"
+                    >
+                        <img
+                            :src="ceo.data.avatar"
+                            class="h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-200 ring-offset-4 group-hover:ring-green-300"
+                        />
+                        <h2 class="text-xl font-semibold text-gray-700">{{ ceo.data.name }}</h2>
+                        <p class="text-sm">{{ ceo.data.designation }}</p>
+                    </div>
+                </template>
             </div>
         </div>
         <hr class="mt-20 h-2" />

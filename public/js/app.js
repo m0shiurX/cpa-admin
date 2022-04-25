@@ -22500,7 +22500,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
     canLogin: Boolean,
-    canRegister: Boolean
+    canRegister: Boolean,
+    teamMembers: Object
   },
   setup: function setup(__props, _ref) {
     var expose = _ref.expose;
@@ -23904,26 +23905,20 @@ var _hoisted_4 = {
   "class": "mb-5 flex items-center gap-x-5"
 };
 
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
-  "class": "text-2xl text-gray-50"
-}, " Mondol IT Limited ", -1
-/* HOISTED */
-);
-
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "text-sm text-slate-400"
 }, " We aspire to build a Digital Bangladesh. You can work with us if you have a minimal experience on computer literacy. Let's build a digital Bangladesh together & change the world. ", -1
 /* HOISTED */
 );
 
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex h-full w-full flex-col gap-x-20 gap-y-5 text-slate-400 sm:flex-row xl:pl-6\"><div><h2 class=\"mb-3 text-xl text-white\">Navigation</h2><ul class=\"space-y-2\"><li>Home</li><li>About</li><li>Contact</li><li>Services</li></ul></div><div><h2 class=\"mb-3 text-xl text-white\">Information</h2><ul class=\"space-y-2\"><li>Privacy Policy</li><li>Terms &amp; Conditions</li><li>FAQ</li></ul></div><div><h2 class=\"mb-3 text-xl text-white\">Find Us</h2><p class=\"leading-6\"> Jamil Nagar, Bogura Sadar <br> Bogura - 5800, BD </p><p class=\"leading-6\"> +880 1977 538 234 <br> support@mondolit.com </p></div></div>", 1);
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex h-full w-full flex-col gap-x-20 gap-y-5 text-slate-400 sm:flex-row xl:pl-6\"><div><h2 class=\"mb-3 text-xl text-white\">Navigation</h2><ul class=\"space-y-2\"><li>Home</li><li>About</li><li>Contact</li><li>Services</li></ul></div><div><h2 class=\"mb-3 text-xl text-white\">Information</h2><ul class=\"space-y-2\"><li>Privacy Policy</li><li>Terms &amp; Conditions</li><li>FAQ</li></ul></div><div><h2 class=\"mb-3 text-xl text-white\">Find Us</h2><p class=\"leading-6\"> Jamil Nagar, Bogura Sadar <br> Bogura - 5800, BD </p><p class=\"leading-6\"> +880 1977 538 234 <br> support@mondolit.com </p></div></div>", 1);
 
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container mt-10 max-w-screen-xl\"><hr class=\"border-slate-500\"></div><div class=\"container mt-2 max-w-screen-xl text-slate-400\"><p class=\"text-sm\"> All rights reserved by MONDOL IT LIMITED <span class=\"\">|</span> Copyright © 2022 </p></div>", 2);
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container mt-10 max-w-screen-xl\"><hr class=\"border-slate-500\"></div><div class=\"container mt-2 max-w-screen-xl text-slate-400\"><p class=\"text-sm\"> All rights reserved by MONDOL IT LIMITED <span class=\"\">|</span> Copyright © 2022 </p></div>", 2);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("footer", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Logo"], {
-    "class": "fill-gray-100"
-  }), _hoisted_5]), _hoisted_6]), _hoisted_7]), _hoisted_8]);
+    "class": "w-64"
+  })]), _hoisted_5]), _hoisted_6]), _hoisted_7]);
 }
 
 /***/ }),
@@ -25488,16 +25483,73 @@ var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 
 var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Join our Network ");
 
-var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"container mt-10 max-w-screen-xl py-20\"><div class=\"text-center\"><h3 class=\"font-medium uppercase underline decoration-green-200 decoration-4 underline-offset-2\">Meet The Team</h3><h2 class=\"mt-5 font-heading text-5xl leading-snug text-gray-700\"> We work hard for <br> your success </h2><div class=\"mt-8 flex flex-col space-y-8 md:mt-10 md:flex-row md:gap-x-4 md:space-y-0\"><div class=\"group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/4\"><img src=\"https://i.pravatar.cc/300?img=3\" class=\"h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300\"><h2 class=\"text-xl font-semibold text-gray-700\">Insaf Sheik</h2><p class=\"text-sm\">Manager</p></div><div class=\"group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/4\"><img src=\"https://i.pravatar.cc/300?img=30\" class=\"h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300\"><h2 class=\"text-xl font-semibold text-gray-700\">LP Sojib</h2><p class=\"text-sm\">Manager</p></div><div class=\"group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/4\"><img src=\"https://i.pravatar.cc/300?img=4\" class=\"h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300\"><h2 class=\"text-xl font-semibold text-gray-700\">S N Rashed Khan (Niloy)</h2><p class=\"text-sm\">Manager</p></div><div class=\"group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/4\"><img src=\"https://i.pravatar.cc/300?img=35\" class=\"h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300\"><h2 class=\"text-xl font-semibold text-gray-700\">Alex hridoy</h2><p class=\"text-sm\">Manager</p></div></div><div class=\"mt-6 flex flex-col space-y-8 md:mt-8 md:flex-row md:justify-center md:gap-x-8 md:space-y-0\"><div class=\"group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/3\"><img src=\"https://i.pravatar.cc/300?img=38\" class=\"h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300\"><h2 class=\"text-xl font-semibold text-gray-700\">Asifur Rahman</h2><p class=\"text-sm\">HR Manager</p></div><div class=\"group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/3\"><img src=\"https://i.pravatar.cc/300?img=37\" class=\"h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300\"><h2 class=\"text-xl font-semibold text-gray-700\">Atikur Rahman</h2><p class=\"text-sm\"></p></div></div><div class=\"mt-6 flex flex-col space-y-8 md:mt-8 md:flex-row md:justify-center md:gap-x-8 md:space-y-0\"><div class=\"group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/3\"><img src=\"https://i.pravatar.cc/300?img=42\" class=\"h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-200 ring-offset-4 group-hover:ring-green-300\"><h2 class=\"text-xl font-semibold text-gray-700\">Emon Hasan</h2><p class=\"text-sm\">CEO</p></div></div></div><hr class=\"mt-20 h-2\"></section>", 1);
-
-var _hoisted_17 = {
-  "class": "container max-w-screen-xl pb-20"
+var _hoisted_16 = {
+  "class": "container mt-10 max-w-screen-xl py-20"
 };
-var _hoisted_18 = {
+var _hoisted_17 = {
   "class": "text-center"
 };
 
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+  "class": "font-medium uppercase underline decoration-green-200 decoration-4 underline-offset-2"
+}, "Meet The Team", -1
+/* HOISTED */
+);
+
 var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
+  "class": "mt-5 font-heading text-5xl leading-snug text-gray-700"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" We work hard for "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" your success ")], -1
+/* HOISTED */
+);
+
+var _hoisted_20 = {
+  key: 0,
+  "class": "mt-8 flex flex-col space-y-8 md:mt-10 md:flex-row md:gap-x-4 md:space-y-0"
+};
+var _hoisted_21 = ["src"];
+var _hoisted_22 = {
+  "class": "text-xl font-semibold text-gray-700"
+};
+var _hoisted_23 = {
+  "class": "text-sm"
+};
+var _hoisted_24 = {
+  key: 1,
+  "class": "mt-6 flex flex-col space-y-8 md:mt-8 md:flex-row md:justify-center md:gap-x-8 md:space-y-0"
+};
+var _hoisted_25 = ["src"];
+var _hoisted_26 = {
+  "class": "text-xl font-semibold text-gray-700"
+};
+var _hoisted_27 = {
+  "class": "text-sm"
+};
+var _hoisted_28 = {
+  key: 2,
+  "class": "mt-6 flex flex-col space-y-8 md:mt-8 md:flex-row md:justify-center md:gap-x-8 md:space-y-0"
+};
+var _hoisted_29 = ["src"];
+var _hoisted_30 = {
+  "class": "text-xl font-semibold text-gray-700"
+};
+var _hoisted_31 = {
+  "class": "text-sm"
+};
+
+var _hoisted_32 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("hr", {
+  "class": "mt-20 h-2"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_33 = {
+  "class": "container max-w-screen-xl pb-20"
+};
+var _hoisted_34 = {
+  "class": "text-center"
+};
+
+var _hoisted_35 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
   "class": "font-heading text-3xl leading-snug text-gray-700 md:text-5xl"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Turn your online career "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "text-sky-500"
@@ -25505,13 +25557,13 @@ var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+var _hoisted_36 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "my-3 text-base font-normal text-gray-500"
 }, " Join today to get into the highest paying affiliate networks with trustworthy and fast payment system. ", -1
 /* HOISTED */
 );
 
-var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Join our Network ");
+var _hoisted_37 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Join our Network ");
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Head"], {
@@ -25542,13 +25594,61 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   }, 8
   /* PROPS */
-  , ["href"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])]), _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [_hoisted_19, _hoisted_20, $props.canRegister ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)($setup["Link"], {
+  , ["href"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [_hoisted_18, _hoisted_19, $props.teamMembers.hasOwnProperty('Manager') ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_20, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.teamMembers.Manager, function (manager, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+      key: index,
+      "class": "group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/4"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+      src: manager.data.avatar,
+      "class": "h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
+    }, null, 8
+    /* PROPS */
+    , _hoisted_21), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(manager.data.name), 1
+    /* TEXT */
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_23, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(manager.data.designation), 1
+    /* TEXT */
+    )]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $props.teamMembers.hasOwnProperty('HR Manager') ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_24, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.teamMembers['HR Manager'], function (hr_manager, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+      key: index,
+      "class": "group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/3"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+      src: hr_manager.data.avatar,
+      "class": "h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-50 ring-offset-4 group-hover:ring-green-300"
+    }, null, 8
+    /* PROPS */
+    , _hoisted_25), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(hr_manager.data.name), 1
+    /* TEXT */
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_27, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(hr_manager.data.designation), 1
+    /* TEXT */
+    )]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $props.teamMembers.hasOwnProperty('CEO') ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_28, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.teamMembers.CEO, function (ceo, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+      key: index,
+      "class": "group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/3"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+      src: ceo.data.avatar,
+      "class": "h-32 w-32 rounded-full object-cover object-left ring-4 ring-green-200 ring-offset-4 group-hover:ring-green-300"
+    }, null, 8
+    /* PROPS */
+    , _hoisted_29), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_30, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(ceo.data.name), 1
+    /* TEXT */
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_31, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(ceo.data.designation), 1
+    /* TEXT */
+    )]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), _hoisted_32]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_33, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_34, [_hoisted_35, _hoisted_36, $props.canRegister ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)($setup["Link"], {
     key: 0,
     href: _ctx.route('join'),
     "class": "mt-5 inline-block rounded-lg bg-green-400 px-6 py-3 uppercase text-white"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_21];
+      return [_hoisted_37];
     }),
     _: 1
     /* STABLE */
