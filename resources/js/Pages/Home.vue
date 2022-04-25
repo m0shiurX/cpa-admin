@@ -2,6 +2,8 @@
 import { Head, Link } from '@inertiajs/inertia-vue3';
 import Footer from '../Components/Footer.vue';
 import Navigation from '../Components/Navigation.vue';
+import Icon from '@/Shared/Icon.vue';
+
 defineProps({
     canLogin: Boolean,
     canRegister: Boolean,
@@ -257,6 +259,23 @@ defineProps({
                         />
                         <h2 class="text-xl font-semibold text-gray-700">{{ manager.data.name }}</h2>
                         <p class="text-sm">{{ manager.data.designation }}</p>
+                        <div class="flex items-center justify-around gap-x-3">
+                            <div>
+                                <a :href="manager.data.whatsapp">
+                                    <Icon icon="whatsapp" class="fill-gray-400" />
+                                </a>
+                            </div>
+                            <div>
+                                <a :href="manager.data.email">
+                                    <Icon icon="email" class="stroke-gray-400" />
+                                </a>
+                            </div>
+                            <div>
+                                <a :href="manager.data.skype">
+                                    <Icon icon="skype" class="fill-gray-400" />
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </template>
             </div>
