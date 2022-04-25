@@ -201,12 +201,12 @@ defineProps({
             <h2 class="mt-5 text-5xl font-semibold leading-normal text-gray-800">Delivering quality products</h2>
             <div class="flex max-w-screen-sm space-x-5">
                 <div class="flex w-1/2 items-center">
-                    <span class="text-6xl font-medium text-green-500">7</span>
+                    <span class="text-6xl font-medium text-green-500">5</span>
                     <span class="w-1/2 px-2 normal-case">Years in business</span>
                 </div>
                 <div class="flex w-1/2 items-center">
                     <span class="text-6xl font-medium text-green-500">200+</span>
-                    <span class="w-1/2 px-2 normal-case">Members</span>
+                    <span class="w-1/2 px-2 normal-case">Workers</span>
                 </div>
             </div>
         </div>
