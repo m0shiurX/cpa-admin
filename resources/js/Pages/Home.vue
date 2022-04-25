@@ -10,22 +10,23 @@ defineProps({
 
 <template>
     <Head title="Mondol IT Limited" />
-    <header id="top__header" class="container h-screen max-w-screen-xl bg-bottom bg-no-repeat pt-8">
-        <!-- Main Navigation -->
-        <Navigation />
-        <!-- hero content -->
-        <div class="mx-auto mt-56 flex max-w-3xl flex-col items-center space-y-4 text-center">
-            <h1 class="mb-5 font-heading text-3xl font-medium leading-10 text-gray-800 md:leading-10 xl:text-4xl xl:leading-normal">
-                We are giving <span class="font-semibold text-sky-500">the highest payout</span> in the country with
-                <span class="underline decoration-sky-500 underline-offset-2"> the fastest payment</span> system. <br />
-                <span class="text-2xl font-normal"> We have wise managers to serve you <span class="text-sky-500">24x7</span>. </span>
-            </h1>
-            <Link v-if="canRegister" :href="route('join')" class="block rounded-lg bg-green-600 px-8 py-4 uppercase text-white">
-                Join our Network
-            </Link>
-        </div>
-    </header>
-
+    <div class="h-screen bg-hero bg-contain bg-bottom bg-no-repeat pt-8">
+        <header id="top__header" class="container h-full max-w-screen-xl">
+            <!-- Main Navigation -->
+            <Navigation />
+            <!-- hero content -->
+            <div class="mx-auto mt-56 flex max-w-3xl flex-col items-center space-y-4 text-center">
+                <h1 class="mb-5 font-heading text-3xl font-medium leading-10 text-gray-800 md:leading-10 xl:text-4xl xl:leading-normal">
+                    We are giving <span class="font-semibold text-sky-500">the highest payout</span> in the country with
+                    <span class="underline decoration-sky-500 underline-offset-2"> the fastest payment</span> system. <br />
+                    <span class="text-2xl font-normal"> We have wise managers to serve you <span class="text-sky-500">24x7</span>. </span>
+                </h1>
+                <Link v-if="canRegister" :href="route('join')" class="block rounded-lg bg-green-600 px-8 py-4 uppercase text-white">
+                    Join our Network
+                </Link>
+            </div>
+        </header>
+    </div>
     <section class="container min-h-screen max-w-screen-xl py-20">
         <h3
             class="relative max-w-screen-sm font-medium uppercase before:absolute before:left-0 before:bottom-1 before:-z-1 before:h-2 before:w-[105px] before:bg-green-500/40"
