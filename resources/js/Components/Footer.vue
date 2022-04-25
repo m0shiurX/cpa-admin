@@ -6,8 +6,7 @@ import Logo from './Logo.vue';
         <div class="container flex h-full max-w-screen-xl flex-col items-center justify-start gap-y-10 gap-x-10 xl:flex-row xl:justify-start">
             <div class="h-full w-full border-slate-500 pr-16 xl:max-w-md xl:border-r">
                 <div class="mb-5 flex items-center gap-x-5">
-                    <Logo class="fill-gray-100" />
-                    <span class="text-2xl text-gray-50"> Mondol IT Limited </span>
+                    <Logo class="w-64" />
                 </div>
                 <p class="text-sm text-slate-400">
                     We aspire to build a Digital Bangladesh. You can work with us if you have a minimal experience on computer literacy. Let's build a
