@@ -249,7 +249,7 @@ defineProps({
             <div v-if="teamMembers.hasOwnProperty('Manager')" class="mt-8 flex flex-col space-y-8 md:mt-10 md:flex-row md:gap-x-4 md:space-y-0">
                 <template v-for="(manager, index) in teamMembers.Manager" :key="index">
                     <div
-                        class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/4"
+                        class="group flex flex-1 flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl"
                     >
                         <img
                             :src="manager.data.avatar"
@@ -266,7 +266,7 @@ defineProps({
             >
                 <template v-for="(hr_manager, index) in teamMembers['HR Manager']" :key="index">
                     <div
-                        class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/3"
+                        class="group flex max-w-sm flex-1 flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl"
                     >
                         <img
                             :src="hr_manager.data.avatar"
@@ -283,7 +283,7 @@ defineProps({
             >
                 <template v-for="(ceo, index) in teamMembers.CEO" :key="index">
                     <div
-                        class="group flex flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl md:w-1/3"
+                        class="group flex max-w-sm flex-1 flex-col items-center justify-center space-y-2 rounded-lg border border-slate-100 bg-white p-5 shadow-sm hover:shadow-xl"
                     >
                         <img
                             :src="ceo.data.avatar"
