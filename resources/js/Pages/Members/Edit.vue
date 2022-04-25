@@ -33,6 +33,9 @@
                                     <div v-if="form.errors?.designation" class="text-sm text-red-500">{{ form.errors.designation }}</div>
                                 </div>
                             </div>
+                            <BaseInput label="Skype" v-model="form.skype" :error="form.errors.skype" class="" />
+                            <BaseInput label="Whatsapp" v-model="form.whatsapp" :error="form.errors.whatsapp" class="" />
+                            <BaseInput label="Email" v-model="form.email" :error="form.errors.email" class="" />
                             <div class="mt-3 py-3">
                                 <label class="mb-3 block text-xl">Choose a photo </label>
                                 <input
@@ -79,6 +82,9 @@ const form = useForm({
     name: props.member.name,
     designation: props.member.designation,
     photo: props.member.photo,
+    skype: props.member.skype,
+    whatsapp: props.member.whatsapp,
+    email: props.member.email,
     avatar: null,
 });
 

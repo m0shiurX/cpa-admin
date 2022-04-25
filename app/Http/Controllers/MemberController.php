@@ -37,6 +37,9 @@ class MemberController extends Controller
                 'id' => $member->id,
                 'name' => $member->name,
                 'designation' => $member->designation,
+                'skype' => $member->skype,
+                'whatsapp' => $member->whatsapp,
+                'email' => $member->email,
                 'avatar' => $member->photo_path ? URL::route('storage', ['path' => $member->photo_path, 'w' => 128, 'h' => 128, 'fit' => 'crop']) : null,
 
             ]
@@ -50,6 +53,9 @@ class MemberController extends Controller
                 'id' => $member->id,
                 'name' => $member->name,
                 'designation' => $member->designation,
+                'skype' => $member->skype,
+                'whatsapp' => $member->whatsapp,
+                'email' => $member->email,
                 'photo' => $member->photo_path,
             ]
         ]);
@@ -57,7 +63,7 @@ class MemberController extends Controller
 
     public function update(UpdateMemberRequest $request, Member $member)
     {
-        $member->update($request->only('name', 'designation'));
+        $member->update($request->only('name', 'designation', 'skype', 'whatsapp', 'email'));
 
         if ($request->hasFile('avatar')) {
             $member->update(['photo_path' => $request->avatar->store('members')]);
@@ -73,7 +79,7 @@ class MemberController extends Controller
 
     public function store(CreateMemberRequest $request)
     {
-        $member = Member::create($request->only('name', 'designation'));
+        $member = Member::create($request->only('name', 'designation', 'skype', 'whatsapp', 'email'));
 
         if ($request->hasFile('avatar')) {
             $member->update(['photo_path' => $request->avatar->store('members')]);

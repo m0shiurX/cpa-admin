@@ -16,7 +16,10 @@ class UpdateMemberRequest extends FormRequest
         return [
             'name' => ['required', 'max:100'],
             'designation' => ['required', 'max:100'],
-            'avatar'    => ['nullable', 'file']
+            'avatar'    => ['nullable', 'file'],
+            'skype'    => ['nullable', 'string'],
+            'whatsapp'    => ['nullable', 'string'],
+            'email'    => ['nullable', 'string']
         ];
     }
 }

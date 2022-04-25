@@ -13,5 +13,6 @@ class Member extends Model
         'name',
         'photo_path',
         'designation',
+        'skype', 'whatsapp', 'email'
     ];
 }

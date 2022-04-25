@@ -20,6 +20,9 @@
                                 <tbody>
                                     <InfoRowVue label="Name" :value="props.member.name" />
                                     <InfoRowVue label="Designation" :value="props.member.designation" />
+                                    <InfoRowVue label="Skype" :value="props.member.skype" />
+                                    <InfoRowVue label="Whatsapp" :value="props.member.whatsapp" />
+                                    <InfoRowVue label="Email" :value="props.member.email" />
                                 </tbody>
                             </table>
                         </div>

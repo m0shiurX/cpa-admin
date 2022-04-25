@@ -16,7 +16,10 @@ class CreateMemberRequest extends FormRequest
         return [
             'name' => ['required', 'string', 'max:100'],
             'designation' => ['required', 'string', 'max:100'],
-            'avatar'    => ['nullable', 'file']
+            'avatar'    => ['nullable', 'file'],
+            'skype'    => ['nullable', 'string'],
+            'whatsapp'    => ['nullable', 'string'],
+            'email'    => ['nullable', 'string']
         ];
     }
 }
