@@ -57,8 +57,10 @@ const destroyItem = (item) => {
                                         class="group h-14 rounded border border-gray-100 bg-gray-50 transition-colors duration-200 ease-in hover:bg-gray-300"
                                     >
                                         <td class="border-r border-gray-100">
-                                            <div class="flex items-center pt-3 pl-5">
-                                                <p class="mr-2 text-lg font-medium leading-none text-gray-700">{{ member.name }}</p>
+                                            <div class="flex items-center py-3 pl-5">
+                                                <img class="h-16 w-16 rounded-full" :src="member.avatar" alt="" />
+
+                                                <p class="mx-2 text-lg font-medium leading-none text-gray-700">{{ member.name }}</p>
                                             </div>
                                         </td>
                                         <td class="border-r border-gray-100">

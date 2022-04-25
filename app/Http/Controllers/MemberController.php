@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use Inertia\Inertia;
 use App\Models\Member;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Redirect;
 use App\Http\Requests\CreateMemberRequest;
 use App\Http\Requests\UpdateMemberRequest;
@@ -21,11 +22,14 @@ class MemberController extends Controller
                     'id' => $member->id,
                     'name' => $member->name,
                     'designation' => $member->designation,
-                    'photo_path' => $member->photo_path,
+                    'avatar' => $member->photo_path,
+                    'avatar' => $member->photo_path ? URL::route('storage', ['path' => $member->photo_path, 'w' => 250, 'h' => 250, 'fit' => 'crop']) : null,
+
                     'created_at' => Carbon::parse($member->created_at)->format('M d, Y'),
                 ]),
         ]);
     }
+
     public function show(Member $member)
     {
         return Inertia::render('Members/Show', [
@@ -33,7 +37,8 @@ class MemberController extends Controller
                 'id' => $member->id,
                 'name' => $member->name,
                 'designation' => $member->designation,
-                'photo_path' => $member->photo_path,
+                'avatar' => $member->photo_path ? URL::route('storage', ['path' => $member->photo_path, 'w' => 128, 'h' => 128, 'fit' => 'crop']) : null,
+
             ]
         ]);
     }
@@ -45,22 +50,20 @@ class MemberController extends Controller
                 'id' => $member->id,
                 'name' => $member->name,
                 'designation' => $member->designation,
-                'photo_path' => $member->photo_path,
+                'photo' => $member->photo_path,
             ]
         ]);
     }
 
     public function update(UpdateMemberRequest $request, Member $member)
     {
-        $member->update($request->validated());
+        $member->update($request->only('name', 'designation'));
 
-        if ($request->hasFile('photo')) {
-            $member->update(['photo_path' => $request->photo->store('users')]);
+        if ($request->hasFile('avatar')) {
+            $member->update(['photo_path' => $request->avatar->store('members')]);
         }
 
         return Redirect::route('members.index')->with('success', 'Successfully updated.');
-
-        // return Redirect::back()->with('success', 'Successfully updated.');
     }
 
     public function create()
@@ -70,11 +73,12 @@ class MemberController extends Controller
 
     public function store(CreateMemberRequest $request)
     {
-        Member::create($request->validated());
+        $member = Member::create($request->only('name', 'designation'));
 
+        if ($request->hasFile('avatar')) {
+            $member->update(['photo_path' => $request->avatar->store('members')]);
+        }
         return Redirect::route('members.index')->with('success', 'Successfully updated.');
-
-        // return Redirect::back()->with('success', 'Successfully updated.');
     }
 
 

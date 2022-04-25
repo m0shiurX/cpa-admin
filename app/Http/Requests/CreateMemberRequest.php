@@ -14,8 +14,9 @@ class CreateMemberRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => ['string', 'max:100', 'required'],
-            'designation' => ['string', 'max:100', 'required']
+            'name' => ['required', 'string', 'max:100'],
+            'designation' => ['required', 'string', 'max:100'],
+            'avatar'    => ['nullable', 'file']
         ];
     }
 }

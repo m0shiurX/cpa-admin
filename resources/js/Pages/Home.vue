@@ -10,16 +10,17 @@ defineProps({
 
 <template>
     <Head title="Mondol IT Limited" />
-    <header id="top__header" class="container h-screen max-w-screen-xl bg-hero bg-bottom bg-no-repeat pt-8">
+    <header id="top__header" class="container h-screen max-w-screen-xl bg-bottom bg-no-repeat pt-8">
         <!-- Main Navigation -->
         <Navigation />
         <!-- hero content -->
         <div class="mx-auto mt-56 flex max-w-3xl flex-col items-center space-y-4 text-center">
-            <h1 class="mb-5 font-heading text-5xl font-bold leading-tight text-gray-800 md:leading-normal xl:text-6xl">
-                We make remarkable <br />
-                <span class="text-sky-500">digital growth</span> together.
+            <h1 class="mb-5 font-heading text-3xl font-medium leading-10 text-gray-800 md:leading-10 xl:text-4xl xl:leading-normal">
+                We are giving <span class="font-semibold text-sky-500">the highest payout</span> in the country with
+                <span class="underline decoration-sky-500 underline-offset-2"> the fastest payment</span> system. <br />
+                <span class="text-2xl font-normal"> We have wise managers to serve you <span class="text-sky-500">24x7</span>. </span>
             </h1>
-            <Link v-if="canRegister" :href="route('join')" class="block rounded-lg bg-green-400 px-6 py-3 uppercase text-white">
+            <Link v-if="canRegister" :href="route('join')" class="block rounded-lg bg-green-600 px-8 py-4 uppercase text-white">
                 Join our Network
             </Link>
         </div>
@@ -48,7 +49,7 @@ defineProps({
 
         <div class="mt-12 flex flex-col space-y-8 md:mt-20 md:flex-row md:gap-x-10 md:space-y-0">
             <div class="group rounded-lg border border-slate-100 bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3">
-                <img class="mb-16" src="@/assets/instagram.png" alt="instagram" />
+                <img class="mb-16" src="@/assets/cpa.png" alt="instagram" />
                 <h4 class="text-2xl font-semibold text-gray-700">CPA/Affiliate</h4>
                 <p class="mt-4 font-light text-gray-500">
                     Affiliate marketing is one of our the strongest expertise since we are doing it for a decade.
@@ -84,7 +85,7 @@ defineProps({
                 </a>
             </div>
             <div class="group rounded-lg border border-slate-100 bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3">
-                <img class="mb-16" src="@/assets/graphic-designer.png" alt="instagram" />
+                <img class="mb-16" src="@/assets/graphic.png" alt="instagram" />
                 <h4 class="text-2xl font-semibold text-gray-700">Graphics Design</h4>
                 <p class="mt-4 font-light text-gray-500">Design sells! We don't create just catchy design but the design that boosts your sells.</p>
                 <a class="mt-8 inline-block" href="#">
@@ -102,7 +103,7 @@ defineProps({
         </div>
         <div class="mt-4 flex flex-col space-y-8 md:mt-8 md:flex-row md:gap-x-10 md:space-y-0">
             <div class="group rounded-lg border border-slate-100 bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3">
-                <img class="mb-16" src="@/assets/instagram.png" alt="instagram" />
+                <img class="mb-16" src="@/assets/digital_marketing.png" alt="instagram" />
                 <h4 class="text-2xl font-semibold text-gray-700">Digital Marketing</h4>
                 <!-- <p class="mt-4 font-light text-gray-500">
                     Digital marketing, also called online marketing, This includes not only email, social media, and web-based advertising, but also
@@ -121,7 +122,7 @@ defineProps({
                 </a>
             </div>
             <div class="group rounded-lg border border-slate-100 bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3">
-                <img class="mb-16" src="@/assets/web.png" alt="instagram" />
+                <img class="mb-16" src="@/assets/app_dev.png" alt="instagram" />
                 <h4 class="text-2xl font-semibold text-gray-700">App Development</h4>
                 <!-- <p class="mt-4 font-light text-gray-500">
                     Mobile app development is the act or process by which a mobile app is developed for mobile devices, such as personal digital
@@ -141,7 +142,7 @@ defineProps({
                 </a>
             </div>
             <div class="group rounded-lg border border-slate-100 bg-white px-8 pt-16 pb-8 shadow-sm hover:shadow-xl md:w-1/3">
-                <img class="mb-16" src="@/assets/graphic-designer.png" alt="instagram" />
+                <img class="mb-16" src="@/assets/social.png" alt="instagram" />
                 <h4 class="text-2xl font-semibold text-gray-700">Social Media Management</h4>
                 <!-- <p class="mt-4 font-light text-gray-500">
                     Social media marketing is the use of social media platforms and websites to promote a product or service. Although the terms

@@ -14,8 +14,9 @@ class UpdateMemberRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => ['string', 'max:100', 'required'],
-            'designation' => ['string', 'max:100', 'required']
+            'name' => ['required', 'max:100'],
+            'designation' => ['required', 'max:100'],
+            'avatar'    => ['nullable', 'file']
         ];
     }
 }

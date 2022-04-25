@@ -34,7 +34,7 @@ const is_manager = computed(() => {
                             <!-- Logo -->
                             <div class="flex shrink-0 items-center">
                                 <Link :href="route('dashboard')">
-                                    <Logo />
+                                    <Logo class="w-44" />
                                 </Link>
                             </div>
 

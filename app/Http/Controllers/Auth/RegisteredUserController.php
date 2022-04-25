@@ -16,11 +16,8 @@ use App\Providers\RouteServiceProvider;
 
 class RegisteredUserController extends Controller
 {
-    /**
-     * Display the registration view.
-     * @return \Inertia\Response
-     */
-    public function create()
+
+    public function create(): \Inertia\Response
     {
 
         return Inertia::render('Join', [
@@ -29,16 +26,12 @@ class RegisteredUserController extends Controller
                 ->through(fn ($network) => [
                     'id' => $network->id,
                     'name' => $network->name,
-                ]),
+                ])
         ]);
     }
 
-    /**
-     * Handle an incoming registration request.
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\RedirectResponse
-     */
-    public function store(Request $request)
+
+    public function store(Request $request): \Illuminate\Http\RedirectResponse
     {
 
         $request->validate([

@@ -2,7 +2,7 @@
 
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Artisan;
+// use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ImagesController;
 use App\Http\Controllers\MemberController;
@@ -11,6 +11,7 @@ use App\Http\Controllers\NetworkController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\RegisteredUserController;
+use App\Http\Controllers\HomeController;
 
 /**************************************************************
  *  Web Routes
@@ -56,13 +57,7 @@ Route::middleware('auth')->group(
 
 
 Route::get('join', [RegisteredUserController::class, 'create'])->middleware('guest')->name('join');
-
-Route::get('/', function () {
-    return Inertia::render('Home', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-    ]);
-})->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 
 // Images

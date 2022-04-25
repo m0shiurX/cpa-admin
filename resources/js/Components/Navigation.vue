@@ -7,8 +7,7 @@ import Logo from './Logo.vue';
     <nav class="flex items-center justify-between">
         <!-- Brand Logo -->
         <Link :href="route('home')" class="flex items-center gap-x-5">
-            <Logo />
-            <span class="text-2xl font-black text-slate-600">MONDOL IT</span>
+            <Logo class="w-48" />
         </Link>
         <!-- Navigation menu items-->
         <div class="hidden items-center space-x-8 md:flex">
