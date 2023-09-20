@@ -359,7 +359,7 @@ defineProps({
                 Join today to get into the highest paying affiliate networks with trustworthy and fast payment system.
             </p>
             <Link v-if="canRegister" :href="route('join')" class="mt-5 inline-block rounded-lg bg-green-400 px-6 py-3 uppercase text-white">
-                Join our Network
+                Join our Networks
             </Link>
         </div>
     </section>
