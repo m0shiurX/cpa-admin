@@ -34,12 +34,12 @@ import Logo from './Logo.vue';
                 <div>
                     <h2 class="mb-3 text-xl text-white">Find Us</h2>
                     <p class="leading-6">
-                        Jamil Nagar, Bogura Sadar <br />
-                        Bogura - 5800, BD
+                        Vill: Hatshira, PO: Hatshira <br />
+                        Kazipur - 5800, Sirajganj, BD
                     </p>
                     <p class="leading-6">
-                        +880 1977 538 234 <br />
-                        support@mondolit.com
+                        +880 1760 538 234 <br />
+                        ahmedraju1534@gmail.com
                     </p>
                 </div>
             </div>
@@ -49,8 +49,8 @@ import Logo from './Logo.vue';
         </div>
         <div class="container mt-2 max-w-screen-xl text-slate-400">
             <p class="text-sm">
-                All rights reserved by MONDOL IT LIMITED
-                <span class="">|</span> Copyright &copy; 2022
+                All rights reserved by MST MAJEDA KHATUN
+                <span class="">|</span> Copyright &copy; 2023
             </p>
         </div>
     </footer>
